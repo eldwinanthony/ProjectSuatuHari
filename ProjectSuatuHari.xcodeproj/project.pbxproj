@@ -19,6 +19,7 @@
 		5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF036285B807D00A2AEF9 /* SoundController.swift */; };
 		5C1FF039285B83A600A2AEF9 /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF038285B83A600A2AEF9 /* Story.storyboard */; };
 		5C1FF03B285B83C600A2AEF9 /* Story2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF03A285B83C600A2AEF9 /* Story2ViewController.swift */; };
+		5C1FF03D285B8D9300A2AEF9 /* Story4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5C1FF036285B807D00A2AEF9 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 		5C1FF038285B83A600A2AEF9 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
 		5C1FF03A285B83C600A2AEF9 /* Story2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story2ViewController.swift; sourceTree = "<group>"; };
+		5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story4ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				5C1FF038285B83A600A2AEF9 /* Story.storyboard */,
 				5C1FF03A285B83C600A2AEF9 /* Story2ViewController.swift */,
+				5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */,
 				5C0DEE53285B2D8D00395723 /* AppDelegate.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
+				5C1FF03D285B8D9300A2AEF9 /* Story4ViewController.swift in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
