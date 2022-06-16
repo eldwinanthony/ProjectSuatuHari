@@ -13,6 +13,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -58,7 +59,14 @@ class ViewController: UIViewController {
         starView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         
         
-        
+    }
+    
+    @IBAction func charButtonPressed(_ sender: Any) {
+        playButtonSound()
+    }
+    
+    @IBAction func learningButtonPressed(_ sender: Any) {
+        playButtonSound()
     }
     
 }

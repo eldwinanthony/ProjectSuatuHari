@@ -25,6 +25,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Desain Karakter Kamu Disini!">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="KBJ-Ot-6k5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfK-r0-yhX">
                                 <rect key="frame" x="827" y="800" width="451" height="130"/>
@@ -35,6 +38,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Cek Tumbuh Kembang Anak!">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="n1O-KA-uEU"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-vc-ril">
                                 <rect key="frame" x="89" y="775" width="179" height="179"/>
