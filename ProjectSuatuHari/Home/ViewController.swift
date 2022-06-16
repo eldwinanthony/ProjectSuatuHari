@@ -16,6 +16,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var starView: UIView!
     @IBOutlet weak var circleViewChar: UIView!
     @IBOutlet weak var charButton: UIButton!
     @IBOutlet weak var checkpointButton: UIButton!
@@ -47,6 +48,14 @@ class ViewController: UIViewController {
         checkpointButton.layer.shadowOffset = .zero
         checkpointButton.layer.shadowRadius = 10
         checkpointButton.layer.shadowOffset = CGSize(width: 0.0, height: 9.0)
+        
+        //set radius and shadow to starView
+        starView.layer.cornerRadius = 10
+        starView.layer.shadowColor = UIColor.black.cgColor
+        starView.layer.shadowOpacity = 0.5
+        starView.layer.shadowOffset = .zero
+        starView.layer.shadowRadius = 2
+        starView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         
         
         
