@@ -10,10 +10,12 @@ import UIKit
 //Antrian Tiket + Activity
 class Story2ViewController: UIViewController {
 
+    @IBOutlet weak var promptIceCream: UIImageView!
     @IBOutlet weak var merahBtn: UIButton!
     @IBOutlet weak var biruBtn: UIButton!
     @IBOutlet weak var kuningBtn: UIButton!
     @IBOutlet weak var hijauBtn: UIButton!
+    @IBOutlet weak var xButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +33,9 @@ class Story2ViewController: UIViewController {
         hijauBtn.layer.cornerRadius = 20
     }
     
-
+    @IBAction func xButtonPressed(_ sender: Any) {
+        promptIceCream.isHidden = true
+        xButton.isHidden = true
+    }
+    
 }
