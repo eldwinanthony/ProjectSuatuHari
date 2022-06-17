@@ -14,7 +14,7 @@ class Story4ViewController: UIViewController {
         super.viewDidLoad()
         
         //set wordContainer to transparent
-        wordContainer.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        wordContainer.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         wordContainer.isOpaque = false
 
         // Do any additional setup after loading the view.
