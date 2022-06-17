@@ -17,6 +17,7 @@
 		5C1FF034285B804900A2AEF9 /* buttonsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF032285B804900A2AEF9 /* buttonsound.wav */; };
 		5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */; };
 		5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF036285B807D00A2AEF9 /* SoundController.swift */; };
+		5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C93C2AA285C572400E32360 /* guidelineandsetting.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5C1FF032285B804900A2AEF9 /* buttonsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonsound.wav; sourceTree = "<group>"; };
 		5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nextactivitysound.wav; sourceTree = "<group>"; };
 		5C1FF036285B807D00A2AEF9 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		5C93C2AA285C572400E32360 /* guidelineandsetting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guidelineandsetting.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		5C1FF031285B801C00A2AEF9 /* SoundEffect */ = {
 			isa = PBXGroup;
 			children = (
+				5C93C2AA285C572400E32360 /* guidelineandsetting.wav */,
 				5C1FF032285B804900A2AEF9 /* buttonsound.wav */,
 				5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */,
 				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
@@ -187,6 +190,7 @@
 			files = (
 				5C1FF034285B804900A2AEF9 /* buttonsound.wav in Resources */,
 				5C0DEE62285B2D8D00395723 /* LaunchScreen.storyboard in Resources */,
+				5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */,
 				5C0DEE5F285B2D8D00395723 /* Assets.xcassets in Resources */,
 				5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */,
 				5C0DEE5A285B2D8D00395723 /* Main.storyboard in Resources */,

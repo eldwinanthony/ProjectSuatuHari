@@ -14,6 +14,9 @@ let buttonsound = URL(fileURLWithPath: pathToSound!)
 let pathSound2 = Bundle.main.path(forResource: "nextactivitysound", ofType: "wav")
 let nextactivitysound = URL(fileURLWithPath: pathSound2!)
 
+let pathSound3 = Bundle.main.path(forResource: "guidelineandsetting", ofType: "wav")
+let guidelinesettingsound = URL(fileURLWithPath: pathSound3!)
+
 var audioPlayer: AVAudioPlayer?
 
 func playButtonSound(){
@@ -29,6 +32,16 @@ func playButtonSound(){
 func playNextActivitySound(){
     do{
         audioPlayer = try AVAudioPlayer(contentsOf: nextactivitysound)
+        audioPlayer?.play()
+    }
+    catch{
+        print(error)
+    }
+}
+
+func playGuidelineSettingSound(){
+    do{
+        audioPlayer = try AVAudioPlayer(contentsOf: guidelinesettingsound)
         audioPlayer?.play()
     }
     catch{

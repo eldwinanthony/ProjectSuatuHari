@@ -68,6 +68,12 @@ class ViewController: UIViewController {
     @IBAction func learningButtonPressed(_ sender: Any) {
         playButtonSound()
     }
+    @IBAction func guidelineButtonPressed(_ sender: Any) {
+        playGuidelineSettingSound()
+    }
+    @IBAction func settingButtonPressed(_ sender: Any) {
+        playGuidelineSettingSound()
+    }
     
 }
 
