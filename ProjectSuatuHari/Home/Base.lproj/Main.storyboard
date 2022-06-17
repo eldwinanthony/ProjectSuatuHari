@@ -16,54 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48F-l2-CcP">
-                                <rect key="frame" x="198" y="800" width="451" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Desain Karakter Kamu Disini!">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="KBJ-Ot-6k5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfK-r0-yhX">
-                                <rect key="frame" x="827" y="800" width="451" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cek Tumbuh Kembang Anak!">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="n1O-KA-uEU"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-vc-ril">
-                                <rect key="frame" x="89" y="775" width="179" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homecharbutton" translatesAutoresizingMaskIntoConstraints="NO" id="Mi1-zz-ruf">
-                                        <rect key="frame" x="14" y="12" width="151" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.62352943419999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIe-iT-OxW">
-                                <rect key="frame" x="718" y="775" width="179" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homecharbutton" translatesAutoresizingMaskIntoConstraints="NO" id="T7t-u8-uQi">
-                                        <rect key="frame" x="14" y="12" width="151" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.62352943419999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halo Ani! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
                                 <rect key="frame" x="578" y="101" width="210" height="57.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
@@ -114,6 +66,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-Wx-f3G">
+                                <rect key="frame" x="92" y="780" width="567" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="charbutton"/>
+                                <connections>
+                                    <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="kBS-vz-CNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-sW-J85">
+                                <rect key="frame" x="721" y="780" width="567" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="checkpointbutton"/>
+                                <connections>
+                                    <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Z1f-5y-no9"/>
+                                    <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="iYB-4K-sWC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -130,10 +101,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="charButton" destination="48F-l2-CcP" id="7Y9-h0-nOO"/>
-                        <outlet property="checkpointButton" destination="KfK-r0-yhX" id="gXb-bf-95Q"/>
-                        <outlet property="circleViewChar" destination="9wp-vc-ril" id="554-ge-vYW"/>
-                        <outlet property="circleViewCheckpoint" destination="zIe-iT-OxW" id="gsn-bX-GDA"/>
+                        <outlet property="charButton" destination="MeV-Wx-f3G" id="00a-eb-SsU"/>
+                        <outlet property="checkpointButton" destination="EXa-sW-J85" id="o5g-Zr-1hP"/>
                         <outlet property="starView" destination="vOf-5L-E4C" id="WsL-XC-ZM2"/>
                     </connections>
                 </viewController>
@@ -143,8 +112,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="charbutton" width="577" height="179"/>
+        <image name="checkpointbutton" width="577" height="179"/>
         <image name="gearshape.circle" catalog="system" width="128" height="121"/>
-        <image name="homecharbutton" width="151" height="155"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="star" width="89" height="86"/>
         <systemColor name="systemBackgroundColor">
