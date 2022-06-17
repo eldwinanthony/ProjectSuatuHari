@@ -70,8 +70,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mau kemana hari ini?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-qa-Nk2">
-                                <rect key="frame" x="503.5" y="158" width="359.5" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mau kemana hari ini?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-qa-Nk2">
+                                <rect key="frame" x="503.5" y="158" width="359.5" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,6 +112,7 @@
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="134" id="97L-qD-0Ii"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="104" id="TbE-7e-jLW"/>
                             <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="c0E-dG-m64"/>
                             <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="77" id="cXx-aA-uW2"/>
