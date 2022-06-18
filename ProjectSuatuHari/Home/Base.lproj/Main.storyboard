@@ -16,18 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halo Ani! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
-                                <rect key="frame" x="578" y="101" width="210" height="57.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mau kemana hari ini?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-qa-Nk2">
-                                <rect key="frame" x="503.5" y="158" width="359.5" height="47"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="39"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ3-Jz-1bp">
                                 <rect key="frame" x="1175" y="63" width="87" height="63"/>
                                 <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -66,20 +54,43 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-Wx-f3G">
-                                <rect key="frame" x="92" y="780" width="567" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-Wx-f3G">
+                                <rect key="frame" x="68" y="786" width="601" height="193"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="charbutton"/>
                                 <connections>
                                     <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="kBS-vz-CNq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-sW-J85">
-                                <rect key="frame" x="721" y="780" width="567" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-gC-I0F">
+                                <rect key="frame" x="42" y="478.5" width="89" height="71"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="checkpointbutton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="leftarrow" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omr-qo-HUu">
+                                <rect key="frame" x="1240" y="478.5" width="89" height="71"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="rightarrow" title=""/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-WW-ikV">
+                                <rect key="frame" x="340" y="278" width="686" height="472"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halo Ani! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
+                                <rect key="frame" x="538.5" y="44" width="289" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mau kemana hari ini?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-qa-Nk2">
+                                <rect key="frame" x="503.5" y="101" width="359.5" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-sW-J85">
+                                <rect key="frame" x="711" y="791.5" width="601" height="193"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="checkpointbutton" title=""/>
                                 <connections>
                                     <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Z1f-5y-no9"/>
                                     <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="iYB-4K-sWC"/>
@@ -89,15 +100,33 @@
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="134" id="97L-qD-0Ii"/>
+                            <constraint firstItem="EXa-sW-J85" firstAttribute="leading" secondItem="MeV-Wx-f3G" secondAttribute="trailing" constant="42" id="0fP-4b-DQL"/>
+                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="omr-qo-HUu" secondAttribute="trailing" constant="37" id="19b-3d-soh"/>
+                            <constraint firstItem="vxd-gC-I0F" firstAttribute="leading" secondItem="sIi-Xr-rcv" secondAttribute="leading" constant="42" id="4Qd-ag-8Wl"/>
+                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="343:512" id="4Zw-Bn-9Jl"/>
+                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="8et-86-Fge"/>
+                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="77" id="97L-qD-0Ii"/>
+                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="EXa-sW-J85" secondAttribute="bottom" constant="19.5" id="BI5-vV-ZzO"/>
+                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="vxd-gC-I0F" secondAttribute="trailing" constant="1235" id="J6d-lK-TAd"/>
+                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="leading" secondItem="vxd-gC-I0F" secondAttribute="trailing" constant="209" id="KB7-sH-Mwc"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="104" id="TbE-7e-jLW"/>
+                            <constraint firstItem="omr-qo-HUu" firstAttribute="baseline" secondItem="vxd-gC-I0F" secondAttribute="baseline" id="X0r-wa-drK"/>
+                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="centerY" secondItem="sIi-Xr-rcv" secondAttribute="centerY" id="XAD-y1-2gs"/>
+                            <constraint firstItem="vxd-gC-I0F" firstAttribute="centerY" secondItem="sIi-Xr-rcv" secondAttribute="centerY" id="XgG-yw-Qpu"/>
+                            <constraint firstItem="EXa-sW-J85" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="a5u-1m-pPw"/>
+                            <constraint firstItem="vxd-gC-I0F" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="aHz-7j-GFE"/>
+                            <constraint firstItem="MeV-Wx-f3G" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="bnv-eq-YwG"/>
                             <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="c0E-dG-m64"/>
-                            <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="77" id="cXx-aA-uW2"/>
+                            <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="20" id="cXx-aA-uW2"/>
+                            <constraint firstItem="MeV-Wx-f3G" firstAttribute="leading" secondItem="sIi-Xr-rcv" secondAttribute="leading" constant="68" id="eQg-3q-KgA"/>
                             <constraint firstItem="Ymp-qa-Nk2" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="fjl-Lb-tO6"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="iIR-eb-g4z"/>
                             <constraint firstItem="dJ3-Jz-1bp" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="m2k-HZ-94R"/>
+                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="MeV-Wx-f3G" secondAttribute="bottom" constant="25" id="s4F-4n-Hwt"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="leading" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="-14" id="sZa-zL-a1S"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="Ffn-ev-6kH" secondAttribute="trailing" constant="31" id="tun-70-zac"/>
+                            <constraint firstItem="tsE-TE-q0h" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="35:124" id="uCW-od-MFM"/>
+                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="EXa-sW-J85" secondAttribute="trailing" constant="54" id="xFv-aQ-PSJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -112,10 +141,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="card1" width="686" height="472"/>
         <image name="charbutton" width="577" height="179"/>
         <image name="checkpointbutton" width="577" height="179"/>
         <image name="gearshape.circle" catalog="system" width="128" height="121"/>
+        <image name="leftarrow" width="65" height="57"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
+        <image name="rightarrow" width="65" height="57"/>
         <image name="star" width="89" height="86"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
