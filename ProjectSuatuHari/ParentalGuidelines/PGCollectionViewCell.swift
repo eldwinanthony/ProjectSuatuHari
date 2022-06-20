@@ -9,4 +9,5 @@ import UIKit
 
 class PGCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var PGImage: UIImageView!
 }
