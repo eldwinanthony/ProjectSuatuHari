@@ -19,6 +19,7 @@
 		5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF036285B807D00A2AEF9 /* SoundController.swift */; };
 		5C28665C28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */; };
 		5C28665E28606017001830EC /* ParentalGuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */; };
+		5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665F2860637A001830EC /* PGCollectionViewCell.swift */; };
 		5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C93C2AA285C572400E32360 /* guidelineandsetting.wav */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		5C1FF036285B807D00A2AEF9 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 		5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentalGuidelinesStoryboard.storyboard; sourceTree = "<group>"; };
 		5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalGuidelinesViewController.swift; sourceTree = "<group>"; };
+		5C28665F2860637A001830EC /* PGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C93C2AA285C572400E32360 /* guidelineandsetting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guidelineandsetting.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */,
+				5C28665F2860637A001830EC /* PGCollectionViewCell.swift */,
 				5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */,
 			);
 			path = ParentalGuidelines;
@@ -216,6 +219,7 @@
 				5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */,
 				5C0DEE53285B2D8D00395723 /* AppDelegate.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
+				5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
