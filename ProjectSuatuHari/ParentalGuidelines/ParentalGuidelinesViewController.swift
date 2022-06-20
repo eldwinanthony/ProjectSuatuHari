@@ -8,7 +8,8 @@
 import UIKit
 
 class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    
+    //SET OUTLETS FOR ELEMENTS IN STORYBOARD
     @IBOutlet weak var closePGBtn: UIButton!
     @IBOutlet weak var PGCollectionView: UICollectionView!
     @IBOutlet weak var previousBtn: UIButton!
@@ -26,8 +27,10 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         PGCollectionView.delegate = self
         PGCollectionView.dataSource = self
         
+        //HIDE PREVIOUS BUTTON
         previousBtn.isHidden = true
         
+        //DEFINE TOTAL DOTS IN PAGE CONTROL
         pgPageControl.numberOfPages = pgimageArray.count
        
     }
@@ -36,14 +39,17 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
+    // GIVE 0 SPACING
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     
+    //DEFINE THE NUMBER OF CELL
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.pgimageArray.count
     }
     
+    //DEFINE THE CELL
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PGCollectionViewCell", for: indexPath) as! PGCollectionViewCell
         cell.PGImage.image = pgimageArray[indexPath.row]
@@ -51,6 +57,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         return cell
     }
     
+    //DEFINE CURRENT POSITION OF PAGE CONTROL
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         pgPageControl.currentPage = currentCellIndex
     }
@@ -60,10 +67,12 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         playButtonSound()
         currentCellIndex += 1
         
+        //HIDE NEXT BTN IF CELL AT TOTAL INDEX - 1
         if currentCellIndex == pgimageArray.count - 1{
             nextBtn.isHidden = true
         }
         
+        //SCROLL NEXT
         if currentCellIndex < pgimageArray.count{
             PGCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
             previousBtn.isHidden = false
@@ -75,14 +84,17 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         playButtonSound()
         currentCellIndex -= 1
         
+        //UNHIDE THE NEXT BUTTON
         if currentCellIndex != pgimageArray.count - 1 {
             nextBtn.isHidden =  false
         }
         
+        //HIDE THE PREVIOUS BUTTON AT FIRST CELL
         if currentCellIndex == 0{
             previousBtn.isHidden = true
         }
         
+        //SCROLL PREVIOUS
         if currentCellIndex < pgimageArray.count{
             PGCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
         }
