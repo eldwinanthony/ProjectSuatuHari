@@ -9,6 +9,7 @@ import UIKit
 
 class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet weak var closePGBtn: UIButton!
     @IBOutlet weak var PGCollectionView: UICollectionView!
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
@@ -56,6 +57,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     
     
     @IBAction func nextPressed(_ sender: Any) {
+        playButtonSound()
         currentCellIndex += 1
         
         if currentCellIndex == pgimageArray.count - 1{
@@ -70,7 +72,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     
     
     @IBAction func previousPressed(_ sender: Any) {
-        
+        playButtonSound()
         currentCellIndex -= 1
         
         if currentCellIndex != pgimageArray.count - 1 {
@@ -85,5 +87,8 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
             PGCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
         }
 
+    }
+    @IBAction func closePressed(_ sender: Any) {
+        playGuidelineSettingSound()
     }
 }
