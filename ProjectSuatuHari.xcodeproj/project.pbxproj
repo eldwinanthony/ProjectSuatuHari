@@ -20,6 +20,7 @@
 		5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C93C2AA285C572400E32360 /* guidelineandsetting.wav */; };
 		AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */; };
 		AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */; };
+		ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE61F42861DA0B00BE079C /* ReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5C93C2AA285C572400E32360 /* guidelineandsetting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guidelineandsetting.wav; sourceTree = "<group>"; };
 		AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCheckPointViewController.swift; sourceTree = "<group>"; };
 		AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCheckPointStoryboard.storyboard; sourceTree = "<group>"; };
+		ABEE61F42861DA0B00BE079C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */,
+				ABEE61F42861DA0B00BE079C /* ReviewCell.swift */,
 				AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */,
 			);
 			path = LearningCheckpoint;
@@ -217,6 +220,7 @@
 				AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
+				ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
