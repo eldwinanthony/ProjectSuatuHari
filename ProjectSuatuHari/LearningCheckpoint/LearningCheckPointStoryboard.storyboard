@@ -303,6 +303,7 @@
                         <outlet property="ParameterDuaBintang" destination="sjd-ul-tfH" id="G5r-7v-2jV"/>
                         <outlet property="ParameterDuaBox" destination="865-yN-5hG" id="EJv-G1-Pna"/>
                         <outlet property="ParameterDuaText" destination="Sf6-hG-VeB" id="z9f-I4-KEg"/>
+                        <outlet property="ParameterSatuBintang" destination="x91-O8-UBv" id="L3h-Ls-MMh"/>
                         <outlet property="ParameterSatuBox" destination="PfK-nu-Twp" id="TEb-E0-ook"/>
                         <outlet property="ParameterSatuText" destination="PfK-nu-Twp" id="klL-or-yFd"/>
                         <outlet property="ParameterTigaBintang" destination="Q1X-Hb-Dx4" id="jdV-KH-i9k"/>
