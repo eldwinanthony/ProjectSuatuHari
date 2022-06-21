@@ -21,6 +21,10 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var charButton: UIButton!
     @IBOutlet weak var checkpointButton: UIButton!
     @IBOutlet weak var homeCollectionView: UICollectionView!
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var previousBtn: UIButton!
+    
+    var currentCellIndex = 0
     
     var arrHomeCardImage = [UIImage(named: "card1"), UIImage(named: "card2"), UIImage(named: "card3")]
     
@@ -38,6 +42,8 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
         
+        previousBtn.isHidden = true
+        
     }
     
     @IBAction func charButtonPressed(_ sender: Any) {
@@ -54,6 +60,14 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         playGuidelineSettingSound()
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrHomeCardImage.count
     }
@@ -65,6 +79,41 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         return cell
     }
     
+    @IBAction func nextBtnPressed(_ sender: Any) {
+                playButtonSound()
+                currentCellIndex += 1
+                
+                //HIDE NEXT BTN IF CELL AT TOTAL INDEX - 1
+                if currentCellIndex == arrHomeCardImage.count - 1{
+                    nextBtn.isHidden = true
+                }
+                
+                //SCROLL NEXT
+                if currentCellIndex < arrHomeCardImage.count{
+                    homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+                    previousBtn.isHidden = false
+                }
+
+    }
+    @IBAction func previousBtnPressed(_ sender: Any) {
+                playButtonSound()
+                currentCellIndex -= 1
+                
+                //UNHIDE THE NEXT BUTTON
+                if currentCellIndex != arrHomeCardImage.count - 1 {
+                    nextBtn.isHidden =  false
+                }
+                
+                //HIDE THE PREVIOUS BUTTON AT FIRST CELL
+                if currentCellIndex == 0{
+                    previousBtn.isHidden = true
+                }
+                
+                //SCROLL PREVIOUS
+                if currentCellIndex < arrHomeCardImage.count{
+                    homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+                }
+    }
 }
 
 
