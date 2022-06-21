@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -72,9 +73,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="rightarrow" title=""/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-WW-ikV">
-                                <rect key="frame" x="340" y="278" width="686" height="472"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halo Ani! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
                                 <rect key="frame" x="538.5" y="44" width="289" height="57.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
@@ -96,6 +94,41 @@
                                     <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="iYB-4K-sWC"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cy9-bS-LMW">
+                                <rect key="frame" x="210" y="217" width="946" height="532"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PYD-rH-xKP">
+                                    <size key="itemSize" width="532" height="430"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="HomeCardCollectionViewCell" id="rAz-AA-L3T" customClass="HomeCardCollectionViewCell" customModule="ProjectSuatuHari" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="51" width="532" height="430"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tQA-0U-KBV">
+                                            <rect key="frame" x="0.0" y="0.0" width="532" height="430"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8GV-Eu-du0">
+                                                    <rect key="frame" x="0.0" y="30" width="573" height="371"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="532" height="430"/>
+                                        <connections>
+                                            <outlet property="homecardImage" destination="8GV-Eu-du0" id="Ehm-nb-dm3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qxs-P2-X2M" id="LQf-HI-t1T"/>
+                                    <outlet property="delegate" destination="qxs-P2-X2M" id="vxR-Pz-yk3"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,15 +136,11 @@
                             <constraint firstItem="EXa-sW-J85" firstAttribute="leading" secondItem="MeV-Wx-f3G" secondAttribute="trailing" constant="42" id="0fP-4b-DQL"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="omr-qo-HUu" secondAttribute="trailing" constant="37" id="19b-3d-soh"/>
                             <constraint firstItem="vxd-gC-I0F" firstAttribute="leading" secondItem="sIi-Xr-rcv" secondAttribute="leading" constant="42" id="4Qd-ag-8Wl"/>
-                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="343:512" id="4Zw-Bn-9Jl"/>
-                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="8et-86-Fge"/>
                             <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="77" id="97L-qD-0Ii"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="EXa-sW-J85" secondAttribute="bottom" constant="19.5" id="BI5-vV-ZzO"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="vxd-gC-I0F" secondAttribute="trailing" constant="1235" id="J6d-lK-TAd"/>
-                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="leading" secondItem="vxd-gC-I0F" secondAttribute="trailing" constant="209" id="KB7-sH-Mwc"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="104" id="TbE-7e-jLW"/>
                             <constraint firstItem="omr-qo-HUu" firstAttribute="baseline" secondItem="vxd-gC-I0F" secondAttribute="baseline" id="X0r-wa-drK"/>
-                            <constraint firstItem="xMQ-WW-ikV" firstAttribute="centerY" secondItem="sIi-Xr-rcv" secondAttribute="centerY" id="XAD-y1-2gs"/>
                             <constraint firstItem="vxd-gC-I0F" firstAttribute="centerY" secondItem="sIi-Xr-rcv" secondAttribute="centerY" id="XgG-yw-Qpu"/>
                             <constraint firstItem="EXa-sW-J85" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="a5u-1m-pPw"/>
                             <constraint firstItem="vxd-gC-I0F" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="aHz-7j-GFE"/>
@@ -132,6 +161,7 @@
                     <connections>
                         <outlet property="charButton" destination="MeV-Wx-f3G" id="00a-eb-SsU"/>
                         <outlet property="checkpointButton" destination="EXa-sW-J85" id="o5g-Zr-1hP"/>
+                        <outlet property="homeCollectionView" destination="cy9-bS-LMW" id="RCW-wv-CRN"/>
                         <outlet property="starView" destination="vOf-5L-E4C" id="WsL-XC-ZM2"/>
                     </connections>
                 </viewController>
@@ -141,7 +171,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="card1" width="686" height="472"/>
         <image name="charbutton" width="577" height="179"/>
         <image name="checkpointbutton" width="577" height="179"/>
         <image name="gearshape.circle" catalog="system" width="128" height="121"/>

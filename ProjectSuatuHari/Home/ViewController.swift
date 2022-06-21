@@ -15,11 +15,14 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var starView: UIView!
     @IBOutlet weak var charButton: UIButton!
     @IBOutlet weak var checkpointButton: UIButton!
+    @IBOutlet weak var homeCollectionView: UICollectionView!
+    
+    var arrHomeCardImage = [UIImage(named: "card1"), UIImage(named: "card2"), UIImage(named: "card3")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,8 @@ class ViewController: UIViewController {
         starView.layer.shadowRadius = 2
         starView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         
+        homeCollectionView.delegate = self
+        homeCollectionView.dataSource = self
         
     }
     
@@ -47,6 +52,17 @@ class ViewController: UIViewController {
     }
     @IBAction func settingButtonPressed(_ sender: Any) {
         playGuidelineSettingSound()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrHomeCardImage.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCardCollectionViewCell", for: indexPath) as! HomeCardCollectionViewCell
+        cell.homecardImage.image = arrHomeCardImage[indexPath.row]
+        
+        return cell
     }
     
 }
