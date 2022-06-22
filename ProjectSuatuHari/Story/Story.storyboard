@@ -103,7 +103,7 @@
         <!--Story1 View Controller-->
         <scene sceneID="AF5-1m-eBN">
             <objects>
-                <viewController id="xjE-Gk-3pd" customClass="Story1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xjE-Gk-3pd" customClass="Story1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="88S-lt-LxI">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,6 +176,7 @@
                         <viewLayoutGuide key="safeArea" id="Bsz-bD-OY5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HHS-3K-74K"/>
                     <connections>
                         <outlet property="bubbleChat" destination="Dq2-YB-fxC" id="Em7-c4-lw4"/>
                         <outlet property="closeBtn" destination="CvI-zD-vz0" id="fvO-X2-cz7"/>
@@ -208,6 +209,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="2">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="100"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="button2TouchDown:" destination="Knj-er-lve" eventType="touchDown" id="4cn-X6-SVh"/>
+                                    <action selector="button2TouchUpInside:" destination="Knj-er-lve" eventType="touchUpInside" id="66p-AJ-e10"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um1-TP-7cq">
                                 <rect key="frame" x="484" y="763.5" width="189.5" height="189.5"/>
@@ -218,6 +223,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="3">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="100"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="button3TouchDown:" destination="Knj-er-lve" eventType="touchDown" id="i1G-ER-AiY"/>
+                                    <action selector="button3TouchUpInside:" destination="Knj-er-lve" eventType="touchUpInside" id="hTD-nG-aGp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBQ-iN-g2c">
                                 <rect key="frame" x="725" y="678.5" width="189.5" height="189.5"/>
@@ -241,6 +250,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="5">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="100"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="button5TouchDown:" destination="Knj-er-lve" eventType="touchDown" id="aTc-m9-KyA"/>
+                                    <action selector="button5TouchUpInside:" destination="Knj-er-lve" eventType="touchUpInside" id="Grr-VE-E1T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-0H-m8d">
                                 <rect key="frame" x="20" y="855" width="149" height="149"/>
@@ -252,6 +265,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="prevBtnPressed:" destination="Knj-er-lve" eventType="touchUpInside" id="ffe-hb-Pvd"/>
+                                    <segue destination="xjE-Gk-3pd" kind="show" id="KkB-nf-2Fa"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textantri" translatesAutoresizingMaskIntoConstraints="NO" id="rfC-dL-PX3">

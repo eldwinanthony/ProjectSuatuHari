@@ -77,6 +77,6 @@ class Story1ViewController: UIViewController {
     
     //when next arrow pressed:
     @IBAction func nextScenePressed(_ sender: Any) {
-        playNextActivitySound()
+        playButtonSound()
     }
 }
