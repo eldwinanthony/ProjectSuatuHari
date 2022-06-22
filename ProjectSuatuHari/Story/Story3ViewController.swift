@@ -13,6 +13,8 @@ class Story3ViewController: UIViewController {
     @IBOutlet weak var circleImage: UIImageView!
     @IBOutlet weak var xImageApple: UIImageView!
     @IBOutlet weak var xImageCarrot: UIImageView!
+    @IBOutlet weak var promptKandangGajah: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,20 +24,34 @@ class Story3ViewController: UIViewController {
         xImageApple.isHidden = true
         xImageCarrot.isHidden = true
         
-        UIView.animate(withDuration: 1, animations: {
-            self.circleImage.alpha = 0
-        })
-    }
+        promptKandangGajah.alpha = 0
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fadeInPrompt()
+    }
+    
+    //grass pressed:
     @IBAction func grassPressed(_ sender: Any) {
         circleImage.isHidden = false
         playNextActivitySound()
     }
+    
+    //apple pressed:
     @IBAction func applePressed(_ sender: Any) {
         xImageApple.isHidden = false
     }
+    
+    //carrot pressed:
     @IBAction func carrotPressed(_ sender: Any) {
         xImageCarrot.isHidden = false
+    }
+    
+    func fadeInPrompt(){
+        UIView.animate(withDuration: 2, animations: {
+            self.promptKandangGajah.alpha = 1
+        })
     }
 }
 

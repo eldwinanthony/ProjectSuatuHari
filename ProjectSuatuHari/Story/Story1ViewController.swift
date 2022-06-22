@@ -26,13 +26,9 @@ class Story1ViewController: UIViewController {
         girlIndicator.isHidden = false
         
         //hide chat bubble at first
-       
-        
         labelChat.alpha = 0
         bubbleChat.alpha = 0
         closeBtn.alpha = 0
-        
-            
         
     }
     
@@ -54,6 +50,7 @@ class Story1ViewController: UIViewController {
             }
         })
     }
+    
     //function to shrink indicator view
     func shrink(){
         UIView.animate(withDuration: 0.5, animations: {
@@ -87,6 +84,7 @@ class Story1ViewController: UIViewController {
         playButtonSound()
     }
     
+    //function to fade in text
     func fadeInText(){
         UIView.animate(withDuration: 1, animations: {
             self.labelChat.alpha = 1
@@ -95,6 +93,7 @@ class Story1ViewController: UIViewController {
         })
     }
     
+    //function to fade out text
     func fadeOutText(){
         UIView.animate(withDuration: 1, animations: {
             self.labelChat.alpha = 0
