@@ -20,6 +20,7 @@
 		5C1FF039285B83A600A2AEF9 /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF038285B83A600A2AEF9 /* Story.storyboard */; };
 		5C1FF03B285B83C600A2AEF9 /* Story2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF03A285B83C600A2AEF9 /* Story2ViewController.swift */; };
 		5C1FF03D285B8D9300A2AEF9 /* Story4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */; };
+		5C3CB7DD28630CA0007EECF6 /* Story1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */; };
 		5C547F28285B9BAC006EBFDF /* Story6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C547F27285B9BAC006EBFDF /* Story6ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		5C1FF038285B83A600A2AEF9 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
 		5C1FF03A285B83C600A2AEF9 /* Story2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story2ViewController.swift; sourceTree = "<group>"; };
 		5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story4ViewController.swift; sourceTree = "<group>"; };
+		5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story1ViewController.swift; sourceTree = "<group>"; };
 		5C547F27285B9BAC006EBFDF /* Story6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story6ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				5C1FF03A285B83C600A2AEF9 /* Story2ViewController.swift */,
 				5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */,
 				5C547F27285B9BAC006EBFDF /* Story6ViewController.swift */,
+				5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3CB7DD28630CA0007EECF6 /* Story1ViewController.swift in Sources */,
 				5C1FF03B285B83C600A2AEF9 /* Story2ViewController.swift in Sources */,
 				5C0DEE57285B2D8D00395723 /* ViewController.swift in Sources */,
 				5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */,
