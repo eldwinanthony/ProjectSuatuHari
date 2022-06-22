@@ -212,6 +212,7 @@
                                 <connections>
                                     <action selector="button2TouchDown:" destination="Knj-er-lve" eventType="touchDown" id="4cn-X6-SVh"/>
                                     <action selector="button2TouchUpInside:" destination="Knj-er-lve" eventType="touchUpInside" id="66p-AJ-e10"/>
+                                    <segue destination="IJG-DY-Xmc" kind="show" id="Eqw-IS-Dr5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um1-TP-7cq">
@@ -226,6 +227,7 @@
                                 <connections>
                                     <action selector="button3TouchDown:" destination="Knj-er-lve" eventType="touchDown" id="i1G-ER-AiY"/>
                                     <action selector="button3TouchUpInside:" destination="Knj-er-lve" eventType="touchUpInside" id="hTD-nG-aGp"/>
+                                    <segue destination="IJG-DY-Xmc" kind="show" id="XHY-Kw-Cgz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBQ-iN-g2c">
@@ -254,6 +256,7 @@
                                 <connections>
                                     <action selector="button5TouchDown:" destination="Knj-er-lve" eventType="touchDown" id="aTc-m9-KyA"/>
                                     <action selector="button5TouchUpInside:" destination="Knj-er-lve" eventType="touchUpInside" id="Grr-VE-E1T"/>
+                                    <segue destination="IJG-DY-Xmc" kind="show" id="kBa-O9-I8t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-0H-m8d">
@@ -423,6 +426,41 @@
             </objects>
             <point key="canvasLocation" x="466.91068814055632" y="741.796875"/>
         </scene>
+        <!--Pop Up1 Belum Behasil View Controller-->
+        <scene sceneID="e94-jh-kWk">
+            <objects>
+                <viewController id="IJG-DY-Xmc" customClass="PopUp1BelumBehasilViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yc-Hx-QB9">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="belumberhasil2" translatesAutoresizingMaskIntoConstraints="NO" id="ut0-76-Lm3">
+                                <rect key="frame" x="-20" y="204" width="744" height="537"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v5-UE-YnS">
+                                <rect key="frame" x="159" y="516" width="387" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lanjut">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="lanjutBtn:" destination="erd-pN-770" eventType="touchUpInside" id="8Oe-GK-Hbg"/>
+                                    <action selector="lanjutPressed:" destination="IJG-DY-Xmc" eventType="touchUpInside" id="JRd-Vu-L0G"/>
+                                    <segue destination="h7Q-Lh-npO" kind="show" id="0Cu-sz-tMq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0tz-qJ-yba"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PZG-EC-Iys"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6o-Ql-ufP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.71449487554901" y="1479.4921875"/>
+        </scene>
         <!--Story4 View Controller-->
         <scene sceneID="nD5-O2-P5w">
             <objects>
@@ -495,13 +533,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u3p-R7-fAd"/>
+        <segue reference="Eqw-IS-Dr5"/>
+        <segue reference="0Cu-sz-tMq"/>
         <segue reference="9ZM-20-xzg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.square" catalog="system" width="128" height="114"/>
         <image name="arrow.right.square" catalog="system" width="128" height="114"/>
         <image name="assetstory2bawah" width="1366" height="250"/>
+        <image name="belumberhasil2" width="1066" height="836"/>
         <image name="bubblechat" width="4075" height="2305"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="lanjut" width="313" height="92"/>
