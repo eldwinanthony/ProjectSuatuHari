@@ -26,10 +26,17 @@ class Story1ViewController: UIViewController {
         girlIndicator.isHidden = false
         
         //hide chat bubble at first
-        labelChat.isHidden = true
-        bubbleChat.isHidden = true
-        closeBtn.isHidden = true
+       
         
+        labelChat.alpha = 0
+        bubbleChat.alpha = 0
+        closeBtn.alpha = 0
+        
+            
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         //animate the indicator view
         animate()
     }
@@ -61,22 +68,38 @@ class Story1ViewController: UIViewController {
     //when the kid pressed:
     @IBAction func kidPressed(_ sender: Any) {
         playButtonSound()
-        labelChat.isHidden = false
-        bubbleChat.isHidden = false
-        closeBtn.isHidden = false
+        fadeInText()
+        
         girlIndicator.isHidden = true
+        
     }
     
     //when the close button in chat bubble pressed:
     @IBAction func closeBtnPressed(_ sender: Any) {
-        labelChat.isHidden = true
-        bubbleChat.isHidden = true
-        closeBtn.isHidden = true
+        fadeOutText()
+       
+        fadeOutText()
         girlIndicator.isHidden = false
     }
     
     //when next arrow pressed:
     @IBAction func nextScenePressed(_ sender: Any) {
         playButtonSound()
+    }
+    
+    func fadeInText(){
+        UIView.animate(withDuration: 1, animations: {
+            self.labelChat.alpha = 1
+            self.closeBtn.alpha = 1
+            self.bubbleChat.alpha = 1
+        })
+    }
+    
+    func fadeOutText(){
+        UIView.animate(withDuration: 1, animations: {
+            self.labelChat.alpha = 0
+            self.closeBtn.alpha = 0
+            self.bubbleChat.alpha = 0
+        })
     }
 }

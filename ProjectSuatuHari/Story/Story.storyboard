@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xjE-Gk-3pd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Knj-er-lve">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -103,7 +103,7 @@
         <!--Story1 View Controller-->
         <scene sceneID="AF5-1m-eBN">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xjE-Gk-3pd" customClass="Story1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="xjE-Gk-3pd" customClass="Story1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="88S-lt-LxI">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,8 +268,8 @@
                                     <segue destination="xjE-Gk-3pd" kind="show" id="KkB-nf-2Fa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textantri" translatesAutoresizingMaskIntoConstraints="NO" id="rfC-dL-PX3">
-                                <rect key="frame" x="53" y="20" width="1252" height="179"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textkarcis" translatesAutoresizingMaskIntoConstraints="NO" id="R8w-wE-c4l">
+                                <rect key="frame" x="107" y="16" width="1134" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -278,6 +278,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JG5-bN-z29"/>
                     <connections>
+                        <outlet property="Prompt" destination="R8w-wE-c4l" id="PRZ-Ur-sbt"/>
                         <outlet property="button2" destination="WVr-ew-yEs" id="Q5Z-nH-diM"/>
                         <outlet property="button3" destination="Um1-TP-7cq" id="SBm-n7-D8J"/>
                         <outlet property="button4" destination="eBQ-iN-g2c" id="Cx5-Fb-dbz"/>
@@ -287,6 +288,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW8-l8-Y53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-303.07467057101024" y="741.796875"/>
+        </scene>
+        <!--Story3 View Controller-->
+        <scene sceneID="fm5-3M-DY8">
+            <objects>
+                <viewController id="h7Q-Lh-npO" customClass="Story3ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJB-QU-FAE">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene3" translatesAutoresizingMaskIntoConstraints="NO" id="K3D-8r-Vda">
+                                <rect key="frame" x="-202" y="0.0" width="1770" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-TA-eAf">
+                                <rect key="frame" x="488" y="513" width="183" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x5V-XY-9eY">
+                                <rect key="frame" x="679" y="546" width="94" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dr6-Qp-PlG">
+                                <rect key="frame" x="679" y="665" width="94" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waC-Mp-9Cd">
+                                <rect key="frame" x="522" y="528" width="116" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="grassPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="Vou-hq-dIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRh-lG-UBt">
+                                <rect key="frame" x="679" y="544" width="94" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="applePressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="4vw-Al-Hlr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxZ-s5-9Zi">
+                                <rect key="frame" x="669" y="662" width="117" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="carrotPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="rAb-oU-ahv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hdS-e9-b7W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleImage" destination="8Sa-TA-eAf" id="XXf-71-Zf2"/>
+                        <outlet property="xImageApple" destination="x5V-XY-9eY" id="Mca-57-wXM"/>
+                        <outlet property="xImageCarrot" destination="dr6-Qp-PlG" id="Bnn-9P-aq4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vww-kr-cn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451.97657393850653" y="741.796875"/>
         </scene>
         <!--Story4 View Controller-->
         <scene sceneID="nD5-O2-P5w">
@@ -356,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLH-zu-oMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811" y="279"/>
+            <point key="canvasLocation" x="467" y="-281"/>
         </scene>
     </scenes>
     <resources>
@@ -364,10 +433,13 @@
         <image name="arrow.right.square" catalog="system" width="128" height="114"/>
         <image name="assetstory2bawah" width="1366" height="250"/>
         <image name="bubblechat" width="4075" height="2305"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
         <image name="scene1" width="5692" height="4242"/>
         <image name="scene2" width="5692" height="4242"/>
-        <image name="textantri" width="1263" height="179"/>
+        <image name="scene3" width="5693" height="4242"/>
         <image name="texticecream" width="1179" height="179"/>
+        <image name="textkarcis" width="1144" height="212"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

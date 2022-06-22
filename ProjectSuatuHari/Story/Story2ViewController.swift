@@ -14,6 +14,7 @@ class Story2ViewController: UIViewController {
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var Prompt: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,14 @@ class Story2ViewController: UIViewController {
         button5.layer.cornerRadius = button2.frame.size.width/2
         button5.clipsToBounds = true
         
+        Prompt.alpha = 0
+        
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fadeInText()
     }
 
     //button 2 press
@@ -72,6 +81,12 @@ class Story2ViewController: UIViewController {
     @IBAction func button4Pressed(_ sender: Any) {
         playNextActivitySound()
         button4.backgroundColor = UIColor.green
+    }
+    
+    func fadeInText(){
+        UIView.animate(withDuration: 2, animations: {
+            self.Prompt.alpha = 1
+        })
     }
 }
 
