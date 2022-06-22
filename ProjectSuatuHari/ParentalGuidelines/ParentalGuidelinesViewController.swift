@@ -15,6 +15,8 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var pgPageControl: UIPageControl!
+    @IBOutlet weak var nextViewBtn: UIButton!
+    
     
     //SET THE ARRAY OF IMAGE
     var pgimageArray = [UIImage(named: "PG1"), UIImage(named: "PG2"), UIImage(named: "PG3"), UIImage(named: "PG4"), UIImage(named: "PG5")]
@@ -32,6 +34,8 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         
         //DEFINE TOTAL DOTS IN PAGE CONTROL
         pgPageControl.numberOfPages = pgimageArray.count
+        
+        nextViewBtn.isHidden = true
        
     }
     
@@ -70,6 +74,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         //HIDE NEXT BTN IF CELL AT TOTAL INDEX - 1
         if currentCellIndex == pgimageArray.count - 1{
             nextBtn.isHidden = true
+            nextViewBtn.isHidden = false
         }
         
         //SCROLL NEXT
