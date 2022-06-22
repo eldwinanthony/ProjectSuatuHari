@@ -16,7 +16,8 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-
+    
+    //set outlets home page
     @IBOutlet weak var starView: UIView!
     @IBOutlet weak var charButton: UIButton!
     @IBOutlet weak var checkpointButton: UIButton!
@@ -24,8 +25,10 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var previousBtn: UIButton!
     
+    //define current cell index = 0
     var currentCellIndex = 0
     
+    //declare the card image
     var arrHomeCardImage = [UIImage(named: "card1"), UIImage(named: "card2"), UIImage(named: "card3")]
     
     override func viewDidLoad() {
@@ -42,36 +45,47 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
         
+        //hide previous btn when started
         previousBtn.isHidden = true
         
     }
     
+    //when char button pressed:
     @IBAction func charButtonPressed(_ sender: Any) {
         playButtonSound()
     }
     
+    //when learning button pressed:
     @IBAction func learningButtonPressed(_ sender: Any) {
         playButtonSound()
     }
+    
+    //when guideline button pressed:
     @IBAction func guidelineButtonPressed(_ sender: Any) {
         playGuidelineSettingSound()
     }
+    
+    //when setting button pressed:
     @IBAction func settingButtonPressed(_ sender: Any) {
         playGuidelineSettingSound()
     }
     
+    //define size of collection view cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
+    //define the spacing between cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
     
+    //define the number of cell
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrHomeCardImage.count
     }
     
+    //define the image for each cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCardCollectionViewCell", for: indexPath) as! HomeCardCollectionViewCell
         cell.homecardImage.image = arrHomeCardImage[indexPath.row]
@@ -79,6 +93,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         return cell
     }
     
+    //when the next cell button pressed
     @IBAction func nextBtnPressed(_ sender: Any) {
                 playButtonSound()
                 currentCellIndex += 1
@@ -95,6 +110,8 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
                 }
 
     }
+    
+    //when the previous button pressed
     @IBAction func previousBtnPressed(_ sender: Any) {
                 playButtonSound()
                 currentCellIndex -= 1
