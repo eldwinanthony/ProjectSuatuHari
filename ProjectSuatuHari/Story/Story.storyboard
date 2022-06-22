@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Story2 View Controller-->
+        <!--Storyx View Controller-->
         <scene sceneID="P89-Pp-f9i">
             <objects>
-                <viewController id="hMg-u3-jCW" customClass="Story2ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hMg-u3-jCW" customClass="StoryxViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ktf-mp-YAh">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DK1-Wd-ySb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133.08931185944363" y="278.90625"/>
+            <point key="canvasLocation" x="-265" y="-281"/>
         </scene>
         <!--Story1 View Controller-->
         <scene sceneID="AF5-1m-eBN">
@@ -112,6 +112,15 @@
                                 <rect key="frame" x="0.0" y="-34" width="1390" height="1106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B53-ql-YV9">
+                                <rect key="frame" x="20" y="855" width="149" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-gC-D7I">
                                 <rect key="frame" x="864" y="679" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,109 +135,79 @@
                                     <action selector="kidPressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="Gkv-Ki-U2C"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblechat" translatesAutoresizingMaskIntoConstraints="NO" id="Dq2-YB-fxC">
+                                <rect key="frame" x="885" y="357" width="227" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ayo ke kebun binatang!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-Py-Xo2">
+                                <rect key="frame" x="909" y="387" width="163" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvI-zD-vz0">
+                                <rect key="frame" x="1062" y="369" width="40" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="4pK-UB-BUD"/>
+                                    <action selector="xButtonPressed:" destination="hMg-u3-jCW" eventType="touchUpInside" id="iqb-nC-Fuy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHQ-yE-NsU">
+                                <rect key="frame" x="1197" y="855" width="149" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextScenePressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="otU-yp-8ek"/>
+                                    <segue destination="Knj-er-lve" kind="show" id="y79-PN-EEE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bsz-bD-OY5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="bubbleChat" destination="Dq2-YB-fxC" id="Em7-c4-lw4"/>
+                        <outlet property="closeBtn" destination="CvI-zD-vz0" id="fvO-X2-cz7"/>
                         <outlet property="girlIndicator" destination="zQz-gC-D7I" id="n9d-8p-wu0"/>
+                        <outlet property="labelChat" destination="ctq-Py-Xo2" id="C9m-ro-0id"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFR-pO-cMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1004.0995607613469" y="741.796875"/>
         </scene>
-        <!--Story6 View Controller-->
+        <!--Story2 View Controller-->
         <scene sceneID="wE5-Xr-ucU">
             <objects>
-                <viewController id="Knj-er-lve" customClass="Story6ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Knj-er-lve" customClass="Story2ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nVO-Nm-ljg">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eth-hC-sVD">
-                                <rect key="frame" x="244" y="679" width="189.5" height="189.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene2" translatesAutoresizingMaskIntoConstraints="NO" id="Rxx-ax-6my">
+                                <rect key="frame" x="0.0" y="-121" width="1385" height="1263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="4">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="128"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0q-oa-rEa">
-                                <rect key="frame" x="484" y="763.5" width="189.5" height="189.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="5">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="128"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FP-4D-lia">
-                                <rect key="frame" x="964" y="762.5" width="189.5" height="189.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.24313727020000001" green="0.87058818339999999" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="7">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="128"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="dwe-cR-ZDh" kind="show" id="Waz-YK-DrZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4g-F9-zeE">
-                                <rect key="frame" x="724" y="678" width="189.5" height="189.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.7254902124" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="6">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="128"/>
-                                </buttonConfiguration>
-                            </button>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="slT-md-CGc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JG5-bN-z29"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW8-l8-Y53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133" y="1111"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Z88-Oh-W5m">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="dwe-cR-ZDh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FJz-j2-spE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRC-P6-ry5">
-                                <rect key="frame" x="33" y="206" width="638" height="532"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kamu Berhasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWM-uz-gio">
-                                        <rect key="frame" x="265" y="256" width="109" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="eDg-45-XmH"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Vdp-q4-vTl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JEU-wc-DZb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="550.80527086383597" y="1110.9375"/>
+            <point key="canvasLocation" x="-303.07467057101024" y="741.796875"/>
         </scene>
         <!--Story4 View Controller-->
         <scene sceneID="nD5-O2-P5w">
@@ -305,7 +284,9 @@
         <image name="arrow.left.square" catalog="system" width="128" height="114"/>
         <image name="arrow.right.square" catalog="system" width="128" height="114"/>
         <image name="assetstory2bawah" width="1366" height="250"/>
+        <image name="bubblechat" width="4075" height="2305"/>
         <image name="scene1" width="5692" height="4242"/>
+        <image name="scene2" width="5692" height="4242"/>
         <image name="texticecream" width="1179" height="179"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

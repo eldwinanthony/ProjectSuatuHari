@@ -10,6 +10,9 @@ import UIKit
 class Story1ViewController: UIViewController {
 
     @IBOutlet weak var girlIndicator: UIView!
+    @IBOutlet weak var labelChat: UILabel!
+    @IBOutlet weak var bubbleChat: UIImageView!
+    @IBOutlet weak var closeBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,11 @@ class Story1ViewController: UIViewController {
         girlIndicator.isOpaque = false
         girlIndicator.layer.cornerRadius = girlIndicator.frame.size.width/2
         girlIndicator.clipsToBounds = true
+        girlIndicator.isHidden = false
+        
+        labelChat.isHidden = true
+        bubbleChat.isHidden = true
+        closeBtn.isHidden = true
         
         animate()
     }
@@ -46,6 +54,21 @@ class Story1ViewController: UIViewController {
     }
     
     @IBAction func kidPressed(_ sender: Any) {
-        
+        playButtonSound()
+        labelChat.isHidden = false
+        bubbleChat.isHidden = false
+        closeBtn.isHidden = false
+        girlIndicator.isHidden = true
+    }
+    
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        labelChat.isHidden = true
+        bubbleChat.isHidden = true
+        closeBtn.isHidden = true
+        girlIndicator.isHidden = false
+    }
+    
+    @IBAction func nextScenePressed(_ sender: Any) {
+        playNextActivitySound()
     }
 }
