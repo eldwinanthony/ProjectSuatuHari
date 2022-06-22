@@ -31,8 +31,6 @@ class Story2ViewController: UIViewController {
         
         Prompt.alpha = 0
         
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

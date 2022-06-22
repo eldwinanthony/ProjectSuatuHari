@@ -122,7 +122,7 @@
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-gC-D7I">
-                                <rect key="frame" x="864" y="679" width="60" height="60"/>
+                                <rect key="frame" x="870" y="679" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -239,6 +239,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="button4Pressed:" destination="Knj-er-lve" eventType="touchUpInside" id="Aeg-Eu-Wx4"/>
+                                    <segue destination="erd-pN-770" kind="show" id="ZLd-WR-RQw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-X7-mwW">
@@ -292,7 +293,7 @@
         <!--Story3 View Controller-->
         <scene sceneID="fm5-3M-DY8">
             <objects>
-                <viewController id="h7Q-Lh-npO" customClass="Story3ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="h7Q-Lh-npO" customClass="Story3ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aJB-QU-FAE">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,10 +348,36 @@
                                 <rect key="frame" x="116" y="24" width="1134" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-PF-4Xc">
+                                <rect key="frame" x="20" y="855" width="149" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="prevBtnPressed:" destination="Knj-er-lve" eventType="touchUpInside" id="xvt-hB-RPV"/>
+                                    <segue destination="Knj-er-lve" kind="show" id="9ZM-20-xzg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-5F-52b">
+                                <rect key="frame" x="1197" y="855" width="149" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextScenePressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="ooy-4I-BF0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hdS-e9-b7W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hj7-I3-XPc"/>
                     <connections>
                         <outlet property="circleImage" destination="8Sa-TA-eAf" id="XXf-71-Zf2"/>
                         <outlet property="promptKandangGajah" destination="zHQ-ut-eEc" id="JCA-mb-ppV"/>
@@ -360,7 +387,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vww-kr-cn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451.97657393850653" y="741.796875"/>
+            <point key="canvasLocation" x="1196" y="742"/>
+        </scene>
+        <!--Pop Up1 View Controller-->
+        <scene sceneID="5Sh-5q-6SO">
+            <objects>
+                <viewController id="erd-pN-770" customClass="PopUp1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yKV-BY-j8W">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popupactivity" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
+                                <rect key="frame" x="-20" y="204" width="744" height="537"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3n-li-x80">
+                                <rect key="frame" x="159" y="516" width="387" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lanjut">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="lanjutBtn:" destination="erd-pN-770" eventType="touchUpInside" id="dpu-Tz-Bok"/>
+                                    <segue destination="h7Q-Lh-npO" kind="show" id="u3p-R7-fAd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U3c-16-7oN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rE3-qG-JNc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfw-NP-0KG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466.91068814055632" y="741.796875"/>
         </scene>
         <!--Story4 View Controller-->
         <scene sceneID="nD5-O2-P5w">
@@ -433,12 +494,18 @@
             <point key="canvasLocation" x="467" y="-281"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="u3p-R7-fAd"/>
+        <segue reference="9ZM-20-xzg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.square" catalog="system" width="128" height="114"/>
         <image name="arrow.right.square" catalog="system" width="128" height="114"/>
         <image name="assetstory2bawah" width="1366" height="250"/>
         <image name="bubblechat" width="4075" height="2305"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="lanjut" width="313" height="92"/>
+        <image name="popupactivity" width="1066" height="836"/>
         <image name="scene1" width="5692" height="4242"/>
         <image name="scene2" width="5692" height="4242"/>
         <image name="scene3" width="5693" height="4242"/>
