@@ -12,7 +12,7 @@
         <!--Parental Guidelines View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ParentalGuidelinesViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ParentalGuidelinesViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +94,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="closePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ymg-H9-Gd3"/>
+                                    <segue destination="QNh-b9-ZTQ" kind="show" id="yAr-S4-EeB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-fm-qPT">
@@ -136,6 +137,9 @@
             <point key="canvasLocation" x="565" y="90"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yAr-S4-EeB"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="PG1" width="1063" height="663"/>
         <image name="leftarrow" width="65" height="57"/>

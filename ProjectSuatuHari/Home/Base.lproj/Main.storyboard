@@ -9,6 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--ParentalGuidelinesStoryboard-->
+        <scene sceneID="bEv-Jk-B0E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParentalGuidelinesStoryboard" id="hfk-JR-iaq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ugE-Bs-FQ8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0B-Tv-dHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1129" y="-1184"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qyD-VV-p2U">
             <objects>
@@ -26,6 +36,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="guidelineButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="9As-bh-R5U"/>
+                                    <segue destination="hfk-JR-iaq" kind="show" id="HmB-rJ-Lip"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-ev-6kH">
