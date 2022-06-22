@@ -8,7 +8,8 @@
 import UIKit
 
 class Story1ViewController: UIViewController {
-
+    
+    //set outlets in scene 1
     @IBOutlet weak var girlIndicator: UIView!
     @IBOutlet weak var labelChat: UILabel!
     @IBOutlet weak var bubbleChat: UIImageView!
@@ -17,19 +18,23 @@ class Story1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //set the indicator view to circle
         girlIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
         girlIndicator.isOpaque = false
         girlIndicator.layer.cornerRadius = girlIndicator.frame.size.width/2
         girlIndicator.clipsToBounds = true
         girlIndicator.isHidden = false
         
+        //hide chat bubble at first
         labelChat.isHidden = true
         bubbleChat.isHidden = true
         closeBtn.isHidden = true
         
+        //animate the indicator view
         animate()
     }
     
+    //function to animate indicator view
     @objc func animate(){
         UIView.animate(withDuration: 0.5, animations: {
             self.girlIndicator.frame = CGRect(x: 864, y: 679, width: 70, height: 70)
@@ -42,7 +47,7 @@ class Story1ViewController: UIViewController {
             }
         })
     }
-    
+    //function to shrink indicator view
     func shrink(){
         UIView.animate(withDuration: 0.5, animations: {
             self.girlIndicator.frame = CGRect(x: 864, y: 679, width: 60, height: 60)
@@ -53,6 +58,7 @@ class Story1ViewController: UIViewController {
         
     }
     
+    //when the kid pressed:
     @IBAction func kidPressed(_ sender: Any) {
         playButtonSound()
         labelChat.isHidden = false
@@ -61,6 +67,7 @@ class Story1ViewController: UIViewController {
         girlIndicator.isHidden = true
     }
     
+    //when the close button in chat bubble pressed:
     @IBAction func closeBtnPressed(_ sender: Any) {
         labelChat.isHidden = true
         bubbleChat.isHidden = true
@@ -68,6 +75,7 @@ class Story1ViewController: UIViewController {
         girlIndicator.isHidden = false
     }
     
+    //when next arrow pressed:
     @IBAction func nextScenePressed(_ sender: Any) {
         playNextActivitySound()
     }
