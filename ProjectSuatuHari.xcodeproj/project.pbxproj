@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D94BA5E2861D58100364CF4 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D94BA5D2861D58100364CF4 /* Character.storyboard */; };
+		4D94BA602861D59D00364CF4 /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94BA5F2861D59D00364CF4 /* CharViewController.swift */; };
 		5C0DEE53285B2D8D00395723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DEE52285B2D8D00395723 /* AppDelegate.swift */; };
 		5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DEE54285B2D8D00395723 /* SceneDelegate.swift */; };
 		5C0DEE57285B2D8D00395723 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DEE56285B2D8D00395723 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D94BA5D2861D58100364CF4 /* Character.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Character.storyboard; path = ProjectSuatuHari/Character.storyboard; sourceTree = SOURCE_ROOT; };
+		4D94BA5F2861D59D00364CF4 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharViewController.swift; path = ProjectSuatuHari/CharViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C0DEE4F285B2D8D00395723 /* ProjectSuatuHari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectSuatuHari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0DEE52285B2D8D00395723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0DEE54285B2D8D00395723 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		5C0DEE6D285B2DE100395723 /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				4D94BA5D2861D58100364CF4 /* Character.storyboard */,
+				4D94BA5F2861D59D00364CF4 /* CharViewController.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1FF034285B804900A2AEF9 /* buttonsound.wav in Resources */,
+				4D94BA5E2861D58100364CF4 /* Character.storyboard in Resources */,
 				5C0DEE62285B2D8D00395723 /* LaunchScreen.storyboard in Resources */,
 				5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */,
 				5C0DEE5F285B2D8D00395723 /* Assets.xcassets in Resources */,
@@ -208,6 +215,7 @@
 				5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */,
 				5C0DEE53285B2D8D00395723 /* AppDelegate.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
+				4D94BA602861D59D00364CF4 /* CharViewController.swift in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
