@@ -471,7 +471,7 @@
         <!--Story4 View Controller-->
         <scene sceneID="nD5-O2-P5w">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="kE2-q3-uBS" customClass="Story4ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="kE2-q3-uBS" customClass="Story4ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9yg-Sc-dZR">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -554,10 +554,25 @@
         <!--View Controller-->
         <scene sceneID="mIB-je-mnd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="mbm-Zw-cbz" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mbm-Zw-cbz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQr-mT-D1P">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQB-vi-aiQ">
+                                <rect key="frame" x="20" y="855" width="149" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="prevBtnPressed:" destination="Knj-er-lve" eventType="touchUpInside" id="KlX-ah-3VY"/>
+                                    <segue destination="kE2-q3-uBS" kind="show" id="QPl-1E-ZGH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lqg-Gq-bDV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -569,6 +584,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="kdl-JS-afl"/>
         <segue reference="Eqw-IS-Dr5"/>
         <segue reference="u3p-R7-fAd"/>
         <segue reference="9ZM-20-xzg"/>
