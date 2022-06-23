@@ -238,6 +238,9 @@
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="SaZ-61-h5A" kind="show" id="K3l-yK-DfW"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogQ-R2-sSa">
                                         <rect key="frame" x="404" y="235" width="390" height="54"/>
@@ -335,6 +338,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIx-a5-e7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1621" y="1036"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Xym-w6-EU2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="SaZ-61-h5A" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xgI-Cn-rZX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDY-FK-AUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="1091"/>
         </scene>
         <!--Parental Control View Controller4-->
         <scene sceneID="Sd3-0r-uyj">
@@ -478,7 +491,7 @@
         <!--Navigation Controller-->
         <scene sceneID="FXU-Ud-WqN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AGn-5g-qp4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="AGn-5g-qp4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="glD-vk-wV5">
                         <rect key="frame" x="0.0" y="24" width="1366" height="50"/>

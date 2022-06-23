@@ -21,9 +21,6 @@
 		5C28665E28606017001830EC /* ParentalGuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */; };
 		5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665F2860637A001830EC /* PGCollectionViewCell.swift */; };
 		5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C93C2AA285C572400E32360 /* guidelineandsetting.wav */; };
-		AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */; };
-		AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */; };
-		ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE61F42861DA0B00BE079C /* ReviewCell.swift */; };
 		5CF1EF1228648640006FEE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF1EF1128648640006FEE22 /* Main.storyboard */; };
 		8700788B286314BC00F4E86E /* ParentalControl_ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */; };
 		8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */; };
@@ -31,6 +28,9 @@
 		8782B1112862023400506788 /* Extension_BorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782B1102862023400506788 /* Extension_BorderRadius.swift */; };
 		87904FF428647F1500465E07 /* ParentalControl_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87904FF328647F1500465E07 /* ParentalControl_Storyboard.storyboard */; };
 		87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */; };
+		AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */; };
+		AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */; };
+		ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE61F42861DA0B00BE079C /* ReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +50,6 @@
 		5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalGuidelinesViewController.swift; sourceTree = "<group>"; };
 		5C28665F2860637A001830EC /* PGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C93C2AA285C572400E32360 /* guidelineandsetting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guidelineandsetting.wav; sourceTree = "<group>"; };
-		AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCheckPointViewController.swift; sourceTree = "<group>"; };
-		AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCheckPointStoryboard.storyboard; sourceTree = "<group>"; };
-		ABEE61F42861DA0B00BE079C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		5CF1EF1128648640006FEE22 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController2.swift; sourceTree = "<group>"; };
 		8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController3.swift; sourceTree = "<group>"; };
@@ -60,6 +57,9 @@
 		8782B1102862023400506788 /* Extension_BorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_BorderRadius.swift; sourceTree = "<group>"; };
 		87904FF328647F1500465E07 /* ParentalControl_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentalControl_Storyboard.storyboard; sourceTree = "<group>"; };
 		87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController.swift; sourceTree = "<group>"; };
+		AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCheckPointViewController.swift; sourceTree = "<group>"; };
+		AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCheckPointStoryboard.storyboard; sourceTree = "<group>"; };
+		ABEE61F42861DA0B00BE079C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

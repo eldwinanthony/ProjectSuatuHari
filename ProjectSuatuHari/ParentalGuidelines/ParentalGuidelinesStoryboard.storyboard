@@ -94,7 +94,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="closePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ymg-H9-Gd3"/>
-                                    <segue destination="QNh-b9-ZTQ" kind="show" id="yAr-S4-EeB"/>
+                                    <segue destination="EYg-7w-Ntc" kind="show" id="RXa-l3-Nzb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-fm-qPT">
@@ -127,9 +127,19 @@
             <point key="canvasLocation" x="132.65007320644216" y="89.6484375"/>
         </scene>
         <!--Main-->
+        <scene sceneID="QCK-z1-PyU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="EYg-7w-Ntc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cWk-bl-ayn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bY-Mc-alm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="46"/>
+        </scene>
+        <!--ParentalControl_Storyboard-->
         <scene sceneID="xyT-L5-C5e">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="QNh-b9-ZTQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ParentalControl_Storyboard" id="QNh-b9-ZTQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="NHO-X8-V4M"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbC-20-iet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -137,9 +147,6 @@
             <point key="canvasLocation" x="565" y="90"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yAr-S4-EeB"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="PG1" width="1063" height="663"/>
         <image name="leftarrow" width="65" height="57"/>
