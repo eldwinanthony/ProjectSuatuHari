@@ -18,6 +18,11 @@
 		5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */; };
 		5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF036285B807D00A2AEF9 /* SoundController.swift */; };
 		5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C93C2AA285C572400E32360 /* guidelineandsetting.wav */; };
+		8700788B286314BC00F4E86E /* ParentalControl_ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */; };
+		8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */; };
+		8700788F28638B3300F4E86E /* ParentalControl_ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */; };
+		8782B1112862023400506788 /* Extension_BorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782B1102862023400506788 /* Extension_BorderRadius.swift */; };
+		87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nextactivitysound.wav; sourceTree = "<group>"; };
 		5C1FF036285B807D00A2AEF9 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 		5C93C2AA285C572400E32360 /* guidelineandsetting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guidelineandsetting.wav; sourceTree = "<group>"; };
+		8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController2.swift; sourceTree = "<group>"; };
+		8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController3.swift; sourceTree = "<group>"; };
+		8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController4.swift; sourceTree = "<group>"; };
+		8782B1102862023400506788 /* Extension_BorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_BorderRadius.swift; sourceTree = "<group>"; };
+		87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,8 @@
 		5C0DEE51285B2D8D00395723 /* ProjectSuatuHari */ = {
 			isa = PBXGroup;
 			children = (
+				8782B10F2861FF5E00506788 /* Extension */,
+				8771FC6D286083A200748B24 /* Parental Control */,
 				5C1FF031285B801C00A2AEF9 /* SoundEffect */,
 				5C0DEE6D285B2DE100395723 /* Character */,
 				5C0DEE6C285B2DD000395723 /* Home */,
@@ -128,6 +140,25 @@
 				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
 			);
 			path = SoundEffect;
+			sourceTree = "<group>";
+		};
+		8771FC6D286083A200748B24 /* Parental Control */ = {
+			isa = PBXGroup;
+			children = (
+				87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */,
+				8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */,
+				8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */,
+				8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */,
+			);
+			path = "Parental Control";
+			sourceTree = "<group>";
+		};
+		8782B10F2861FF5E00506788 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8782B1102862023400506788 /* Extension_BorderRadius.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,11 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8700788B286314BC00F4E86E /* ParentalControl_ViewController2.swift in Sources */,
+				8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */,
 				5C0DEE57285B2D8D00395723 /* ViewController.swift in Sources */,
 				5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */,
 				5C0DEE53285B2D8D00395723 /* AppDelegate.swift in Sources */,
+				87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
+				8700788F28638B3300F4E86E /* ParentalControl_ViewController4.swift in Sources */,
+				8782B1112862023400506788 /* Extension_BorderRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
