@@ -44,7 +44,7 @@ class Story2ViewController: UIViewController {
     
     //button 2 release
     @IBAction func button2TouchUpInside(_ sender: Any) {
-        playButtonSound()//nanti diganti sound suara salah
+        playWrongSound()//nanti diganti sound suara salah
         button2.backgroundColor = UIColor.systemCyan
     }
     
@@ -55,7 +55,7 @@ class Story2ViewController: UIViewController {
     
     //button 3 release
     @IBAction func button3TouchUpInside(_ sender: Any) {
-        playButtonSound()//nanti diganti sound suara salah
+        playWrongSound()//nanti diganti sound suara salah
         button3.backgroundColor = UIColor.systemCyan
     }
     
@@ -66,7 +66,7 @@ class Story2ViewController: UIViewController {
     
     //button 5 release
     @IBAction func button5TouchUpInside(_ sender: Any) {
-        playButtonSound()//nanti diganti sound suara salah
+        playWrongSound()//nanti diganti sound suara salah
         button5.backgroundColor = UIColor.systemCyan
     }
     

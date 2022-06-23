@@ -41,11 +41,13 @@ class Story3ViewController: UIViewController {
     //apple pressed:
     @IBAction func applePressed(_ sender: Any) {
         xImageApple.isHidden = false
+        playWrongSound()
     }
     
     //carrot pressed:
     @IBAction func carrotPressed(_ sender: Any) {
         xImageCarrot.isHidden = false
+        playWrongSound()
     }
     
     func fadeInPrompt(){
