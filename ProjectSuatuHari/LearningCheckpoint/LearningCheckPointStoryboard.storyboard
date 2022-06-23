@@ -10,10 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main-->
+        <scene sceneID="NRq-nj-rfZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="uA9-q4-rur" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mBW-HC-coU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NA-YV-ZaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529" y="-71"/>
+        </scene>
         <!--Learning Check Point View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LearningCheckPointViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="LearningCheckPointViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,6 +281,15 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="zeY-G3-L43"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqq-0S-D6A">
+                                <rect key="frame" x="48" y="42" width="89" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="leftarrow" title=""/>
+                                <connections>
+                                    <segue destination="uA9-q4-rur" kind="show" id="1cL-1R-k9l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -322,6 +341,7 @@
     <resources>
         <image name="chevron.compact.left" catalog="system" width="64" height="128"/>
         <image name="chevron.compact.right" catalog="system" width="64" height="128"/>
+        <image name="leftarrow" width="65" height="57"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="star" width="89" height="86"/>
         <image name="star off" width="23.5" height="22.5"/>

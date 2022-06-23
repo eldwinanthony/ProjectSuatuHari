@@ -19,6 +19,16 @@
             </objects>
             <point key="canvasLocation" x="-1129" y="-1184"/>
         </scene>
+        <!--LearningCheckPointStoryboard-->
+        <scene sceneID="1zP-7n-OsN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LearningCheckPointStoryboard" id="quQ-EU-QgR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0N7-vZ-GfE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSv-Rh-Hjr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="-872"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qyD-VV-p2U">
             <objects>
@@ -102,6 +112,7 @@
                                 <connections>
                                     <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Z1f-5y-no9"/>
                                     <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="iYB-4K-sWC"/>
+                                    <segue destination="quQ-EU-QgR" kind="show" id="R4e-cQ-Yx9"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cy9-bS-LMW">
