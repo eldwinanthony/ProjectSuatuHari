@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6sT-XL-bZh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -498,10 +498,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-Wd-lhd">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-Wd-lhd">
                                         <rect key="frame" x="470" y="458" width="259" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="259" id="MaB-xS-wvs"/>
+                                            <constraint firstAttribute="height" constant="54" id="R1c-k3-62V"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -572,7 +575,9 @@
                                     <constraint firstAttribute="bottom" secondItem="CVU-bg-fVy" secondAttribute="bottom" constant="168" id="Mrh-Wi-B3U"/>
                                     <constraint firstAttribute="height" constant="574" id="O60-RR-0Np"/>
                                     <constraint firstItem="s2W-B7-cuM" firstAttribute="top" secondItem="KXV-ek-Md1" secondAttribute="bottom" constant="124" id="TQu-j2-Dzo"/>
+                                    <constraint firstItem="lsF-Wd-lhd" firstAttribute="top" secondItem="s2W-B7-cuM" secondAttribute="bottom" constant="124" id="XMw-Eu-yFU"/>
                                     <constraint firstItem="KXV-ek-Md1" firstAttribute="top" secondItem="omR-Ve-5Vl" secondAttribute="top" constant="55" id="jIm-JO-7jJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="lsF-Wd-lhd" secondAttribute="trailing" constant="200" id="nN1-Nf-Bsu"/>
                                     <constraint firstAttribute="width" constant="929" id="rYO-tj-Zyc"/>
                                     <constraint firstAttribute="trailing" secondItem="s2W-B7-cuM" secondAttribute="trailing" constant="136" id="xjB-Fu-q2Q"/>
                                 </constraints>
