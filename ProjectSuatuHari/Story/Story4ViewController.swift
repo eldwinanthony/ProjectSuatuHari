@@ -55,15 +55,14 @@ class Story4ViewController: UIViewController {
             if ACariView.frame.intersects(AJawab.frame){
                 showViewA(view: ACariView)
             }
-            else{
-                returnViewToOriginA(view: ACariView)
-            }
-            
             if HCariView.frame.intersects(HJawab.frame) {
                 showViewH(view: HCariView)
             }
-            else{
+            if HCariView.frame.intersects(HJawab.frame) != false{
                 returnViewToOriginH(view: HCariView)
+            }
+            else{
+                returnViewToOriginA(view: ACariView)
             }
             
         default:
