@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xjE-Gk-3pd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h7Q-Lh-npO">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -320,6 +320,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u79-0O-fPj">
+                                <rect key="frame" x="547" y="596" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waC-Mp-9Cd">
                                 <rect key="frame" x="522" y="528" width="116" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -383,6 +388,7 @@
                     <navigationItem key="navigationItem" id="hj7-I3-XPc"/>
                     <connections>
                         <outlet property="circleImage" destination="8Sa-TA-eAf" id="XXf-71-Zf2"/>
+                        <outlet property="grassIndicator" destination="u79-0O-fPj" id="Kgm-4x-Etf"/>
                         <outlet property="promptKandangGajah" destination="zHQ-ut-eEc" id="JCA-mb-ppV"/>
                         <outlet property="xImageApple" destination="x5V-XY-9eY" id="Mca-57-wXM"/>
                         <outlet property="xImageCarrot" destination="dr6-Qp-PlG" id="Bnn-9P-aq4"/>
@@ -390,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vww-kr-cn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="742"/>
+            <point key="canvasLocation" x="1195.6076134699854" y="741.796875"/>
         </scene>
         <!--Pop Up1 View Controller-->
         <scene sceneID="5Sh-5q-6SO">
