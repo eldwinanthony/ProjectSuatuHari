@@ -85,12 +85,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAD-ry-9un">
-                                <rect key="frame" x="40" y="52" width="84" height="60"/>
+                                <rect key="frame" x="24" y="36" width="117" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="38" weight="bold"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="60" weight="bold"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="closePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ymg-H9-Gd3"/>

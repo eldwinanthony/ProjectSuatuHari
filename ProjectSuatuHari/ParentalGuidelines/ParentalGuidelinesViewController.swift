@@ -99,6 +99,10 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
             previousBtn.isHidden = true
         }
         
+        if currentCellIndex < pgimageArray.count - 1{
+            nextViewBtn.isHidden = true
+        }
+        
         //SCROLL PREVIOUS
         if currentCellIndex < pgimageArray.count{
             PGCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
