@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kE2-q3-uBS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xjE-Gk-3pd">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -379,6 +379,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextScenePressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="ooy-4I-BF0"/>
+                                    <segue destination="kE2-q3-uBS" kind="show" id="kdl-JS-afl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -470,7 +471,7 @@
         <!--Story4 View Controller-->
         <scene sceneID="nD5-O2-P5w">
             <objects>
-                <viewController id="kE2-q3-uBS" customClass="Story4ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kE2-q3-uBS" customClass="Story4ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9yg-Sc-dZR">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,6 +504,7 @@
                         <viewLayoutGuide key="safeArea" id="1bU-Ev-xrY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dMT-yK-kww"/>
                     <connections>
                         <outlet property="ACariImageView" destination="gkY-cj-CWi" id="6ac-u2-CpN"/>
                         <outlet property="AJawab" destination="sYg-yZ-jOn" id="pHb-JK-cF5"/>
