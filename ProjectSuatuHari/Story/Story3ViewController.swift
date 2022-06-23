@@ -72,8 +72,9 @@ class Story3ViewController: UIViewController {
     //grass pressed:
     @IBAction func grassPressed(_ sender: Any) {
         circleImage.isHidden = false
-        grassIndicator.isHidden = true
         playNextActivitySound()
+        grassIndicator.isHidden = true
+        grassflag = 0
     }
     
     //apple pressed:
