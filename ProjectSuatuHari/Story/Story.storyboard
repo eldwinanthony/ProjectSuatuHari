@@ -407,12 +407,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popupactivity" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
                                 <rect key="frame" x="-20" y="204" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3n-li-x80">
-                                <rect key="frame" x="159" y="516" width="387" height="177"/>
+                                <rect key="frame" x="159" y="541" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -519,7 +519,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Eqw-IS-Dr5"/>
-        <segue reference="0Cu-sz-tMq"/>
+        <segue reference="u3p-R7-fAd"/>
         <segue reference="9ZM-20-xzg"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -531,8 +531,8 @@
         <image name="belumberhasil2" width="1066" height="836"/>
         <image name="bubblechat" width="4075" height="2305"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="kerjabagus2" width="1066" height="836"/>
         <image name="lanjut" width="313" height="92"/>
-        <image name="popupactivity" width="1066" height="836"/>
         <image name="scene1" width="5692" height="4242"/>
         <image name="scene2" width="5692" height="4242"/>
         <image name="scene3" width="5693" height="4242"/>
