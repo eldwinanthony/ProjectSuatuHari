@@ -14,6 +14,7 @@ class Story1ViewController: UIViewController {
     @IBOutlet weak var labelChat: UILabel!
     @IBOutlet weak var bubbleChat: UIImageView!
     @IBOutlet weak var closeBtn: UIButton!
+    @IBOutlet weak var Prompt: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +31,14 @@ class Story1ViewController: UIViewController {
         bubbleChat.alpha = 0
         closeBtn.alpha = 0
         
+        Prompt.alpha = 0
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         //animate the indicator view
         animate()
+        fadeInPrompt()
     }
     
     //function to animate indicator view
@@ -99,6 +103,12 @@ class Story1ViewController: UIViewController {
             self.labelChat.alpha = 0
             self.closeBtn.alpha = 0
             self.bubbleChat.alpha = 0
+        })
+    }
+    
+    func fadeInPrompt(){
+        UIView.animate(withDuration: 2, animations: {
+            self.Prompt.alpha = 1
         })
     }
 }

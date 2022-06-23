@@ -59,15 +59,9 @@ class Story4ViewController: UIViewController {
                 showViewA(view: ACariView)
                 moveSegue()
             }
-            if HCariView.frame.intersects(HJawab.frame) {
+            else if HCariView.frame.intersects(HJawab.frame) {
                 showViewH(view: HCariView)
                 moveSegue()
-            }
-            if HCariView.frame.intersects(HJawab.frame) != false{
-                returnViewToOriginH(view: HCariView)
-            }
-            else{
-                returnViewToOriginA(view: ACariView)
             }
             
         default:

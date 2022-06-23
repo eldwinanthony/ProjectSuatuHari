@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xjE-Gk-3pd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kE2-q3-uBS">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -136,18 +136,18 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubblechat" translatesAutoresizingMaskIntoConstraints="NO" id="Dq2-YB-fxC">
-                                <rect key="frame" x="885" y="357" width="227" height="144"/>
+                                <rect key="frame" x="776" y="298" width="336" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ayo ke kebun binatang!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-Py-Xo2">
-                                <rect key="frame" x="909" y="387" width="163" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mama lihat ada jerapah dan gajah. Yuk kita masuk ke kebun binatang!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-Py-Xo2">
+                                <rect key="frame" x="796" y="323" width="280" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvI-zD-vz0">
-                                <rect key="frame" x="1062" y="369" width="40" height="42"/>
+                                <rect key="frame" x="1047" y="303" width="58" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -172,12 +172,17 @@
                                     <segue destination="Knj-er-lve" kind="show" id="y79-PN-EEE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="promptscene1" translatesAutoresizingMaskIntoConstraints="NO" id="P83-qy-FED">
+                                <rect key="frame" x="151" y="9" width="1134" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bsz-bD-OY5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="HHS-3K-74K"/>
                     <connections>
+                        <outlet property="Prompt" destination="P83-qy-FED" id="nVe-IW-frV"/>
                         <outlet property="bubbleChat" destination="Dq2-YB-fxC" id="Em7-c4-lw4"/>
                         <outlet property="closeBtn" destination="CvI-zD-vz0" id="fvO-X2-cz7"/>
                         <outlet property="girlIndicator" destination="zQz-gC-D7I" id="n9d-8p-wu0"/>
@@ -587,7 +592,7 @@
         <segue reference="kdl-JS-afl"/>
         <segue reference="Eqw-IS-Dr5"/>
         <segue reference="u3p-R7-fAd"/>
-        <segue reference="9ZM-20-xzg"/>
+        <segue reference="y79-PN-EEE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Acari" width="150" height="158"/>
@@ -600,6 +605,7 @@
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="kerjabagus2" width="1066" height="836"/>
         <image name="lanjut" width="313" height="92"/>
+        <image name="promptscene1" width="1074" height="199"/>
         <image name="scene1" width="5692" height="4242"/>
         <image name="scene2" width="5692" height="4242"/>
         <image name="scene3" width="5693" height="4242"/>
