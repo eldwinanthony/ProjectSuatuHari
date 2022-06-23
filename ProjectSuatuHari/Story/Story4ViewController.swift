@@ -18,6 +18,8 @@ class Story4ViewController: UIViewController {
     var ACariOrigin: CGPoint!
     var HCariOrigin: CGPoint!
     
+    var flag = 0
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +36,7 @@ class Story4ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         AJawab.isHidden = true
         HJawab.isHidden = true
+        
     }
     
     func addPanGesture(view: UIView){
@@ -54,9 +57,11 @@ class Story4ViewController: UIViewController {
         case .ended:
             if ACariView.frame.intersects(AJawab.frame){
                 showViewA(view: ACariView)
+                moveSegue()
             }
             if HCariView.frame.intersects(HJawab.frame) {
                 showViewH(view: HCariView)
+                moveSegue()
             }
             if HCariView.frame.intersects(HJawab.frame) != false{
                 returnViewToOriginH(view: HCariView)
@@ -83,6 +88,7 @@ class Story4ViewController: UIViewController {
         
         AJawab.isHidden = false
         ACariImageView.isHidden = true
+        playNextActivitySound()
     }
     
     func returnViewToOriginA(view: UIView) {
@@ -96,6 +102,7 @@ class Story4ViewController: UIViewController {
         
         HJawab.isHidden = false
         HCariImageView.isHidden = true
+        playNextActivitySound()
     }
     
     func returnViewToOriginH(view: UIView) {
@@ -103,6 +110,15 @@ class Story4ViewController: UIViewController {
         UIView.animate(withDuration: 0.7, animations: {
             view.frame.origin = self.HCariOrigin
         })
+    }
+    
+    func moveSegue(){
+        flag += 1
+        if flag == 2{
+            performSegue(withIdentifier: "toPopUp2", sender: nil)
+            flag = 0
+        }
+        
     }
     
 }
