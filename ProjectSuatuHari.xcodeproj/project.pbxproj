@@ -26,6 +26,7 @@
 		5C4668422865DCFC002EF090 /* Story5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4668412865DCFC002EF090 /* Story5ViewController.swift */; };
 		5C4668442865DE89002EF090 /* elephant-trumpets-growls-6047.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */; };
 		5C4668462865E2D0002EF090 /* lionroar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4668452865E2D0002EF090 /* lionroar.mp3 */; };
+		5C4668492865E59E002EF090 /* SoundKuinsi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C4668482865E59E002EF090 /* SoundKuinsi.wav */; };
 		5C491DA02863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */; };
 		5C547F28285B9BAC006EBFDF /* Story2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */; };
 		5C764E0F286456C9009338F9 /* StorySoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C764E0E286456C9009338F9 /* StorySoundController.swift */; };
@@ -54,6 +55,7 @@
 		5C4668412865DCFC002EF090 /* Story5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story5ViewController.swift; sourceTree = "<group>"; };
 		5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "elephant-trumpets-growls-6047.mp3"; sourceTree = "<group>"; };
 		5C4668452865E2D0002EF090 /* lionroar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lionroar.mp3; sourceTree = "<group>"; };
+		5C4668482865E59E002EF090 /* SoundKuinsi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoundKuinsi.wav; sourceTree = "<group>"; };
 		5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp1BelumBehasilViewController.swift; sourceTree = "<group>"; };
 		5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story2ViewController.swift; sourceTree = "<group>"; };
 		5C764E0E286456C9009338F9 /* StorySoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySoundController.swift; sourceTree = "<group>"; };
@@ -123,9 +125,9 @@
 				5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */,
 				5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */,
 				5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */,
+				5C4668412865DCFC002EF090 /* Story5ViewController.swift */,
 				5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */,
 				5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */,
-				5C4668412865DCFC002EF090 /* Story5ViewController.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 		5C764E0D286456B0009338F9 /* SoundEffectStory */ = {
 			isa = PBXGroup;
 			children = (
+				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
 				5C4668452865E2D0002EF090 /* lionroar.mp3 */,
 				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
 				5C764E10286456E1009338F9 /* wrong.wav */,
@@ -239,6 +242,7 @@
 				5C764E11286456E1009338F9 /* wrong.wav in Resources */,
 				5C0DEE5F285B2D8D00395723 /* Assets.xcassets in Resources */,
 				5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */,
+				5C4668492865E59E002EF090 /* SoundKuinsi.wav in Resources */,
 				5C4668442865DE89002EF090 /* elephant-trumpets-growls-6047.mp3 in Resources */,
 				5C0DEE5A285B2D8D00395723 /* Main.storyboard in Resources */,
 			);

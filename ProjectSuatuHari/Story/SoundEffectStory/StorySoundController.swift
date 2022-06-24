@@ -17,6 +17,9 @@ let elephanttapped = URL(fileURLWithPath: pathToElephantSound!)
 let pathToLionSound = Bundle.main.path(forResource: "lionroar", ofType: "mp3")
 let liontapped = URL(fileURLWithPath: pathToLionSound!)
 
+let pathToSoundAnak = Bundle.main.path(forResource: "SoundKuinsi", ofType: "wav")
+let anaktapped = URL(fileURLWithPath: pathToSoundAnak!)
+
 func playWrongSound(){
     do{
         audioPlayer = try AVAudioPlayer(contentsOf: wrongchoice)
@@ -41,6 +44,26 @@ func playLionSound(){
     do{
         audioPlayer = try AVAudioPlayer(contentsOf: liontapped)
         audioPlayer?.play()
+    }
+    catch{
+        print(error)
+    }
+}
+
+func playSoundAnak(){
+    do{
+        audioPlayer = try AVAudioPlayer(contentsOf: anaktapped)
+        audioPlayer?.play()
+    }
+    catch{
+        print(error)
+    }
+}
+
+func stopSoundAnak(){
+    do{
+        audioPlayer = try AVAudioPlayer(contentsOf: anaktapped)
+        audioPlayer?.stop()
     }
     catch{
         print(error)

@@ -44,7 +44,7 @@ class Story1ViewController: UIViewController {
     //function to animate indicator view
     @objc func animate(){
         UIView.animate(withDuration: 0.5, animations: {
-            self.girlIndicator.frame = CGRect(x: 864, y: 679, width: 70, height: 70)
+            self.girlIndicator.frame = CGRect(x: 864, y: 679, width: 80, height: 80)
             
         }, completion: { done in
             if done{
@@ -70,7 +70,7 @@ class Story1ViewController: UIViewController {
     @IBAction func kidPressed(_ sender: Any) {
         playButtonSound()
         fadeInText()
-        
+        playSoundAnak()
         girlIndicator.isHidden = true
         
     }
@@ -78,6 +78,7 @@ class Story1ViewController: UIViewController {
     //when the close button in chat bubble pressed:
     @IBAction func closeBtnPressed(_ sender: Any) {
         fadeOutText()
+        stopSoundAnak()
        
         fadeOutText()
         girlIndicator.isHidden = false
