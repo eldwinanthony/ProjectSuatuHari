@@ -156,7 +156,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="submitNama" destination="Juf-KO-MBa" eventType="touchUpInside" id="C8S-0b-nIi"/>
+                                            <segue destination="35m-gR-D2s" kind="show" id="2Sr-dx-Ozc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -199,7 +199,6 @@
                     <navigationItem key="navigationItem" id="TMN-xa-I7x"/>
                     <connections>
                         <outlet property="CardView2" destination="6dx-eO-q1c" id="qYK-22-Smm"/>
-                        <outlet property="inputNama" destination="Icj-UQ-fNr" id="YRU-kd-sad"/>
                         <outlet property="submit2" destination="h8f-78-GUb" id="s2N-cE-zel"/>
                     </connections>
                 </viewController>
@@ -507,8 +506,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Q08-5f-7D9"/>
-        <segue reference="jtw-TX-OTG"/>
+        <segue reference="2Sr-dx-Ozc"/>
+        <segue reference="HaV-g9-jmm"/>
         <segue reference="5t1-df-CKO"/>
     </inferredMetricsTieBreakers>
     <resources>
