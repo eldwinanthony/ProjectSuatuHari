@@ -37,7 +37,7 @@ class ParentalControl_ViewController: UIViewController {
             CardView.layer.shadowOffset = CGSize(width: 10, height: 10)
             CardView.layer.shadowRadius = 10.0
             CardView.layer.shadowOpacity = 0.4
-         
+    
         }
     }
     

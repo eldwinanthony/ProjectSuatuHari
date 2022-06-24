@@ -30,6 +30,7 @@
 		87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */; };
 		AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */; };
 		AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */; };
+		ABB0E75F2865BE7800CD9D2C /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */; };
 		ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE61F42861DA0B00BE079C /* ReviewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController.swift; sourceTree = "<group>"; };
 		AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCheckPointViewController.swift; sourceTree = "<group>"; };
 		AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCheckPointStoryboard.storyboard; sourceTree = "<group>"; };
+		ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		ABEE61F42861DA0B00BE079C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 		5CB89BD22865971B00A9EDD9 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				5C21DB9028620F410053606D /* HomeCardCollectionViewCell.swift in Sources */,
 				5C28665E28606017001830EC /* ParentalGuidelinesViewController.swift in Sources */,
+				ABB0E75F2865BE7800CD9D2C /* CoreDataHelper.swift in Sources */,
 				8700788B286314BC00F4E86E /* ParentalControl_ViewController2.swift in Sources */,
 				8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */,
 				5C0DEE57285B2D8D00395723 /* ViewController.swift in Sources */,
