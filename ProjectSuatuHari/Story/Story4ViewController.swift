@@ -9,6 +9,7 @@ import UIKit
 
 class Story4ViewController: UIViewController {
 
+    @IBOutlet weak var Prompt: UIImageView!
     @IBOutlet weak var ACariImageView: UIImageView!
     @IBOutlet weak var HCariImageView: UIImageView!
     
@@ -31,12 +32,14 @@ class Story4ViewController: UIViewController {
         
         view.bringSubviewToFront(ACariImageView)
         view.bringSubviewToFront(HCariImageView)
+        
+        Prompt.alpha = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
         AJawab.isHidden = true
         HJawab.isHidden = true
-        
+        fadeInText()
     }
     
     func addPanGesture(view: UIView){
@@ -113,6 +116,12 @@ class Story4ViewController: UIViewController {
             flag = 0
         }
         
+    }
+    
+    func fadeInText(){
+        UIView.animate(withDuration: 2, animations: {
+            self.Prompt.alpha = 1
+        })
     }
     
 }
