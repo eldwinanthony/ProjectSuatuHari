@@ -8,98 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Storyx View Controller-->
-        <scene sceneID="P89-Pp-f9i">
-            <objects>
-                <viewController id="hMg-u3-jCW" customClass="StoryxViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ktf-mp-YAh">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assetstory2bawah" translatesAutoresizingMaskIntoConstraints="NO" id="RSY-tT-IDn">
-                                <rect key="frame" x="0.0" y="756" width="1366" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apa warna es krim yang kamu pilih?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csi-YN-PiW">
-                                <rect key="frame" x="379" y="791" width="530" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnI-Z6-ZHP">
-                                <rect key="frame" x="378" y="851" width="350" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.7254902124" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Merah">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-bS-WS6">
-                                <rect key="frame" x="748" y="851" width="350" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.7254902124" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Kuning">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-Sf-eQI">
-                                <rect key="frame" x="748" y="931" width="350" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.7254902124" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Hijau">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpL-uY-skv">
-                                <rect key="frame" x="378" y="931" width="350" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.7254902124" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Biru">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
-                                </buttonConfiguration>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="texticecream" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-BL-zhY">
-                                <rect key="frame" x="49" y="13" width="1169" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guH-cA-Fo4">
-                                <rect key="frame" x="1276" y="33" width="77" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="bold"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="xButtonPressed:" destination="hMg-u3-jCW" eventType="touchUpInside" id="vSv-mL-gk5"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="7yS-Sz-cIF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="biruBtn" destination="KpL-uY-skv" id="5PE-NO-BfZ"/>
-                        <outlet property="hijauBtn" destination="hvd-Sf-eQI" id="UYV-Ks-VhG"/>
-                        <outlet property="kuningBtn" destination="iOx-bS-WS6" id="EEZ-Og-l7m"/>
-                        <outlet property="merahBtn" destination="rnI-Z6-ZHP" id="z5C-F7-bgT"/>
-                        <outlet property="promptIceCream" destination="Bde-BL-zhY" id="Mdh-dM-q6k"/>
-                        <outlet property="xButton" destination="guH-cA-Fo4" id="PAD-kN-Nrp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DK1-Wd-ySb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-265" y="-281"/>
-        </scene>
         <!--Story1 View Controller-->
         <scene sceneID="AF5-1m-eBN">
             <objects>
@@ -165,11 +73,10 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="closeBtnPressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="4pK-UB-BUD"/>
-                                    <action selector="xButtonPressed:" destination="hMg-u3-jCW" eventType="touchUpInside" id="iqb-nC-Fuy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B53-ql-YV9">
-                                <rect key="frame" x="20" y="867" width="119" height="120"/>
+                                <rect key="frame" x="43" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -267,7 +174,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-0H-m8d">
-                                <rect key="frame" x="20" y="855" width="119" height="120"/>
+                                <rect key="frame" x="43" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -364,20 +271,6 @@
                                 <rect key="frame" x="85" y="0.0" width="1134" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-PF-4Xc">
-                                <rect key="frame" x="20" y="855" width="119" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="prevBtnPressed:" destination="Knj-er-lve" eventType="touchUpInside" id="xvt-hB-RPV"/>
-                                    <segue destination="Knj-er-lve" kind="show" id="9ZM-20-xzg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-5F-52b">
                                 <rect key="frame" x="1197" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -433,11 +326,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
-                                <rect key="frame" x="-20" y="204" width="744" height="537"/>
+                                <rect key="frame" x="-20" y="174" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3n-li-x80">
-                                <rect key="frame" x="159" y="541" width="387" height="177"/>
+                                <rect key="frame" x="159" y="511" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -467,11 +360,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="belumberhasil2" translatesAutoresizingMaskIntoConstraints="NO" id="ut0-76-Lm3">
-                                <rect key="frame" x="-20" y="204" width="744" height="537"/>
+                                <rect key="frame" x="-20" y="174" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v5-UE-YnS">
-                                <rect key="frame" x="159" y="516" width="387" height="177"/>
+                                <rect key="frame" x="159" y="492" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -547,20 +440,20 @@
             </objects>
             <point key="canvasLocation" x="1887.8477306002926" y="741.796875"/>
         </scene>
-        <!--View Controller-->
+        <!--Pop Up2 View Controller-->
         <scene sceneID="Pwv-sO-FA4">
             <objects>
-                <viewController id="UKt-ns-WBC" sceneMemberID="viewController">
+                <viewController id="UKt-ns-WBC" customClass="PopUp2ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEr-W0-NnH">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="CCa-C5-zAX">
-                                <rect key="frame" x="-20" y="204" width="744" height="537"/>
+                                <rect key="frame" x="-20" y="174" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-D4-RI3">
-                                <rect key="frame" x="159" y="541" width="387" height="177"/>
+                                <rect key="frame" x="159" y="511" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -568,6 +461,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="lanjutBtn:" destination="erd-pN-770" eventType="touchUpInside" id="Hmp-ve-bUS"/>
+                                    <action selector="lanjutPressed:" destination="UKt-ns-WBC" eventType="touchUpInside" id="WLv-mD-AEw"/>
                                     <segue destination="mbm-Zw-cbz" kind="show" id="77h-j3-bcW"/>
                                 </connections>
                             </button>
@@ -598,7 +492,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj2-9V-ZRu">
-                                <rect key="frame" x="1221" y="855" width="119" height="120"/>
+                                <rect key="frame" x="1197" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -608,6 +502,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextScenePressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="L6L-aZ-12U"/>
+                                    <segue destination="akX-Xm-88x" kind="show" id="zxw-LJ-0Cf"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-Ka-bQ3">
@@ -638,18 +533,169 @@
             </objects>
             <point key="canvasLocation" x="3260.9077598828694" y="744.7265625"/>
         </scene>
+        <!--Story6 View Controller-->
+        <scene sceneID="nZp-ml-RSa">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="akX-Xm-88x" customClass="Story6ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="50I-qJ-LFh">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene6" translatesAutoresizingMaskIntoConstraints="NO" id="Vrf-Ak-5Ld">
+                                <rect key="frame" x="-33" y="0.0" width="1432" height="1034"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene6prompt" translatesAutoresizingMaskIntoConstraints="NO" id="30I-IY-NU7">
+                                <rect key="frame" x="85" y="0.0" width="1134" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scopemerah" translatesAutoresizingMaskIntoConstraints="NO" id="5GH-Dz-pBJ">
+                                <rect key="frame" x="390" y="232" width="242" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scopecoklat" translatesAutoresizingMaskIntoConstraints="NO" id="RYQ-72-XCK">
+                                <rect key="frame" x="735" y="232" width="242" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ma-3f-jTL">
+                                <rect key="frame" x="110" y="760" width="235" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="eskrimMerahTapped:" destination="akX-Xm-88x" eventType="touchUpInside" id="h60-ls-Ecg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sko-gI-ivn">
+                                <rect key="frame" x="419" y="760" width="235" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="eskrimUnguTapped:" destination="akX-Xm-88x" eventType="touchUpInside" id="9rh-Po-n0s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p4-TX-jSN">
+                                <rect key="frame" x="726" y="760" width="235" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="eskrimOrangeTapped:" destination="akX-Xm-88x" eventType="touchUpInside" id="CG8-JI-hsZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-ku-pfb">
+                                <rect key="frame" x="1033" y="760" width="204" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="eskrimCoklatTapped:" destination="akX-Xm-88x" eventType="touchUpInside" id="vOq-n7-Qtn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-jB-qlH">
+                                <rect key="frame" x="438" y="835" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uue-nY-2Sg">
+                                <rect key="frame" x="735" y="835" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99215686319999996" green="0.38823530080000002" blue="0.4196078479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f99-cz-l8w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a7K-5l-k55"/>
+                    <connections>
+                        <outlet property="Prompt" destination="30I-IY-NU7" id="lft-aQ-Adz"/>
+                        <outlet property="scopecokelat" destination="RYQ-72-XCK" id="alB-oA-sf2"/>
+                        <outlet property="scopemerah" destination="5GH-Dz-pBJ" id="iPM-NS-gHg"/>
+                        <outlet property="xmarkorange" destination="uue-nY-2Sg" id="bEe-hT-bcc"/>
+                        <outlet property="xmarkungu" destination="fmW-jB-qlH" id="XAY-RH-PQc"/>
+                        <segue destination="PWV-m2-kv9" kind="show" identifier="toPopUp3" id="6LI-Hg-JdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfy-fl-ZHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3958.857979502196" y="736.5234375"/>
+        </scene>
+        <!--Pop Up2 View Controller-->
+        <scene sceneID="qrG-jn-Vi4">
+            <objects>
+                <viewController id="PWV-m2-kv9" customClass="PopUp2ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6n-y1-3Nm">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-0d-jlF">
+                                <rect key="frame" x="-20" y="174" width="744" height="537"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-eR-YcX">
+                                <rect key="frame" x="159" y="511" width="387" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lanjut">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="lanjutBtn:" destination="erd-pN-770" eventType="touchUpInside" id="5w8-Nn-r4x"/>
+                                    <action selector="lanjutPressed:" destination="PWV-m2-kv9" eventType="touchUpInside" id="GzL-q2-zJJ"/>
+                                    <segue destination="rod-NA-MCp" kind="show" id="9V7-Gd-fEv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AUR-Xm-aRv"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Iq-lV-eaI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFh-kh-S0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4641" y="737"/>
+        </scene>
+        <!--Story7 View Controller-->
+        <scene sceneID="v19-9y-kL8">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="rod-NA-MCp" customClass="Story7ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXE-xd-gjE">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene7" translatesAutoresizingMaskIntoConstraints="NO" id="6XD-ar-i9N">
+                                <rect key="frame" x="-33" y="-5" width="1432" height="1034"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene7prompt" translatesAutoresizingMaskIntoConstraints="NO" id="tO4-rY-Hgj">
+                                <rect key="frame" x="85" y="0.0" width="1134" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="07B-Bg-ibu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2JK-np-004"/>
+                    <connections>
+                        <outlet property="Prompt" destination="tO4-rY-Hgj" id="w43-Jr-HIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rD-TU-4Ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4638" y="1503"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="y79-PN-EEE"/>
         <segue reference="Eqw-IS-Dr5"/>
         <segue reference="u3p-R7-fAd"/>
-        <segue reference="y79-PN-EEE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Acari" width="150" height="158"/>
         <image name="Hcari" width="150" height="158"/>
         <image name="arrow.left.square" catalog="system" width="128" height="114"/>
         <image name="arrow.right.square" catalog="system" width="128" height="114"/>
-        <image name="assetstory2bawah" width="1366" height="250"/>
         <image name="belumberhasil2" width="1066" height="836"/>
         <image name="chatbubblenew" width="400" height="234"/>
         <image name="circle" catalog="system" width="128" height="121"/>
@@ -664,8 +710,13 @@
         <image name="scene4" width="5692" height="4242"/>
         <image name="scene5" width="5693" height="4242"/>
         <image name="scene5prompt" width="1199" height="230"/>
+        <image name="scene6" width="1366" height="1024"/>
+        <image name="scene6prompt" width="1199" height="230"/>
+        <image name="scene7" width="5692" height="4243"/>
+        <image name="scene7prompt" width="1199" height="230"/>
         <image name="scenejerapahpromptnew" width="1199" height="230"/>
-        <image name="texticecream" width="1179" height="179"/>
+        <image name="scopecoklat" width="239" height="238"/>
+        <image name="scopemerah" width="239" height="238"/>
         <image name="textjerapahbawah2" width="1241" height="228"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>

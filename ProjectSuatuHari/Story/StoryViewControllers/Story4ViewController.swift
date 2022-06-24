@@ -111,10 +111,12 @@ class Story4ViewController: UIViewController {
     
     func moveSegue(){
         flag += 1
-        if flag == 2{
-            performSegue(withIdentifier: "toPopUp2", sender: nil)
-            flag = 0
-        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            if self.flag == 2{
+                self.performSegue(withIdentifier: "toPopUp2", sender: nil)
+                self.flag = 0
+            }
+        })
         
     }
     

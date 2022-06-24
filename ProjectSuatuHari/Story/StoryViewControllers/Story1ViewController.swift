@@ -91,7 +91,7 @@ class Story1ViewController: UIViewController {
     
     //function to fade in text
     func fadeInText(){
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 2, animations: {
             self.labelChat.alpha = 1
             self.closeBtn.alpha = 1
             self.bubbleChat.alpha = 1
