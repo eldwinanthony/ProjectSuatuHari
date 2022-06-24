@@ -15,6 +15,7 @@ class Story3ViewController: UIViewController {
     @IBOutlet weak var xImageCarrot: UIImageView!
     @IBOutlet weak var promptKandangGajah: UIImageView!
     @IBOutlet weak var grassIndicator: UIView!
+    @IBOutlet weak var elephantIndicator: UIView!
     
     var grassflag = 0
     
@@ -35,14 +36,23 @@ class Story3ViewController: UIViewController {
         grassIndicator.layer.cornerRadius =  grassIndicator.frame.size.width/2
         grassIndicator.clipsToBounds = true
         grassIndicator.isHidden = true
+        
+        //set the indicator view to circle
+        elephantIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
+        elephantIndicator.isOpaque = false
+        elephantIndicator.layer.cornerRadius =  elephantIndicator.frame.size.width/2
+        elephantIndicator.clipsToBounds = true
+        elephantIndicator.isHidden = false
 
     }
+    
+    
     
     //function to animate indicator view
     @objc func animate(){
         UIView.animate(withDuration: 0.5, animations: {
             self.grassIndicator.isHidden = false
-            self.grassIndicator.frame = CGRect(x: 547, y: 596, width: 75, height: 75)
+            self.grassIndicator.frame = CGRect(x: 547, y: 596, width: 65, height: 65)
             
         }, completion: { done in
             if done{
@@ -56,7 +66,7 @@ class Story3ViewController: UIViewController {
     //function to shrink indicator view
     func shrink(){
         UIView.animate(withDuration: 0.5, animations: {
-            self.grassIndicator.frame = CGRect(x: 547, y: 596, width: 60, height: 60)
+            self.grassIndicator.frame = CGRect(x: 547, y: 596, width: 50, height: 50)
             
         }, completion: { done in
             self.animate()
@@ -64,9 +74,39 @@ class Story3ViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    @objc func animateElephant(){
+        UIView.animate(withDuration: 0.5, animations: {
+            self.elephantIndicator.isHidden = false
+            self.elephantIndicator.frame = CGRect(x: 1079, y: 446, width: 150, height: 150)
+            
+        }, completion: { done in
+            if done{
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.shrinkElephant()
+                })
+            }
+        })
+    }
+    
+    
+    
+    @objc func shrinkElephant(){
+        UIView.animate(withDuration: 0.5, animations: {
+            self.elephantIndicator.frame = CGRect(x: 1079, y: 446, width: 120, height: 120)
+            
+        }, completion: { done in
+            self.animateElephant()
+        })
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         fadeInPrompt()
+        animateElephant()
+    }
+    
+    @IBAction func elephantPressed(_ sender: Any) {
+        playElephantSound()
     }
     
     //grass pressed:

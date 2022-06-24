@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kE2-q3-uBS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mbm-Zw-cbz">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -112,16 +112,6 @@
                                 <rect key="frame" x="0.0" y="-34" width="1390" height="1106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B53-ql-YV9">
-                                <rect key="frame" x="20" y="855" width="125" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
-                                </buttonConfiguration>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-gC-D7I">
                                 <rect key="frame" x="870" y="679" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,7 +127,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHQ-yE-NsU">
-                                <rect key="frame" x="1197" y="855" width="125" height="132"/>
+                                <rect key="frame" x="1197" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,6 +167,16 @@
                                     <action selector="closeBtnPressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="4pK-UB-BUD"/>
                                     <action selector="xButtonPressed:" destination="hMg-u3-jCW" eventType="touchUpInside" id="iqb-nC-Fuy"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B53-ql-YV9">
+                                <rect key="frame" x="20" y="867" width="119" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bsz-bD-OY5"/>
@@ -267,7 +267,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-0H-m8d">
-                                <rect key="frame" x="20" y="855" width="125" height="132"/>
+                                <rect key="frame" x="20" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -365,7 +365,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-PF-4Xc">
-                                <rect key="frame" x="20" y="855" width="125" height="132"/>
+                                <rect key="frame" x="20" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -379,7 +379,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-5F-52b">
-                                <rect key="frame" x="1197" y="855" width="125" height="132"/>
+                                <rect key="frame" x="1197" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -392,6 +392,20 @@
                                     <segue destination="kE2-q3-uBS" kind="show" id="kdl-JS-afl"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Re-Lq-E0l">
+                                <rect key="frame" x="1079" y="446" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-8y-3J4">
+                                <rect key="frame" x="872" y="307" width="378" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="elephantPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="ERa-Ni-ZWb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hdS-e9-b7W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -399,6 +413,7 @@
                     <navigationItem key="navigationItem" id="hj7-I3-XPc"/>
                     <connections>
                         <outlet property="circleImage" destination="8Sa-TA-eAf" id="XXf-71-Zf2"/>
+                        <outlet property="elephantIndicator" destination="0Re-Lq-E0l" id="KDa-Hj-F61"/>
                         <outlet property="grassIndicator" destination="u79-0O-fPj" id="Kgm-4x-Etf"/>
                         <outlet property="promptKandangGajah" destination="zHQ-ut-eEc" id="JCA-mb-ppV"/>
                         <outlet property="xImageApple" destination="x5V-XY-9eY" id="Mca-57-wXM"/>
@@ -566,26 +581,47 @@
             </objects>
             <point key="canvasLocation" x="2564" y="741"/>
         </scene>
-        <!--View Controller-->
+        <!--Story5 View Controller-->
         <scene sceneID="mIB-je-mnd">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mbm-Zw-cbz" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mbm-Zw-cbz" customClass="Story5ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQr-mT-D1P">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQB-vi-aiQ">
-                                <rect key="frame" x="20" y="855" width="125" height="132"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene5" translatesAutoresizingMaskIntoConstraints="NO" id="bw5-rI-h3T">
+                                <rect key="frame" x="-33" y="0.0" width="1432" height="1034"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene5prompt" translatesAutoresizingMaskIntoConstraints="NO" id="jV9-0a-LuS">
+                                <rect key="frame" x="85" y="0.0" width="1134" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj2-9V-ZRu">
+                                <rect key="frame" x="1221" y="855" width="119" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.left.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="prevBtnPressed:" destination="Knj-er-lve" eventType="touchUpInside" id="KlX-ah-3VY"/>
-                                    <segue destination="kE2-q3-uBS" kind="show" id="QPl-1E-ZGH"/>
+                                    <action selector="nextScenePressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="L6L-aZ-12U"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-Ka-bQ3">
+                                <rect key="frame" x="833" y="370" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nf-Hm-OfD">
+                                <rect key="frame" x="700" y="237" width="341" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="lionTapped:" destination="mbm-Zw-cbz" eventType="touchUpInside" id="Ial-OB-PX1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -593,18 +629,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="SrF-3f-IlC"/>
+                    <connections>
+                        <outlet property="Prompt" destination="jV9-0a-LuS" id="v5o-WW-6mQ"/>
+                        <outlet property="lionIndicator" destination="mA7-Ka-bQ3" id="2E5-bz-LLQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6x-1B-Lup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3261" y="745"/>
+            <point key="canvasLocation" x="3260.9077598828694" y="744.7265625"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KkB-nf-2Fa"/>
-        <segue reference="QPl-1E-ZGH"/>
         <segue reference="Eqw-IS-Dr5"/>
         <segue reference="u3p-R7-fAd"/>
-        <segue reference="y79-PN-EEE"/>
+        <segue reference="9ZM-20-xzg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Acari" width="150" height="158"/>
@@ -624,6 +662,8 @@
         <image name="scene3" width="5693" height="4242"/>
         <image name="scene3promptnew" width="1199" height="230"/>
         <image name="scene4" width="5692" height="4242"/>
+        <image name="scene5" width="5693" height="4242"/>
+        <image name="scene5prompt" width="1199" height="230"/>
         <image name="scenejerapahpromptnew" width="1199" height="230"/>
         <image name="texticecream" width="1179" height="179"/>
         <image name="textjerapahbawah2" width="1241" height="228"/>
