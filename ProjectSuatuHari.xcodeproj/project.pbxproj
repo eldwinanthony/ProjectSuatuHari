@@ -32,6 +32,23 @@
 		AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */; };
 		ABB0E75F2865BE7800CD9D2C /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */; };
 		ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE61F42861DA0B00BE079C /* ReviewCell.swift */; };
+		5C1FF039285B83A600A2AEF9 /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF038285B83A600A2AEF9 /* Story.storyboard */; };
+		5C1FF03D285B8D9300A2AEF9 /* Story4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */; };
+		5C3CB7DD28630CA0007EECF6 /* Story1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */; };
+		5C3CB7E1286362C9007EECF6 /* Story3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */; };
+		5C3CB7E5286376A1007EECF6 /* PopUp1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */; };
+		5C4668422865DCFC002EF090 /* Story5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4668412865DCFC002EF090 /* Story5ViewController.swift */; };
+		5C4668442865DE89002EF090 /* elephant-trumpets-growls-6047.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */; };
+		5C4668492865E59E002EF090 /* SoundKuinsi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C4668482865E59E002EF090 /* SoundKuinsi.wav */; };
+		5C46684B2865EC4C002EF090 /* Story6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46684A2865EC4C002EF090 /* Story6ViewController.swift */; };
+		5C46684E2865F1FD002EF090 /* PopUp3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46684D2865F1FD002EF090 /* PopUp3ViewController.swift */; };
+		5C4668502865F272002EF090 /* PopUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46684F2865F272002EF090 /* PopUp2ViewController.swift */; };
+		5C4668522865F37A002EF090 /* Story7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4668512865F37A002EF090 /* Story7ViewController.swift */; };
+		5C4668552865F6EA002EF090 /* lionroar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C4668542865F6EA002EF090 /* lionroar.mp3 */; };
+		5C491DA02863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */; };
+		5C547F28285B9BAC006EBFDF /* Story2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */; };
+		5C764E0F286456C9009338F9 /* StorySoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C764E0E286456C9009338F9 /* StorySoundController.swift */; };
+		5C764E11286456E1009338F9 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C764E10286456E1009338F9 /* wrong.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +79,23 @@
 		AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCheckPointStoryboard.storyboard; sourceTree = "<group>"; };
 		ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		ABEE61F42861DA0B00BE079C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		5C1FF038285B83A600A2AEF9 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
+		5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story4ViewController.swift; sourceTree = "<group>"; };
+		5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story1ViewController.swift; sourceTree = "<group>"; };
+		5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story3ViewController.swift; sourceTree = "<group>"; };
+		5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp1ViewController.swift; sourceTree = "<group>"; };
+		5C4668412865DCFC002EF090 /* Story5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story5ViewController.swift; sourceTree = "<group>"; };
+		5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "elephant-trumpets-growls-6047.mp3"; sourceTree = "<group>"; };
+		5C4668482865E59E002EF090 /* SoundKuinsi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoundKuinsi.wav; sourceTree = "<group>"; };
+		5C46684A2865EC4C002EF090 /* Story6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story6ViewController.swift; sourceTree = "<group>"; };
+		5C46684D2865F1FD002EF090 /* PopUp3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp3ViewController.swift; sourceTree = "<group>"; };
+		5C46684F2865F272002EF090 /* PopUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp2ViewController.swift; sourceTree = "<group>"; };
+		5C4668512865F37A002EF090 /* Story7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story7ViewController.swift; sourceTree = "<group>"; };
+		5C4668542865F6EA002EF090 /* lionroar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lionroar.mp3; sourceTree = "<group>"; };
+		5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp1BelumBehasilViewController.swift; sourceTree = "<group>"; };
+		5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story2ViewController.swift; sourceTree = "<group>"; };
+		5C764E0E286456C9009338F9 /* StorySoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySoundController.swift; sourceTree = "<group>"; };
+		5C764E10286456E1009338F9 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +159,23 @@
 		5C0DEE6A285B2DBF00395723 /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				5C1FF038285B83A600A2AEF9 /* Story.storyboard */,
+				5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */,
+				5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */,
+				5C46684F2865F272002EF090 /* PopUp2ViewController.swift */,
+				5C46684D2865F1FD002EF090 /* PopUp3ViewController.swift */,
+				5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */,
+				5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */,
+				5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */,
+				5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */,
+				5C4668412865DCFC002EF090 /* Story5ViewController.swift */,
+				5C46684A2865EC4C002EF090 /* Story6ViewController.swift */,
+				5C4668512865F37A002EF090 /* Story7ViewController.swift */,
+				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
+				5C4668542865F6EA002EF090 /* lionroar.mp3 */,
+				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
+				5C764E10286456E1009338F9 /* wrong.wav */,
+				5C764E0E286456C9009338F9 /* StorySoundController.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -257,13 +308,19 @@
 			files = (
 				5C28665C28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard in Resources */,
 				87904FF428647F1500465E07 /* ParentalControl_Storyboard.storyboard in Resources */,
+				5C4668552865F6EA002EF090 /* lionroar.mp3 in Resources */,
+				5C1FF039285B83A600A2AEF9 /* Story.storyboard in Resources */,
 				5C1FF034285B804900A2AEF9 /* buttonsound.wav in Resources */,
 				5CF1EF1228648640006FEE22 /* Main.storyboard in Resources */,
 				5C0DEE62285B2D8D00395723 /* LaunchScreen.storyboard in Resources */,
 				5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */,
+				5C764E11286456E1009338F9 /* wrong.wav in Resources */,
 				5C0DEE5F285B2D8D00395723 /* Assets.xcassets in Resources */,
 				AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */,
 				5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */,
+				5C4668492865E59E002EF090 /* SoundKuinsi.wav in Resources */,
+				5C4668442865DE89002EF090 /* elephant-trumpets-growls-6047.mp3 in Resources */,
+				5C0DEE5A285B2D8D00395723 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,17 +336,29 @@
 				ABB0E75F2865BE7800CD9D2C /* CoreDataHelper.swift in Sources */,
 				8700788B286314BC00F4E86E /* ParentalControl_ViewController2.swift in Sources */,
 				8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */,
+				5C4668522865F37A002EF090 /* Story7ViewController.swift in Sources */,
+				5C3CB7E1286362C9007EECF6 /* Story3ViewController.swift in Sources */,
+				5C3CB7DD28630CA0007EECF6 /* Story1ViewController.swift in Sources */,
+				5C764E0F286456C9009338F9 /* StorySoundController.swift in Sources */,
+				5C491DA02863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift in Sources */,
 				5C0DEE57285B2D8D00395723 /* ViewController.swift in Sources */,
 				5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */,
+				5C547F28285B9BAC006EBFDF /* Story2ViewController.swift in Sources */,
+				5C4668422865DCFC002EF090 /* Story5ViewController.swift in Sources */,
 				5C0DEE53285B2D8D00395723 /* AppDelegate.swift in Sources */,
 				AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */,
 				87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
 				5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */,
+				5C4668502865F272002EF090 /* PopUp2ViewController.swift in Sources */,
+				5C3CB7E5286376A1007EECF6 /* PopUp1ViewController.swift in Sources */,
+				5C46684B2865EC4C002EF090 /* Story6ViewController.swift in Sources */,
+				5C1FF03D285B8D9300A2AEF9 /* Story4ViewController.swift in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
 				ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */,
 				8700788F28638B3300F4E86E /* ParentalControl_ViewController4.swift in Sources */,
 				8782B1112862023400506788 /* Extension_BorderRadius.swift in Sources */,
+				5C46684E2865F1FD002EF090 /* PopUp3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +503,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -463,6 +533,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
