@@ -125,9 +125,22 @@
 			isa = PBXGroup;
 			children = (
 				5C1FF038285B83A600A2AEF9 /* Story.storyboard */,
-				5C4668532865F380002EF090 /* PopUpViewControllers */,
-				5C46684C2865EC51002EF090 /* StoryViewControllers */,
-				5C764E0D286456B0009338F9 /* SoundEffectStory */,
+				5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */,
+				5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */,
+				5C46684F2865F272002EF090 /* PopUp2ViewController.swift */,
+				5C46684D2865F1FD002EF090 /* PopUp3ViewController.swift */,
+				5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */,
+				5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */,
+				5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */,
+				5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */,
+				5C4668412865DCFC002EF090 /* Story5ViewController.swift */,
+				5C46684A2865EC4C002EF090 /* Story6ViewController.swift */,
+				5C4668512865F37A002EF090 /* Story7ViewController.swift */,
+				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
+				5C4668542865F6EA002EF090 /* lionroar.mp3 */,
+				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
+				5C764E10286456E1009338F9 /* wrong.wav */,
+				5C764E0E286456C9009338F9 /* StorySoundController.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -163,43 +176,6 @@
 				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
 			);
 			path = SoundEffect;
-			sourceTree = "<group>";
-		};
-		5C46684C2865EC51002EF090 /* StoryViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */,
-				5C547F27285B9BAC006EBFDF /* Story2ViewController.swift */,
-				5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */,
-				5C1FF03C285B8D9300A2AEF9 /* Story4ViewController.swift */,
-				5C4668412865DCFC002EF090 /* Story5ViewController.swift */,
-				5C46684A2865EC4C002EF090 /* Story6ViewController.swift */,
-				5C4668512865F37A002EF090 /* Story7ViewController.swift */,
-			);
-			path = StoryViewControllers;
-			sourceTree = "<group>";
-		};
-		5C4668532865F380002EF090 /* PopUpViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */,
-				5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */,
-				5C46684F2865F272002EF090 /* PopUp2ViewController.swift */,
-				5C46684D2865F1FD002EF090 /* PopUp3ViewController.swift */,
-			);
-			path = PopUpViewControllers;
-			sourceTree = "<group>";
-		};
-		5C764E0D286456B0009338F9 /* SoundEffectStory */ = {
-			isa = PBXGroup;
-			children = (
-				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
-				5C4668542865F6EA002EF090 /* lionroar.mp3 */,
-				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
-				5C764E10286456E1009338F9 /* wrong.wav */,
-				5C764E0E286456C9009338F9 /* StorySoundController.swift */,
-			);
-			path = SoundEffectStory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
