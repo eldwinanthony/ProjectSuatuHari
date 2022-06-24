@@ -29,6 +29,16 @@
             </objects>
             <point key="canvasLocation" x="-1119" y="-872"/>
         </scene>
+        <!--Story-->
+        <scene sceneID="BlZ-JG-CUW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Story" id="Vkz-0P-dBv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0is-8N-Zcu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVd-tZ-xme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1131" y="-767"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qyD-VV-p2U">
             <objects>
@@ -142,6 +152,7 @@
                                         <size key="customSize" width="886" height="430"/>
                                         <connections>
                                             <outlet property="homecardImage" destination="8GV-Eu-du0" id="Ehm-nb-dm3"/>
+                                            <segue destination="Vkz-0P-dBv" kind="show" id="DJN-xY-o0R"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
