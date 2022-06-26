@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
-class ParentalControl_ViewController2: UIViewController {
+class ParentalControl_ViewController2: UIViewController, viewControllerHomeDelegate {
 
+    let coreDataHelper = CoreDataHelper()
     @IBOutlet weak var submit2: UIButton!
+    @IBOutlet weak var inputNama: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,20 @@ class ParentalControl_ViewController2: UIViewController {
         }
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as? ViewController
+//        vc?.delegate = self
+//        vc.data = self.nama
+//    }
+    
+    @IBAction
+    func submitName(){
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//        let context = coreDataHelper.getBackgroundContext()
+        let nama = SuatuHari(context: context)
+        nama.namaAnak = inputNama.text
+        coreDataHelper.saveContext()
+    }
 
     /*
     // MARK: - Navigation

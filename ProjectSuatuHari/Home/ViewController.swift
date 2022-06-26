@@ -14,9 +14,16 @@
 
 import UIKit
 import AVFoundation
+import CoreData
+
+protocol viewControllerHomeDelegate: AnyObject {
+    
+}
 
 class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    
+    weak var delegate : viewControllerHomeDelegate?
+    let coreDataHelper = CoreDataHelper()
+    var fetchTemp : SuatuHari?
     //set outlets home page
     @IBOutlet weak var starView: UIView!
     @IBOutlet weak var charButton: UIButton!
@@ -24,6 +31,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var previousBtn: UIButton!
+    @IBOutlet weak var profiling: UILabel!
     
     //define current cell index = 0
     var currentCellIndex = 0
@@ -47,7 +55,22 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         
         //hide previous btn when started
         previousBtn.isHidden = true
+        self.fetchNama()
+    }
+    
+    func fetchNama(){
+//        let context = coreDataHelper.getBackgroundContext()
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
+            profiling.text = "halo " + (fetchTemp?.namaAnak ?? "")
+        }
         
+        catch
+        {
+            print(error.localizedDescription)
+        }
     }
     
     //when char button pressed:
@@ -95,43 +118,44 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     
     //when the next cell button pressed
     @IBAction func nextBtnPressed(_ sender: Any) {
-                playButtonSound()
-                currentCellIndex += 1
-                
-                //HIDE NEXT BTN IF CELL AT TOTAL INDEX - 1
-                if currentCellIndex == arrHomeCardImage.count - 1{
-                    nextBtn.isHidden = true
-                }
-                
-                //SCROLL NEXT
-                if currentCellIndex < arrHomeCardImage.count{
-                    homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
-                    previousBtn.isHidden = false
-                }
-
+        playButtonSound()
+        currentCellIndex += 1
+        
+        //HIDE NEXT BTN IF CELL AT TOTAL INDEX - 1
+        if currentCellIndex == arrHomeCardImage.count - 1{
+            nextBtn.isHidden = true
+        }
+        
+        //SCROLL NEXT
+        if currentCellIndex < arrHomeCardImage.count{
+            homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+            previousBtn.isHidden = false
+        }
+        
     }
     
     //when the previous button pressed
     @IBAction func previousBtnPressed(_ sender: Any) {
-                playButtonSound()
-                currentCellIndex -= 1
-                
-                //UNHIDE THE NEXT BUTTON
-                if currentCellIndex != arrHomeCardImage.count - 1 {
-                    nextBtn.isHidden =  false
-                }
-                
-                //HIDE THE PREVIOUS BUTTON AT FIRST CELL
-                if currentCellIndex == 0{
-                    previousBtn.isHidden = true
-                }
-                
-                //SCROLL PREVIOUS
-                if currentCellIndex < arrHomeCardImage.count{
-                    homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
-                }
+        playButtonSound()
+        currentCellIndex -= 1
+        
+        //UNHIDE THE NEXT BUTTON
+        if currentCellIndex != arrHomeCardImage.count - 1 {
+            nextBtn.isHidden =  false
+        }
+        
+        //HIDE THE PREVIOUS BUTTON AT FIRST CELL
+        if currentCellIndex == 0{
+            previousBtn.isHidden = true
+        }
+        
+        //SCROLL PREVIOUS
+        if currentCellIndex < arrHomeCardImage.count{
+            homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+        }
     }
 }
+
 
 
 

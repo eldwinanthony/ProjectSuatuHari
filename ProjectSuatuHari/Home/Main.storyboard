@@ -103,7 +103,7 @@
                                     <action selector="previousBtnPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="vqG-B3-v0J"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halo Ani! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
                                 <rect key="frame" x="538.5" y="44" width="289" height="57.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <nil key="textColor"/>
@@ -199,6 +199,7 @@
                         <outlet property="homeCollectionView" destination="cy9-bS-LMW" id="RCW-wv-CRN"/>
                         <outlet property="nextBtn" destination="omr-qo-HUu" id="ITI-bI-4Mt"/>
                         <outlet property="previousBtn" destination="vxd-gC-I0F" id="pVN-RZ-1vq"/>
+                        <outlet property="profiling" destination="tsE-TE-q0h" id="ac6-pF-t5o"/>
                         <outlet property="starView" destination="vOf-5L-E4C" id="WsL-XC-ZM2"/>
                     </connections>
                 </viewController>

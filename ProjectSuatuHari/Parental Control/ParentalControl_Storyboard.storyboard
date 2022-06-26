@@ -156,6 +156,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="submitName" destination="Juf-KO-MBa" eventType="touchUpInside" id="ylf-7A-dKZ"/>
                                             <segue destination="35m-gR-D2s" kind="show" id="2Sr-dx-Ozc"/>
                                         </connections>
                                     </button>
@@ -199,6 +200,7 @@
                     <navigationItem key="navigationItem" id="TMN-xa-I7x"/>
                     <connections>
                         <outlet property="CardView2" destination="6dx-eO-q1c" id="qYK-22-Smm"/>
+                        <outlet property="inputNama" destination="Icj-UQ-fNr" id="aBK-gg-nf1"/>
                         <outlet property="submit2" destination="h8f-78-GUb" id="s2N-cE-zel"/>
                     </connections>
                 </viewController>
