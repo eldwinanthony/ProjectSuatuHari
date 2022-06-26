@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import CoreData
 
 class LearningCheckPointViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
+    let coreDataHelper = CoreDataHelper()
+    var fetchTemp : SuatuHari?
     @IBOutlet weak var StoryBackground: UIView!{
         didSet{
             StoryBackground.layer.borderWidth = 2
@@ -16,6 +19,7 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
             StoryBackground.layer.cornerRadius = 12
         }
     }
+    @IBOutlet weak var SubmitButton: UIButton!
     @IBOutlet weak var ParameterSatuText: UIView!
     @IBOutlet weak var ParameterSatuBintang: UIImageView!
     @IBOutlet weak var ParameterSatuBox: UIView!{
@@ -25,7 +29,7 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
             ParameterSatuBox.layer.shadowRadius = 5.0
             ParameterSatuBox.layer.shadowOpacity = 0.1
             ParameterSatuBox.layer.cornerRadius = 12
-
+            
         }
     }
     @IBOutlet weak var ParameterDuaText: UILabel!
@@ -52,7 +56,6 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
     }
     @IBOutlet weak var Notes: UITextView!
     @IBOutlet weak var ButtonTrash: UIButton!
-    @IBOutlet weak var ButtonEdit: UIButton!
     @IBOutlet weak var StoryText: UILabel!
     @IBOutlet weak var NotesBackground: UIView!{
         didSet{
@@ -65,7 +68,8 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.fetchText()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -78,6 +82,47 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         cell.setupReviewView(indexForDraw: indexPath.row)
         return cell
     }
-
-
+    @IBAction
+    func submitNote(){
+        let context = coreDataHelper.getBackgroundContext()
+        let note = SuatuHari(context: context)
+        note.noteLearningCheckPoint = Notes.text
+        print(note)
+        coreDataHelper.saveContext()
+    }
+    //fetch
+    func fetchText(){
+        let context = coreDataHelper.getBackgroundContext()
+        do
+        {
+            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
+            Notes.text = fetchTemp?.noteLearningCheckPoint ?? "edit here!"
+            
+        }
+        
+        catch
+        {
+            print(error.localizedDescription)
+        }
+        
+    }
+    @IBAction
+    func deleteNama(){
+        let context = coreDataHelper.getBackgroundContext()
+        do
+        {
+            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
+            context.delete(fetchTemp!)
+            try coreDataHelper.saveContext()
+            Notes.text = "edit here!"
+            
+        }
+        
+        catch
+        {
+            print(error.localizedDescription)
+        }
+        
+    }
+    
 }

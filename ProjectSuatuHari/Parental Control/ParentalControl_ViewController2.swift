@@ -41,16 +41,10 @@ class ParentalControl_ViewController2: UIViewController, viewControllerHomeDeleg
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as? ViewController
-//        vc?.delegate = self
-//        vc.data = self.nama
-//    }
-    
     @IBAction
     func submitName(){
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//        let context = coreDataHelper.getBackgroundContext()
+//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let context = coreDataHelper.getBackgroundContext()
         let nama = SuatuHari(context: context)
         nama.namaAnak = inputNama.text
         coreDataHelper.saveContext()

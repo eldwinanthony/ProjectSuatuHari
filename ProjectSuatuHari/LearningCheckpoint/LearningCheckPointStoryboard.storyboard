@@ -170,24 +170,25 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="black"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteNama" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c6G-E1-BF2"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1C0-9B-LpD">
-                                        <rect key="frame" x="367" y="179" width="46" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIZ-UP-IVG">
+                                        <rect key="frame" x="21" y="179" width="70" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="pencil" catalog="system" symbolScale="large"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="black"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitNote" destination="Y6W-OH-hqX" eventType="touchUpInside" id="k6y-Qi-PrQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Vjp-g8-eJU" secondAttribute="trailing" constant="8" id="8Mq-lI-V7K"/>
                                     <constraint firstAttribute="bottom" secondItem="Vjp-g8-eJU" secondAttribute="bottom" constant="20" id="8f2-Ip-np8"/>
                                     <constraint firstAttribute="height" constant="230" id="Ozh-8v-ipe"/>
-                                    <constraint firstItem="Vjp-g8-eJU" firstAttribute="leading" secondItem="1C0-9B-LpD" secondAttribute="trailing" constant="8" id="S0G-5z-HDM"/>
                                     <constraint firstAttribute="width" constant="475" id="rb3-W9-eBU"/>
-                                    <constraint firstAttribute="bottom" secondItem="1C0-9B-LpD" secondAttribute="bottom" constant="20" id="tiZ-GX-6Z7"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0DQ-2L-N3x">
@@ -315,7 +316,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ButtonEdit" destination="1C0-9B-LpD" id="W3L-Ag-3Fg"/>
                         <outlet property="ButtonTrash" destination="Vjp-g8-eJU" id="80S-aY-8hO"/>
                         <outlet property="Notes" destination="PQr-co-3gv" id="Lya-iU-rVQ"/>
                         <outlet property="NotesBackground" destination="Sf3-6Z-aHL" id="WHx-FH-2vt"/>
@@ -342,7 +342,6 @@
         <image name="chevron.compact.left" catalog="system" width="64" height="128"/>
         <image name="chevron.compact.right" catalog="system" width="64" height="128"/>
         <image name="leftarrow" width="65" height="57"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="star" width="89" height="86"/>
         <image name="star off" width="23.5" height="22.5"/>
         <image name="trash" catalog="system" width="121" height="128"/>

@@ -22,7 +22,7 @@ class CoreDataHelper{
     }
     //buat ngambil context buat ngakses core data
     func getBackgroundContext() -> NSManagedObjectContext {
-            if let context = container?.newBackgroundContext() {
+            if let context = container?.viewContext {
                 return context
             } else {
                 return viewcontext
