@@ -16,6 +16,8 @@ class ParentalControl_ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        stopBackgroundSound()
+        
         let warna1 = UIColor(red: 106, green: 73, blue: 246)
         let warna2 = UIColor(red: 190, green: 145, blue: 245)
         
@@ -30,6 +32,10 @@ class ParentalControl_ViewController: UIViewController {
         submit1.layer.masksToBounds=true
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func submitPressed(_ sender: Any) {
+        playButtonSound()
     }
     
     @IBOutlet weak var CardView: UIView!{

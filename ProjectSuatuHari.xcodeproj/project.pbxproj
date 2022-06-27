@@ -22,6 +22,7 @@
 		5C28665C28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */; };
 		5C28665E28606017001830EC /* ParentalGuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */; };
 		5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665F2860637A001830EC /* PGCollectionViewCell.swift */; };
+		5C36788C28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */; };
 		5C3CB7DD28630CA0007EECF6 /* Story1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */; };
 		5C3CB7E1286362C9007EECF6 /* Story3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */; };
 		5C3CB7E5286376A1007EECF6 /* PopUp1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */; };
@@ -68,6 +69,7 @@
 		5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentalGuidelinesStoryboard.storyboard; sourceTree = "<group>"; };
 		5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalGuidelinesViewController.swift; sourceTree = "<group>"; };
 		5C28665F2860637A001830EC /* PGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fm-freemusic-cheerful-whistling.mp3"; sourceTree = "<group>"; };
 		5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story1ViewController.swift; sourceTree = "<group>"; };
 		5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story3ViewController.swift; sourceTree = "<group>"; };
 		5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp1ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				5C93C2AA285C572400E32360 /* guidelineandsetting.wav */,
 				5C1FF032285B804900A2AEF9 /* buttonsound.wav */,
 				5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */,
+				5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */,
 				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
 			);
 			path = SoundEffect;
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C28665C28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard in Resources */,
+				5C36788C28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 in Resources */,
 				87904FF428647F1500465E07 /* ParentalControl_Storyboard.storyboard in Resources */,
 				5C4668552865F6EA002EF090 /* lionroar.mp3 in Resources */,
 				5C1FF039285B83A600A2AEF9 /* Story.storyboard in Resources */,

@@ -125,4 +125,7 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         
     }
     
+    @IBAction func backPressed(_ sender: Any) {
+        playButtonSound()
+    }
 }

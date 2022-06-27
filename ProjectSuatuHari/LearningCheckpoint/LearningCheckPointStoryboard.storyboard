@@ -291,6 +291,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="leftarrow" title=""/>
                                 <connections>
+                                    <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FeJ-vW-fLn"/>
                                     <segue destination="uA9-q4-rur" kind="show" id="1cL-1R-k9l"/>
                                 </connections>
                             </button>

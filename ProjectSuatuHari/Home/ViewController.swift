@@ -63,6 +63,10 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         starTotalLabel.text = "\(StarTotal) /15"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        playBackgroundSoundHome()
+    }
+    
     func fetchNama(){
 //        let context = coreDataHelper.getBackgroundContext()
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext

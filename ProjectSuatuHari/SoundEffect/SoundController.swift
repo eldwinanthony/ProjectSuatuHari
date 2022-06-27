@@ -112,3 +112,43 @@ func stopSoundAnak(){
         print(error)
     }
 }
+
+
+let pathBackgroundSound = Bundle.main.path(forResource: "fm-freemusic-cheerful-whistling", ofType: "mp3")
+let backgroundSound = URL(fileURLWithPath: pathBackgroundSound!)
+
+var backgroundAudioPlayer: AVAudioPlayer?
+
+func playBackgroundSoundHome(){
+    do{
+        backgroundAudioPlayer = try AVAudioPlayer(contentsOf: backgroundSound)
+        backgroundAudioPlayer?.play()
+        backgroundAudioPlayer?.numberOfLoops = -1
+        backgroundAudioPlayer?.volume = 0.6
+    }
+    catch{
+        print(error)
+    }
+}
+
+func playBackgroundSoundStory(){
+    do{
+        backgroundAudioPlayer = try AVAudioPlayer(contentsOf: backgroundSound)
+        backgroundAudioPlayer?.play()
+        backgroundAudioPlayer?.numberOfLoops = -1
+        backgroundAudioPlayer?.volume = 0.2
+    }
+    catch{
+        print(error)
+    }
+}
+
+func stopBackgroundSound(){
+    do{
+        audioPlayer = try AVAudioPlayer(contentsOf: backgroundSound)
+        backgroundAudioPlayer?.stop()
+    }
+    catch{
+        print(error)
+    }
+}

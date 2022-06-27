@@ -36,6 +36,9 @@ class ParentalControl_ViewController3: UIViewController {
          
         }
     }
+    @IBAction func submitPressed(_ sender: Any) {
+        playButtonSound()
+    }
     @IBOutlet weak var SoundCardView: UIView!{
         didSet{
             SoundCardView.layer.borderWidth = 1

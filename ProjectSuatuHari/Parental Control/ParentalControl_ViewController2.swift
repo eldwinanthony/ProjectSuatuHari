@@ -41,6 +41,9 @@ class ParentalControl_ViewController2: UIViewController, viewControllerHomeDeleg
         }
     }
     
+    @IBAction func submitPressed(_ sender: Any) {
+        playButtonSound()
+    }
     @IBAction
     func submitName(){
 //        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext

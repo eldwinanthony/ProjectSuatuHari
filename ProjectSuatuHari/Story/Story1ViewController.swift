@@ -41,6 +41,7 @@ class Story1ViewController: UIViewController {
         //animate the indicator view
         animate()
         fadeInPrompt()
+        playBackgroundSoundStory()
     }
     
     //function to animate indicator view

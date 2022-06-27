@@ -61,6 +61,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="submitPressed:" destination="R6F-Td-gH5" eventType="touchUpInside" id="qwa-8o-KaC"/>
                                             <segue destination="Juf-KO-MBa" kind="presentation" modalPresentationStyle="fullScreen" id="jtw-TX-OTG"/>
                                         </connections>
                                     </button>
@@ -157,6 +158,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="submitName" destination="Juf-KO-MBa" eventType="touchUpInside" id="ylf-7A-dKZ"/>
+                                            <action selector="submitPressed:" destination="Juf-KO-MBa" eventType="touchUpInside" id="QVg-4P-QjB"/>
                                             <segue destination="35m-gR-D2s" kind="show" id="2Sr-dx-Ozc"/>
                                         </connections>
                                     </button>
@@ -240,6 +242,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="submitPressed:" destination="tBZ-kh-cuJ" eventType="touchUpInside" id="9x0-bc-3J1"/>
                                             <segue destination="SaZ-61-h5A" kind="show" id="K3l-yK-DfW"/>
                                         </connections>
                                     </button>
@@ -384,6 +387,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="submitPressed:" destination="35m-gR-D2s" eventType="touchUpInside" id="yKB-zr-RqZ"/>
                                             <segue destination="tBZ-kh-cuJ" kind="presentation" modalPresentationStyle="fullScreen" id="JKa-F2-hb6"/>
                                         </connections>
                                     </button>
@@ -508,7 +512,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2Sr-dx-Ozc"/>
+        <segue reference="Q08-5f-7D9"/>
         <segue reference="HaV-g9-jmm"/>
         <segue reference="5t1-df-CKO"/>
     </inferredMetricsTieBreakers>
