@@ -22,7 +22,7 @@ class Story1ViewController: UIViewController {
         StarTotal = 0
         
         //set the indicator view to circle
-        girlIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
+        girlIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         girlIndicator.isOpaque = false
         girlIndicator.layer.cornerRadius = girlIndicator.frame.size.width/2
         girlIndicator.clipsToBounds = true

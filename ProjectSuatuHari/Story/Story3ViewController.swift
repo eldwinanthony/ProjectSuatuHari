@@ -33,14 +33,14 @@ class Story3ViewController: UIViewController {
         promptKandangGajah.alpha = 0
         
         //set the indicator view to circle
-        grassIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
+        grassIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         grassIndicator.isOpaque = false
         grassIndicator.layer.cornerRadius =  grassIndicator.frame.size.width/2
         grassIndicator.clipsToBounds = true
         grassIndicator.isHidden = true
         
         //set the indicator view to circle
-        elephantIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
+        elephantIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         elephantIndicator.isOpaque = false
         elephantIndicator.layer.cornerRadius =  elephantIndicator.frame.size.width/2
         elephantIndicator.clipsToBounds = true

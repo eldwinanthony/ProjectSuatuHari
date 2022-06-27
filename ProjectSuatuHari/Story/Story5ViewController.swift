@@ -18,7 +18,7 @@ class Story5ViewController: UIViewController {
         StarTotal += 1
         
         //set the indicator view to circle
-        lionIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
+        lionIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         lionIndicator.isOpaque = false
         lionIndicator.layer.cornerRadius = lionIndicator.frame.size.width/2
         lionIndicator.clipsToBounds = true
