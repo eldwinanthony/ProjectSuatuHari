@@ -23,6 +23,8 @@ class Story3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        StarTotal += 1
+        
         //hide the x and o
         circleImage.isHidden = true
         xImageApple.isHidden = true

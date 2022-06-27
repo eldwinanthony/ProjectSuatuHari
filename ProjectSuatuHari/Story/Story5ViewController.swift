@@ -15,6 +15,8 @@ class Story5ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        StarTotal += 1
+        
         //set the indicator view to circle
         lionIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
         lionIndicator.isOpaque = false

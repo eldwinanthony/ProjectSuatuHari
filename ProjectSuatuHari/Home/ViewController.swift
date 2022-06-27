@@ -20,11 +20,14 @@ protocol viewControllerHomeDelegate: AnyObject {
     
 }
 
+var StarTotal = 0
+
 class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     weak var delegate : viewControllerHomeDelegate?
     let coreDataHelper = CoreDataHelper()
     var fetchTemp : SuatuHari?
     //set outlets home page
+    @IBOutlet weak var starTotalLabel: UILabel!
     @IBOutlet weak var starView: UIView!
     @IBOutlet weak var charButton: UIButton!
     @IBOutlet weak var checkpointButton: UIButton!
@@ -56,6 +59,8 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         //hide previous btn when started
         previousBtn.isHidden = true
         self.fetchNama()
+        
+        starTotalLabel.text = "\(StarTotal) /15"
     }
     
     func fetchNama(){

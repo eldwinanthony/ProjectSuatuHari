@@ -12,6 +12,9 @@ class Story7ViewController: UIViewController {
     @IBOutlet weak var Prompt: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        StarTotal += 1
+        
         Prompt.alpha = 0
         // Do any additional setup after loading the view.
     }

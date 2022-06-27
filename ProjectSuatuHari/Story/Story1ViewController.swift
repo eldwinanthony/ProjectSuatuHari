@@ -19,6 +19,8 @@ class Story1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        StarTotal = 0
+        
         //set the indicator view to circle
         girlIndicator.backgroundColor = UIColor.white.withAlphaComponent(0.6)
         girlIndicator.isOpaque = false

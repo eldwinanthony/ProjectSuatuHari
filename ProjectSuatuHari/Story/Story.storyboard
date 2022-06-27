@@ -647,6 +647,20 @@
                                 <rect key="frame" x="85" y="0.0" width="1134" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEF-mS-otD">
+                                <rect key="frame" x="1197" y="855" width="119" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right.square" catalog="system" title="" imagePadding="0.0" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="120" weight="light"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextScenePressed:" destination="xjE-Gk-3pd" eventType="touchUpInside" id="T9G-8X-DFz"/>
+                                    <segue destination="CqT-34-8vv" kind="show" id="n09-7v-WdO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="07B-Bg-ibu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -659,6 +673,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rD-TU-4Ct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4638" y="1503"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="IlP-XQ-uT7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="CqT-34-8vv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aw6-pU-76K"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtM-yb-ouw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5125" y="1520"/>
         </scene>
     </scenes>
     <resources>
