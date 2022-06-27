@@ -64,7 +64,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         do
         {
             fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
-            profiling.text = "halo " + (fetchTemp?.namaAnak ?? "")
+            profiling.text = "Halo " + (fetchTemp?.namaAnak ?? "")
         }
         
         catch

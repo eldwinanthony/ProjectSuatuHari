@@ -37,7 +37,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVd-tZ-xme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1131" y="-767"/>
+            <point key="canvasLocation" x="-1154" y="-958"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qyD-VV-p2U">
@@ -48,11 +48,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ3-Jz-1bp">
-                                <rect key="frame" x="1175" y="63" width="87" height="63"/>
+                                <rect key="frame" x="1146" y="63" width="101" height="77"/>
                                 <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="questionmark.circle" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="41" weight="bold"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" weight="bold"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="guidelineButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="9As-bh-R5U"/>
@@ -60,11 +60,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-ev-6kH">
-                                <rect key="frame" x="1248" y="63" width="87" height="63"/>
+                                <rect key="frame" x="1233" y="63" width="102" height="77"/>
                                 <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gearshape.circle" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="41" weight="bold"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" weight="bold"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="settingButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="5wu-qH-lc4"/>
@@ -98,19 +98,15 @@
                                 <rect key="frame" x="166" y="488" width="89" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="leftarrow" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="leftarrow" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="previousBtnPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="vqG-B3-v0J"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
-                                <rect key="frame" x="538.5" y="44" width="289" height="57.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mau kemana hari ini?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-qa-Nk2">
-                                <rect key="frame" x="503.5" y="101" width="359.5" height="47"/>
+                                <rect key="frame" x="503.5" y="131" width="359.5" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -165,31 +161,38 @@
                                 <rect key="frame" x="1134" y="488" width="89" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rightarrow" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="rightarrow" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="nextBtnPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Pew-De-cgD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-TE-q0h">
+                                <rect key="frame" x="416" y="65" width="530" height="58"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EXa-sW-J85" firstAttribute="leading" secondItem="MeV-Wx-f3G" secondAttribute="trailing" constant="42" id="0fP-4b-DQL"/>
-                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="77" id="97L-qD-0Ii"/>
+                            <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="7dS-IF-eM9"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="EXa-sW-J85" secondAttribute="bottom" constant="19.5" id="BI5-vV-ZzO"/>
-                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="104" id="TbE-7e-jLW"/>
+                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="119" id="OTU-44-GZE"/>
+                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="107" id="VZm-jC-g7b"/>
+                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="Yc3-Pn-TnP"/>
                             <constraint firstItem="EXa-sW-J85" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="a5u-1m-pPw"/>
                             <constraint firstItem="MeV-Wx-f3G" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="bnv-eq-YwG"/>
-                            <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="c0E-dG-m64"/>
-                            <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="20" id="cXx-aA-uW2"/>
+                            <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="41" id="eAw-ss-cPd"/>
                             <constraint firstItem="MeV-Wx-f3G" firstAttribute="leading" secondItem="sIi-Xr-rcv" secondAttribute="leading" constant="68" id="eQg-3q-KgA"/>
-                            <constraint firstItem="Ymp-qa-Nk2" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="fjl-Lb-tO6"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="iIR-eb-g4z"/>
                             <constraint firstItem="dJ3-Jz-1bp" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="m2k-HZ-94R"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="MeV-Wx-f3G" secondAttribute="bottom" constant="25" id="s4F-4n-Hwt"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="leading" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="-14" id="sZa-zL-a1S"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="Ffn-ev-6kH" secondAttribute="trailing" constant="31" id="tun-70-zac"/>
-                            <constraint firstItem="tsE-TE-q0h" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="35:124" id="uCW-od-MFM"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="EXa-sW-J85" secondAttribute="trailing" constant="54" id="xFv-aQ-PSJ"/>
                         </constraints>
                     </view>
