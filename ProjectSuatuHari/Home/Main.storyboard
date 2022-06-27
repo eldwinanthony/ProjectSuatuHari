@@ -39,6 +39,16 @@
             </objects>
             <point key="canvasLocation" x="-1154" y="-958"/>
         </scene>
+        <!--Character-->
+        <scene sceneID="tQp-fD-ZbU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Character" id="Fdb-np-f1t" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Drf-6Y-PKY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6h-lk-m6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1959" y="-628"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qyD-VV-p2U">
             <objects>
@@ -93,6 +103,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="Button Home Char"/>
                                 <connections>
                                     <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="kBS-vz-CNq"/>
+                                    <segue destination="Fdb-np-f1t" kind="show" id="orc-tZ-xM8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-gC-I0F">
