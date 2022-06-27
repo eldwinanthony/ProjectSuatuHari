@@ -126,6 +126,7 @@
 		5C0DEE51285B2D8D00395723 /* ProjectSuatuHari */ = {
 			isa = PBXGroup;
 			children = (
+				5C36788A2869908D00E93E79 /* Settings */,
 				5C0DEE6B285B2DC500395723 /* LearningCheckpoint */,
 				5CB89BD22865971B00A9EDD9 /* CoreData */,
 				8782B10F2861FF5E00506788 /* Extension */,
@@ -214,6 +215,13 @@
 				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
 			);
 			path = SoundEffect;
+			sourceTree = "<group>";
+		};
+		5C36788A2869908D00E93E79 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		5CB89BD22865971B00A9EDD9 /* CoreData */ = {
