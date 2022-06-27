@@ -26,7 +26,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        stopBackgroundSound()
+
         
         PGCollectionView.delegate = self
         PGCollectionView.dataSource = self

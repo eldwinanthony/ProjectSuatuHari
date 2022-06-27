@@ -73,6 +73,10 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        stopBackgroundSound()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
