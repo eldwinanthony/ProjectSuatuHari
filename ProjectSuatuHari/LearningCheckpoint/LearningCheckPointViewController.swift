@@ -66,6 +66,8 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
     }
     @IBOutlet weak var reviewCollectionView: UICollectionView!
     
+    var activityArray = ["Melalui nyanyian, anak akan lebih mudah mengenal konsep angka. Ajak balita bernyanyi bersama lagu Satu-satu Aku Sayang Ibu. Lagu itu mengenalkan anak kepada bilangan dan urutan.", "Salah satu kegiatan favorit anak adalah menggambar. Nah, Bunda juga bisa mengajarinya tentang jumlah dan angka lewat aktivitas tersebut.", "Ajak balita bermain tebak-tebakan angka. Minta ia menebak angka berdasarkan petunjuk yang Anda berikan."]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fetchText()
@@ -84,6 +86,7 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "ReviewID", for: indexPath) as? ReviewCell)!
         cell.setupReviewView(indexForDraw: indexPath.row)
+        cell.reviewBottomText.text = activityArray[indexPath.row]
         return cell
     }
     @IBAction
