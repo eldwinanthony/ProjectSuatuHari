@@ -124,7 +124,7 @@ func playBackgroundSoundHome(){
         backgroundAudioPlayer = try AVAudioPlayer(contentsOf: backgroundSound)
         backgroundAudioPlayer?.play()
         backgroundAudioPlayer?.numberOfLoops = -1
-        backgroundAudioPlayer?.volume = 0.15
+        backgroundAudioPlayer?.volume = 0.12
     }
     catch{
         print(error)
