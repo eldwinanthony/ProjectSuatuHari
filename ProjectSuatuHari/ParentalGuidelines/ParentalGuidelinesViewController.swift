@@ -41,6 +41,10 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        stopBackgroundSound()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }

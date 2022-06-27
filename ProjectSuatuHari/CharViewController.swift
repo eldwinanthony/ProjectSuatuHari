@@ -29,6 +29,10 @@ class CharViewController: UIViewController{
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        stopBackgroundSound()
+    }
+    
     @IBAction func buttonPressed(sender: UIButton) {
         
         clearSelectedState()
