@@ -33,6 +33,9 @@ class CharViewController: UIViewController{
         stopBackgroundSound()
     }
     
+    @IBAction func backPressed(_ sender: Any) {
+        playButtonSound()
+    }
     @IBAction func buttonPressed(sender: UIButton) {
         
         clearSelectedState()

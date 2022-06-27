@@ -90,6 +90,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3En-mv-oeD"/>
                                     <segue destination="w5w-JK-RMg" kind="show" id="o33-kq-9y9"/>
                                 </connections>
                             </button>
