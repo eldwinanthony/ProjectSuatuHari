@@ -95,11 +95,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-gC-I0F">
-                                <rect key="frame" x="166" y="488" width="89" height="71"/>
+                                <rect key="frame" x="151" y="469" width="120" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="leftarrow" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.fill" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="60"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="previousBtnPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="vqG-B3-v0J"/>
@@ -158,11 +159,12 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omr-qo-HUu">
-                                <rect key="frame" x="1134" y="488" width="89" height="71"/>
+                                <rect key="frame" x="1120" y="469" width="119" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rightarrow" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.fill" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="60"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextBtnPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Pew-De-cgD"/>
@@ -213,12 +215,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="charbutton" width="577" height="179"/>
         <image name="checkpointbutton" width="577" height="179"/>
         <image name="gearshape.circle" catalog="system" width="128" height="121"/>
-        <image name="leftarrow" width="65" height="57"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
-        <image name="rightarrow" width="65" height="57"/>
         <image name="star" width="89" height="86"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
