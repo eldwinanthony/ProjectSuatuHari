@@ -86,10 +86,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-Wx-f3G">
-                                <rect key="frame" x="68" y="786" width="601" height="193"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-Wx-f3G">
+                                <rect key="frame" x="67" y="781" width="601" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="charbutton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Button Home Char"/>
                                 <connections>
                                     <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="kBS-vz-CNq"/>
                                 </connections>
@@ -112,16 +113,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-sW-J85">
-                                <rect key="frame" x="711" y="791.5" width="601" height="193"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="checkpointbutton" title=""/>
-                                <connections>
-                                    <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Z1f-5y-no9"/>
-                                    <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="iYB-4K-sWC"/>
-                                    <segue destination="quQ-EU-QgR" kind="show" id="R4e-cQ-Yx9"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cy9-bS-LMW">
                                 <rect key="frame" x="249" y="272" width="946" height="506"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -176,26 +167,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-sW-J85">
+                                <rect key="frame" x="710" y="767" width="601" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Button Home LC" title=""/>
+                                <connections>
+                                    <action selector="charButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="Z1f-5y-no9"/>
+                                    <action selector="learningButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="iYB-4K-sWC"/>
+                                    <segue destination="quQ-EU-QgR" kind="show" id="R4e-cQ-Yx9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EXa-sW-J85" firstAttribute="leading" secondItem="MeV-Wx-f3G" secondAttribute="trailing" constant="42" id="0fP-4b-DQL"/>
                             <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="7dS-IF-eM9"/>
-                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="EXa-sW-J85" secondAttribute="bottom" constant="19.5" id="BI5-vV-ZzO"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="119" id="OTU-44-GZE"/>
                             <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="107" id="VZm-jC-g7b"/>
                             <constraint firstItem="Ymp-qa-Nk2" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="Yc3-Pn-TnP"/>
-                            <constraint firstItem="EXa-sW-J85" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="a5u-1m-pPw"/>
-                            <constraint firstItem="MeV-Wx-f3G" firstAttribute="width" secondItem="UBn-Fv-Raj" secondAttribute="height" multiplier="601:1024" id="bnv-eq-YwG"/>
                             <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="41" id="eAw-ss-cPd"/>
-                            <constraint firstItem="MeV-Wx-f3G" firstAttribute="leading" secondItem="sIi-Xr-rcv" secondAttribute="leading" constant="68" id="eQg-3q-KgA"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="iIR-eb-g4z"/>
                             <constraint firstItem="dJ3-Jz-1bp" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="m2k-HZ-94R"/>
-                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="bottom" secondItem="MeV-Wx-f3G" secondAttribute="bottom" constant="25" id="s4F-4n-Hwt"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="leading" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="-14" id="sZa-zL-a1S"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="Ffn-ev-6kH" secondAttribute="trailing" constant="31" id="tun-70-zac"/>
-                            <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="EXa-sW-J85" secondAttribute="trailing" constant="54" id="xFv-aQ-PSJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -215,10 +210,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Button Home Char" width="614" height="202"/>
+        <image name="Button Home LC" width="617" height="230"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
-        <image name="charbutton" width="577" height="179"/>
-        <image name="checkpointbutton" width="577" height="179"/>
         <image name="gearshape.circle" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="star" width="89" height="86"/>
