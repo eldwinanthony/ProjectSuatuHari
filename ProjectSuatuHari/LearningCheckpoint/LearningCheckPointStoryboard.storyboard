@@ -175,10 +175,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIZ-UP-IVG">
-                                        <rect key="frame" x="21" y="179" width="90" height="31"/>
+                                        <rect key="frame" x="323" y="179" width="90" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="submitNote" destination="Y6W-OH-hqX" eventType="touchUpInside" id="k6y-Qi-PrQ"/>
                                         </connections>
