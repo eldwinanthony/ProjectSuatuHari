@@ -8,10 +8,28 @@
 import UIKit
 import CoreData
 
-class LearningCheckPointViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class LearningCheckPointViewController: UIViewController{
     
     let coreDataHelper = CoreDataHelper()
     var fetchTemp : NoteLearning?
+    
+    @IBOutlet weak var buttonAngkaTransparant: UIButton!{
+        didSet{
+            buttonAngkaTransparant.layer.cornerRadius = 12
+            buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
+        }
+    }
+    @IBOutlet weak var buttonHurufTransparant: UIButton!{
+        didSet{
+            buttonHurufTransparant.layer.cornerRadius = 12
+        }
+    }
+    @IBOutlet weak var buttonHurufWarna: UIButton!{
+        didSet{
+            buttonHurufWarna.layer.cornerRadius = 12
+        }
+    }
+    
     @IBOutlet weak var StoryBackground: UIView!{
         didSet{
             StoryBackground.layer.borderWidth = 2
@@ -64,9 +82,39 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
             NotesBackground.layer.cornerRadius = 12
         }
     }
-    @IBOutlet weak var reviewCollectionView: UICollectionView!
-    
-    var activityArray = ["Melalui nyanyian, anak akan lebih mudah mengenal konsep angka. Ajak balita bernyanyi bersama lagu Satu-satu Aku Sayang Ibu. Lagu itu mengenalkan anak kepada bilangan dan urutan.", "Salah satu kegiatan favorit anak adalah menggambar. Nah, Bunda juga bisa mengajarinya tentang jumlah dan angka lewat aktivitas tersebut.", "Ajak balita bermain tebak-tebakan angka. Minta ia menebak angka berdasarkan petunjuk yang Anda berikan."]
+    @IBOutlet weak var summaryTitle: UILabel!{
+        didSet{
+            summaryTitle.text = " "
+        }
+    }
+    @IBOutlet weak var summaryImage: UIImageView!{
+        didSet{
+            summaryImage.image = UIImage(systemName: "star")
+        }
+    }
+    @IBOutlet weak var summaryText: UILabel!{
+        didSet{
+            summaryText.text = " "
+        }
+    }
+    @IBOutlet weak var summaryTextBackground: UIView!{
+        didSet{
+            summaryTextBackground.layer.shadowColor = UIColor.black.cgColor
+            summaryTextBackground.layer.shadowOffset = CGSize(width: 5, height: 5)
+            summaryTextBackground.layer.shadowRadius = 5.0
+            summaryTextBackground.layer.shadowOpacity = 0.1
+            summaryTextBackground.layer.cornerRadius = 12
+        }
+    }
+    @IBOutlet weak var summaryBackground: UIView!{
+        didSet{
+            summaryBackground.layer.shadowColor = UIColor.black.cgColor
+            summaryBackground.layer.shadowOffset = CGSize(width: 5, height: 5)
+            summaryBackground.layer.shadowRadius = 5.0
+            summaryBackground.layer.shadowOpacity = 0.1
+            summaryBackground.layer.cornerRadius = 12
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,16 +127,8 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         stopBackgroundSound()
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "ReviewID", for: indexPath) as? ReviewCell)!
-        cell.setupReviewView(indexForDraw: indexPath.row)
-        cell.reviewBottomText.text = activityArray[indexPath.row]
-        return cell
-    }
+    
     @IBAction
     func submitNote(){
         let context = coreDataHelper.getBackgroundContext()
@@ -140,4 +180,29 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
     @IBAction func backPressed(_ sender: Any) {
         playButtonSound()
     }
+    @IBAction func pressAngka(){
+        buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
+        buttonHurufTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
+        buttonHurufWarna.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
+        summaryTitle.text = "test a"
+        summaryImage.image = UIImage(systemName: "star")
+        summaryText.text = " "
+    }
+    @IBAction func pressHuruf(){
+        buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
+        buttonHurufTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
+        buttonHurufWarna.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
+        summaryTitle.text = "test b"
+        summaryImage.image = UIImage(systemName: "star")
+        summaryText.text = " "
+    }
+    @IBAction func presswarna(){
+        buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
+        buttonHurufTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
+        buttonHurufWarna.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
+        summaryTitle.text = "test c "
+        summaryImage.image = UIImage(systemName: "star")
+        summaryText.text = " "
+    }
 }
+

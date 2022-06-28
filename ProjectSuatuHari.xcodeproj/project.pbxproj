@@ -52,7 +52,6 @@
 		AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */; };
 		AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */; };
 		ABB0E75F2865BE7800CD9D2C /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */; };
-		ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE61F42861DA0B00BE079C /* ReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,7 +102,6 @@
 		AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCheckPointViewController.swift; sourceTree = "<group>"; };
 		AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningCheckPointStoryboard.storyboard; sourceTree = "<group>"; };
 		ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		ABEE61F42861DA0B00BE079C /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +159,6 @@
 				5C0DEE54285B2D8D00395723 /* SceneDelegate.swift */,
 				878A336C286A00A200D09B25 /* Setting_ViewController.swift */,
 				AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */,
-				ABEE61F42861DA0B00BE079C /* ReviewCell.swift */,
 				8782B1102862023400506788 /* Extension_BorderRadius.swift */,
 				87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */,
 				8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */,
@@ -321,7 +318,6 @@
 				5C46684B2865EC4C002EF090 /* Story6ViewController.swift in Sources */,
 				5C1FF03D285B8D9300A2AEF9 /* Story4ViewController.swift in Sources */,
 				5C0DEE55285B2D8D00395723 /* SceneDelegate.swift in Sources */,
-				ABEE61F52861DA0B00BE079C /* ReviewCell.swift in Sources */,
 				8700788F28638B3300F4E86E /* ParentalControl_ViewController4.swift in Sources */,
 				8782B1112862023400506788 /* Extension_BorderRadius.swift in Sources */,
 				5C46684E2865F1FD002EF090 /* PopUp3ViewController.swift in Sources */,
