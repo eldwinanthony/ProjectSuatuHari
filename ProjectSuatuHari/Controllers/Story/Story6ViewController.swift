@@ -14,6 +14,8 @@ class Story6ViewController: UIViewController {
     @IBOutlet weak var Prompt: UIImageView!
     @IBOutlet weak var xmarkungu: UIImageView!
     @IBOutlet weak var xmarkorange: UIImageView!
+    @IBOutlet weak var checkmarkmerah: UIImageView!
+    @IBOutlet weak var checkmarkcoklat: UIImageView!
     
     var flag = 0
     
@@ -27,6 +29,8 @@ class Story6ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         xmarkungu.isHidden = true
         xmarkorange.isHidden = true
+        checkmarkmerah.isHidden = true
+        checkmarkcoklat.isHidden = true
         scopemerah.alpha = 0
         scopecokelat.alpha = 0
         fadeInPrompt()
@@ -36,6 +40,7 @@ class Story6ViewController: UIViewController {
     @IBAction func eskrimMerahTapped(_ sender: Any) {
         playNextActivitySound()
         fadeInScopeMerah()
+        checkmarkmerah.isHidden = false
         moveSegue()
     }
     
@@ -51,6 +56,7 @@ class Story6ViewController: UIViewController {
     @IBAction func eskrimCoklatTapped(_ sender: Any) {
         playNextActivitySound()
         fadeInScopeCoklat()
+        checkmarkcoklat.isHidden = false
         moveSegue()
     }
     
