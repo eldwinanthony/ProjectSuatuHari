@@ -337,17 +337,17 @@
         <!--Pop Up1 View Controller-->
         <scene sceneID="5Sh-5q-6SO">
             <objects>
-                <viewController id="erd-pN-770" customClass="PopUp1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="erd-pN-770" customClass="PopUp1ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yKV-BY-j8W">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
-                                <rect key="frame" x="-20" y="174" width="744" height="537"/>
+                                <rect key="frame" x="311" y="244" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3n-li-x80">
-                                <rect key="frame" x="159" y="511" width="387" height="177"/>
+                                <rect key="frame" x="490" y="581" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -425,17 +425,17 @@
         <!--Pop Up2 View Controller-->
         <scene sceneID="Pwv-sO-FA4">
             <objects>
-                <viewController id="UKt-ns-WBC" customClass="PopUp2ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="UKt-ns-WBC" customClass="PopUp2ViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEr-W0-NnH">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="CCa-C5-zAX">
-                                <rect key="frame" x="-20" y="174" width="744" height="537"/>
+                                <rect key="frame" x="311" y="244" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-D4-RI3">
-                                <rect key="frame" x="159" y="511" width="387" height="177"/>
+                                <rect key="frame" x="490" y="581" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">

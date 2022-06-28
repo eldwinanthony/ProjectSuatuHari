@@ -11,7 +11,7 @@ class PopUp1ViewController: UIViewController, UIAdaptivePresentationControllerDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.isUserInteractionEnabled = false
+//        self.view.isUserInteractionEnabled = false
         self.isModalInPresentation = false
     }
     
