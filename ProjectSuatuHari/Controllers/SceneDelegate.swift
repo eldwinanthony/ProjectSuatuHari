@@ -6,24 +6,33 @@
 //
 
 import UIKit
+import CoreData
+
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let coreDataHelper = CoreDataHelper()
+    var fetchTemp: SuatuHari?
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
-        window?.makeKeyAndVisible()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            let mainStoryboard = UIStoryboard(name: "ParentalGuidelinesStoryboard", bundle: nil)
-            let vc: UIViewController
-            vc = mainStoryboard.instantiateInitialViewController()!
-            self.window?.rootViewController = vc
-            self.window?.makeKeyAndVisible()
+        self.fetchData()
+        if fetchTemp?.namaAnak == nil{
+            window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
+            window?.makeKeyAndVisible()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                let mainStoryboard = UIStoryboard(name: "ParentalGuidelinesStoryboard", bundle: nil)
+                let vc: UIViewController
+                vc = mainStoryboard.instantiateInitialViewController()!
+                self.window?.rootViewController = vc
+                self.window?.makeKeyAndVisible()
+        }
+        
         }
         guard let _ = (scene as? UIWindowScene) else { return }
     }
@@ -58,6 +67,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
+    
+    func fetchData(){
+
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            do
+            {
+                fetchTemp = try context.fetch(SuatuHari.fetchRequest()).last
+            }
+            
+            catch
+            {
+                print(error.localizedDescription)
+            }
+        }
 
 
 }

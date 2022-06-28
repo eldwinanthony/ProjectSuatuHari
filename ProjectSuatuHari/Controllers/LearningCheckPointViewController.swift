@@ -84,17 +84,17 @@ class LearningCheckPointViewController: UIViewController{
     }
     @IBOutlet weak var summaryTitle: UILabel!{
         didSet{
-            summaryTitle.text = " "
+            summaryTitle.text = "Bagaimana cara meningkatkan kemampuan anak mengenal angka?"
         }
     }
     @IBOutlet weak var summaryImage: UIImageView!{
         didSet{
-            summaryImage.image = UIImage(systemName: "star")
+            summaryImage.image = UIImage(named: "imageangka")
         }
     }
     @IBOutlet weak var summaryText: UILabel!{
         didSet{
-            summaryText.text = " "
+            summaryText.text = "Melalui nyanyian, anak akan lebih mudah mengenal konsep angka. Ajak balita bernyanyi bersama lagu Satu-satu Aku Sayang Ibu. Lagu itu mengenalkan anak kepada bilangan dan urutan."
         }
     }
     @IBOutlet weak var summaryTextBackground: UIView!{
@@ -143,7 +143,7 @@ class LearningCheckPointViewController: UIViewController{
         do
         {
             fetchTemp = try context.fetch(NoteLearning.fetchRequest()).last
-            Notes.text = fetchTemp?.notes ?? "edit here!"
+            Notes.text = fetchTemp?.notes ?? "Anak sudah mahir membaca!"
             
         }
         
@@ -166,7 +166,7 @@ class LearningCheckPointViewController: UIViewController{
         
             context.delete(fetchTemp!)
             try coreDataHelper.saveContext()
-            Notes.text = "edit here!"
+            Notes.text = "Anak sudah mahir membaca!"
             
         }
         
@@ -184,25 +184,25 @@ class LearningCheckPointViewController: UIViewController{
         buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
         buttonHurufTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
         buttonHurufWarna.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
-        summaryTitle.text = "test a"
-        summaryImage.image = UIImage(systemName: "star")
-        summaryText.text = " "
+        summaryTitle.text = "Bagaimana cara meningkatkan kemampuan anak mengenal angka?"
+        summaryImage.image = UIImage(named: "imageangka")
+        summaryText.text = "Melalui nyanyian, anak akan lebih mudah mengenal konsep angka. Ajak balita bernyanyi bersama lagu Satu-satu Aku Sayang Ibu. Lagu itu mengenalkan anak kepada bilangan dan urutan."
     }
     @IBAction func pressHuruf(){
         buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
         buttonHurufTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
         buttonHurufWarna.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
-        summaryTitle.text = "test b"
-        summaryImage.image = UIImage(systemName: "star")
-        summaryText.text = " "
+        summaryTitle.text = "Bagaimana cara meningkatkan kemampuan anak mengenal huruf?"
+        summaryImage.image = UIImage(named: "imagekata")
+        summaryText.text = "Salah satu kegiatan favorit anak adalah menggambar. Nah, Bunda juga bisa mengajarinya tentang jumlah dan angka lewat aktivitas tersebut."
     }
     @IBAction func presswarna(){
         buttonAngkaTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
         buttonHurufTransparant.backgroundColor = UIColor.darkGray.withAlphaComponent(0)
         buttonHurufWarna.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
-        summaryTitle.text = "test c "
-        summaryImage.image = UIImage(systemName: "star")
-        summaryText.text = " "
+        summaryTitle.text = "Bagaimana cara meningkatkan kemampuan anak mengenal warna?"
+        summaryImage.image = UIImage(named: "imagewarna")
+        summaryText.text = "Ajak balita bermain tebak-tebakan angka. Minta ia menebak angka berdasarkan petunjuk yang Anda berikan."
     }
 }
 
