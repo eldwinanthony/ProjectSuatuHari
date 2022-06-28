@@ -11,7 +11,7 @@ import CoreData
 class LearningCheckPointViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
     let coreDataHelper = CoreDataHelper()
-    var fetchTemp : SuatuHari?
+    var fetchTemp : NoteLearning?
     @IBOutlet weak var StoryBackground: UIView!{
         didSet{
             StoryBackground.layer.borderWidth = 2
@@ -92,8 +92,8 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
     @IBAction
     func submitNote(){
         let context = coreDataHelper.getBackgroundContext()
-        let note = SuatuHari(context: context)
-        note.noteLearningCheckPoint = Notes.text
+        let note = NoteLearning(context: context)
+        note.notes = Notes.text
         print(note)
         coreDataHelper.saveContext(saveContext: context)
     }
@@ -102,8 +102,8 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         let context = coreDataHelper.getBackgroundContext()
         do
         {
-            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).last
-            Notes.text = fetchTemp?.noteLearningCheckPoint ?? "edit here!"
+            fetchTemp = try context.fetch(NoteLearning.fetchRequest()).last
+            Notes.text = fetchTemp?.notes ?? "edit here!"
             
         }
         
@@ -118,7 +118,7 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         let context = coreDataHelper.getBackgroundContext()
         do
         {
-            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).last
+            fetchTemp = try context.fetch(NoteLearning.fetchRequest()).last
 //            let fetchReq :NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "SuatuHari")
 //            let delete = NSBatchDeleteRequest(fetchRequest: fetchReq)
 //            delete.resultType = .resultTypeObjectIDs
