@@ -72,7 +72,7 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do
         {
-            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
+            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).last
             profiling.text = "Halo " + (fetchTemp?.namaAnak ?? "")
         }
         

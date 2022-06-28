@@ -95,14 +95,14 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         let note = SuatuHari(context: context)
         note.noteLearningCheckPoint = Notes.text
         print(note)
-        coreDataHelper.saveContext()
+        coreDataHelper.saveContext(saveContext: context)
     }
     //fetch
     func fetchText(){
         let context = coreDataHelper.getBackgroundContext()
         do
         {
-            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
+            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).last
             Notes.text = fetchTemp?.noteLearningCheckPoint ?? "edit here!"
             
         }
@@ -118,7 +118,12 @@ class LearningCheckPointViewController: UIViewController,UICollectionViewDelegat
         let context = coreDataHelper.getBackgroundContext()
         do
         {
-            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).first
+            fetchTemp = try context.fetch(SuatuHari.fetchRequest()).last
+//            let fetchReq :NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "SuatuHari")
+//            let delete = NSBatchDeleteRequest(fetchRequest: fetchReq)
+//            delete.resultType = .resultTypeObjectIDs
+//            try context.execute(delete)
+        
             context.delete(fetchTemp!)
             try coreDataHelper.saveContext()
             Notes.text = "edit here!"

@@ -50,7 +50,7 @@ class ParentalControl_ViewController2: UIViewController, viewControllerHomeDeleg
         let context = coreDataHelper.getBackgroundContext()
         let nama = SuatuHari(context: context)
         nama.namaAnak = inputNama.text
-        coreDataHelper.saveContext()
+        coreDataHelper.saveContext(saveContext: context)
     }
 
     /*

@@ -79,6 +79,7 @@ class Story2ViewController: UIViewController {
     @IBAction func button4Pressed(_ sender: Any) {
         playNextActivitySound()
         button4.backgroundColor = UIColor.green
+        performSegue(withIdentifier: "movePopup1", sender: self)
     }
     
     func fadeInText(){

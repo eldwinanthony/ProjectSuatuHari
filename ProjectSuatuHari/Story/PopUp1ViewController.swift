@@ -7,12 +7,18 @@
 
 import UIKit
 
-class PopUp1ViewController: UIViewController {
+class PopUp1ViewController: UIViewController, UIAdaptivePresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.isUserInteractionEnabled = false
+        self.isModalInPresentation = false
     }
+    
+    func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
+        return false
+    }
+    
     
 
     @IBAction func lanjutBtn(_ sender: Any) {

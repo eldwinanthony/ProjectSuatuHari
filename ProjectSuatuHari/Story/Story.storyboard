@@ -166,7 +166,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="button4Pressed:" destination="Knj-er-lve" eventType="touchUpInside" id="Aeg-Eu-Wx4"/>
-                                    <segue destination="erd-pN-770" kind="show" id="ZLd-WR-RQw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-X7-mwW">
@@ -212,6 +211,7 @@
                         <outlet property="button3" destination="Um1-TP-7cq" id="SBm-n7-D8J"/>
                         <outlet property="button4" destination="eBQ-iN-g2c" id="Cx5-Fb-dbz"/>
                         <outlet property="button5" destination="Ycf-X7-mwW" id="ynS-03-qxa"/>
+                        <segue destination="erd-pN-770" kind="show" identifier="movePopup1" id="Sa2-58-kIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW8-l8-Y53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
