@@ -265,8 +265,9 @@
                                             <fragment>
                                                 <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec urna ex. Aliquam interdum ullamcorper velit quis dapibus. Proin quis maximus felis. In tristique commodo velit, quis condimentum nisl tristique sodales. </string>
                                                 <attributes>
-                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="22"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -281,6 +282,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Bagaimana cara meningkatkan kemampuan anak mengenal angka?">
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="25" name="SFPro-Semibold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
                                         </attributes>

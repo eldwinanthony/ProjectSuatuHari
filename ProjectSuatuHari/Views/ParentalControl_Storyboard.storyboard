@@ -138,7 +138,7 @@
                                             <constraint firstAttribute="height" constant="44" id="fcN-m4-894"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-78-GUb">
                                         <rect key="frame" x="470" y="458" width="259" height="54"/>
@@ -512,9 +512,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Q08-5f-7D9"/>
+        <segue reference="2Sr-dx-Ozc"/>
         <segue reference="HaV-g9-jmm"/>
-        <segue reference="WlS-Uj-oDb"/>
+        <segue reference="5t1-df-CKO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bayi" width="392" height="398"/>

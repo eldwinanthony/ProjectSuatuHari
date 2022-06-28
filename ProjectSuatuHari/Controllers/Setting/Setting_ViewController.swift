@@ -105,7 +105,7 @@ class Setting_ViewController: UIViewController {
     func Switcher(){
         do{
             temp = (temp + 1) % 2
-            print(temp)
+            print(temp!)
             if temp==1{
                 VolumeButton.setImage(flag1, for: .normal)
                 VolumeButton.tintColor = UIColor.systemGreen

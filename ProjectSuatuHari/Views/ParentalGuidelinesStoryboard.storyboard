@@ -123,16 +123,6 @@
             </objects>
             <point key="canvasLocation" x="565" y="46"/>
         </scene>
-        <!--ParentalControl_Storyboard-->
-        <scene sceneID="xyT-L5-C5e">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ParentalControl_Storyboard" id="QNh-b9-ZTQ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="NHO-X8-V4M"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GbC-20-iet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="565" y="90"/>
-        </scene>
     </scenes>
     <resources>
         <image name="PG1" width="1063" height="663"/>
