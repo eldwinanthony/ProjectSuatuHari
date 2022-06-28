@@ -36,6 +36,7 @@ class CharViewController: UIViewController{
     @IBAction func backPressed(_ sender: Any) {
         playButtonSound()
     }
+    
     @IBAction func buttonPressed(sender: UIButton) {
         
         clearSelectedState()
@@ -43,9 +44,9 @@ class CharViewController: UIViewController{
         sender.isSelected = true
         sender.setImage(UIImage(named:"selected"), for: .selected)
         if sender.isEqual(shirtButton){
-            dummy.image = UIImage(named: "dummyWhite")
+            dummy.image = UIImage(named: "cowoor")
         } else if sender.isEqual(shirtButton2) {
-            dummy.image = UIImage(named:"dummyRed")
+            dummy.image = UIImage(named:"ceweor")
         }
     }
     
