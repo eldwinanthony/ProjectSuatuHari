@@ -342,12 +342,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Popupactivity1" translatesAutoresizingMaskIntoConstraints="NO" id="oLd-BN-ire">
                                 <rect key="frame" x="311" y="244" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3n-li-x80">
-                                <rect key="frame" x="490" y="581" width="387" height="177"/>
+                                <rect key="frame" x="490" y="569" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -430,12 +430,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="CCa-C5-zAX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Popupactivity2" translatesAutoresizingMaskIntoConstraints="NO" id="CCa-C5-zAX">
                                 <rect key="frame" x="311" y="244" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-D4-RI3">
-                                <rect key="frame" x="490" y="581" width="387" height="177"/>
+                                <rect key="frame" x="490" y="569" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -611,12 +611,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kerjabagus2" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-0d-jlF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Popupacitivity3" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-0d-jlF">
                                 <rect key="frame" x="311" y="244" width="744" height="537"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-eR-YcX">
-                                <rect key="frame" x="490" y="581" width="387" height="177"/>
+                                <rect key="frame" x="490" y="569" width="387" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="lanjut">
@@ -695,11 +695,13 @@
     <resources>
         <image name="Acari" width="150" height="158"/>
         <image name="Hcari" width="150" height="158"/>
+        <image name="Popupacitivity3" width="1066" height="836"/>
+        <image name="Popupactivity1" width="1066" height="836"/>
+        <image name="Popupactivity2" width="1066" height="836"/>
         <image name="arrow.left.square" catalog="system" width="128" height="114"/>
         <image name="arrow.right.square" catalog="system" width="128" height="114"/>
         <image name="chatbubblenew" width="400" height="234"/>
         <image name="circle" catalog="system" width="128" height="121"/>
-        <image name="kerjabagus2" width="1066" height="836"/>
         <image name="lanjut" width="313" height="92"/>
         <image name="prompttextjerapah" width="1199" height="230"/>
         <image name="scene1" width="5692" height="4242"/>
