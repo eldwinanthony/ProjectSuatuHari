@@ -9,6 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SettingsStoryboard-->
+        <scene sceneID="9cU-R6-d9d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsStoryboard" id="eeT-e4-PKO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="46y-OI-kCX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3B-TI-uOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1287" y="-1286"/>
+        </scene>
         <!--ParentalGuidelinesStoryboard-->
         <scene sceneID="bEv-Jk-B0E">
             <objects>
@@ -78,6 +88,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="settingButtonPressed:" destination="qxs-P2-X2M" eventType="touchUpInside" id="5wu-qH-lc4"/>
+                                    <segue destination="eeT-e4-PKO" kind="show" id="d65-kd-4mY"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-5L-E4C">
