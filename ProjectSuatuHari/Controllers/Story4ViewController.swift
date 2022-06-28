@@ -24,8 +24,8 @@ class Story4ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addPanGesture(view: ACariImageView)
-        addPanGesture(view: HCariImageView)
+        addPanGestureA(view: ACariImageView)
+        addPanGestureH(view: HCariImageView)
         
         ACariOrigin = ACariImageView.frame.origin
         HCariOrigin = HCariImageView.frame.origin
@@ -42,27 +42,44 @@ class Story4ViewController: UIViewController {
         fadeInText()
     }
     
-    func addPanGesture(view: UIView){
-        let pan = UIPanGestureRecognizer(target: self, action: #selector(Story4ViewController.handlePan(sender:)))
-        
+    func addPanGestureA(view: UIView){
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(Story4ViewController.handlePanA(sender:)))
         view.addGestureRecognizer(pan)
     }
     
-    @objc func handlePan(sender: UIPanGestureRecognizer){
+    func addPanGestureH(view: UIView){
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(Story4ViewController.handlePanH(sender:)))
+        view.addGestureRecognizer(pan)
+    }
+    
+    @objc func handlePanA(sender: UIPanGestureRecognizer){
         
         let ACariView = sender.view!
-        let HCariView = sender.view!
         
         switch sender.state {
         case .began, .changed:
             moveViewWithPan(view: ACariView, sender: sender)
-            moveViewWithPan(view: HCariView, sender: sender)
         case .ended:
             if ACariView.frame.intersects(AJawab.frame){
                 showViewA(view: ACariView)
                 moveSegue()
             }
-            else if HCariView.frame.intersects(HJawab.frame) {
+            
+        default:
+            break
+        }
+        
+    }
+    @objc func handlePanH(sender: UIPanGestureRecognizer){
+        
+        let HCariView = sender.view!
+        
+        switch sender.state {
+        case .began, .changed:
+            moveViewWithPan(view: HCariView, sender: sender)
+        case .ended:
+            
+            if HCariView.frame.intersects(HJawab.frame) {
                 showViewH(view: HCariView)
                 moveSegue()
             }
@@ -72,6 +89,7 @@ class Story4ViewController: UIViewController {
         }
         
     }
+    
     
     func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
         

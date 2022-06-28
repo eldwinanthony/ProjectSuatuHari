@@ -56,8 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D94BA5D2861D58100364CF4 /* Character.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Character.storyboard; path = ProjectSuatuHari/Character.storyboard; sourceTree = SOURCE_ROOT; };
-		4D94BA5F2861D59D00364CF4 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharViewController.swift; path = ProjectSuatuHari/CharViewController.swift; sourceTree = SOURCE_ROOT; };
+		4D94BA5D2861D58100364CF4 /* Character.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Character.storyboard; path = ProjectSuatuHari/Views/Character.storyboard; sourceTree = SOURCE_ROOT; };
+		4D94BA5F2861D59D00364CF4 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharViewController.swift; path = ProjectSuatuHari/Controllers/CharViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C0DEE4F285B2D8D00395723 /* ProjectSuatuHari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectSuatuHari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0DEE52285B2D8D00395723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0DEE54285B2D8D00395723 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,19 +136,9 @@
 		5C0DEE51285B2D8D00395723 /* ProjectSuatuHari */ = {
 			isa = PBXGroup;
 			children = (
-				5C36788A2869908D00E93E79 /* Settings */,
-				5C0DEE6B285B2DC500395723 /* LearningCheckpoint */,
-				5CB89BD22865971B00A9EDD9 /* CoreData */,
-				8782B10F2861FF5E00506788 /* Extension */,
-				8771FC6D286083A200748B24 /* Parental Control */,
-				5C1FF031285B801C00A2AEF9 /* SoundEffect */,
-				5C0DEE6D285B2DE100395723 /* Character */,
-				5C0DEE6C285B2DD000395723 /* Home */,
-				5C0DEE6A285B2DBF00395723 /* Story */,
-				5C0DEE69285B2DB000395723 /* ParentalGuidelines */,
-				5C0DEE52285B2D8D00395723 /* AppDelegate.swift */,
-				5C0DEE54285B2D8D00395723 /* SceneDelegate.swift */,
-				5C5E9D78286AE73700B9F5A7 /* LaunchScreen.storyboard */,
+				AB796F38286B34E7003BA0E0 /* Models */,
+				AB796F3A286B34F9003BA0E0 /* Views */,
+				AB796F39286B34EF003BA0E0 /* Controllers */,
 				5C0DEE5E285B2D8D00395723 /* Assets.xcassets */,
 				5C0DEE63285B2D8D00395723 /* Info.plist */,
 				5C0DEE5B285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld */,
@@ -156,20 +146,31 @@
 			path = ProjectSuatuHari;
 			sourceTree = "<group>";
 		};
-		5C0DEE69285B2DB000395723 /* ParentalGuidelines */ = {
+		AB796F38286B34E7003BA0E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */,
-				5C28665F2860637A001830EC /* PGCollectionViewCell.swift */,
-				5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */,
+				ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */,
 			);
-			path = ParentalGuidelines;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		5C0DEE6A285B2DBF00395723 /* Story */ = {
+		AB796F39286B34EF003BA0E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5C1FF038285B83A600A2AEF9 /* Story.storyboard */,
+				5C0DEE52285B2D8D00395723 /* AppDelegate.swift */,
+				5C0DEE54285B2D8D00395723 /* SceneDelegate.swift */,
+				878A336C286A00A200D09B25 /* Setting_ViewController.swift */,
+				AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */,
+				ABEE61F42861DA0B00BE079C /* ReviewCell.swift */,
+				8782B1102862023400506788 /* Extension_BorderRadius.swift */,
+				87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */,
+				8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */,
+				8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */,
+				8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */,
+				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
+				4D94BA5F2861D59D00364CF4 /* CharViewController.swift */,
+				5C0DEE56285B2D8D00395723 /* ViewController.swift */,
+				5C21DB8F28620F410053606D /* HomeCardCollectionViewCell.swift */,
 				5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */,
 				5C491D9F2863814000FB6DF1 /* PopUp1BelumBehasilViewController.swift */,
 				5C46684F2865F272002EF090 /* PopUp2ViewController.swift */,
@@ -181,42 +182,8 @@
 				5C4668412865DCFC002EF090 /* Story5ViewController.swift */,
 				5C46684A2865EC4C002EF090 /* Story6ViewController.swift */,
 				5C4668512865F37A002EF090 /* Story7ViewController.swift */,
-			);
-			path = Story;
-			sourceTree = "<group>";
-		};
-		5C0DEE6B285B2DC500395723 /* LearningCheckpoint */ = {
-			isa = PBXGroup;
-			children = (
-				AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */,
-				ABEE61F42861DA0B00BE079C /* ReviewCell.swift */,
-				AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */,
-			);
-			path = LearningCheckpoint;
-			sourceTree = "<group>";
-		};
-		5C0DEE6C285B2DD000395723 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				5CF1EF1128648640006FEE22 /* Main.storyboard */,
-				5C0DEE56285B2D8D00395723 /* ViewController.swift */,
-				5C21DB8F28620F410053606D /* HomeCardCollectionViewCell.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		5C0DEE6D285B2DE100395723 /* Character */ = {
-			isa = PBXGroup;
-			children = (
-				4D94BA5D2861D58100364CF4 /* Character.storyboard */,
-				4D94BA5F2861D59D00364CF4 /* CharViewController.swift */,
-			);
-			path = Character;
-			sourceTree = "<group>";
-		};
-		5C1FF031285B801C00A2AEF9 /* SoundEffect */ = {
-			isa = PBXGroup;
-			children = (
+				5C28665F2860637A001830EC /* PGCollectionViewCell.swift */,
+				5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */,
 				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
 				5C4668542865F6EA002EF090 /* lionroar.mp3 */,
 				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
@@ -225,46 +192,23 @@
 				5C1FF032285B804900A2AEF9 /* buttonsound.wav */,
 				5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */,
 				5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */,
-				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
 			);
-			path = SoundEffect;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5C36788A2869908D00E93E79 /* Settings */ = {
+		AB796F3A286B34F9003BA0E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				878A336A2869BB7100D09B25 /* SettingsStoryboard.storyboard */,
-				878A336C286A00A200D09B25 /* Setting_ViewController.swift */,
-			);
-			name = Settings;
-			sourceTree = "<group>";
-		};
-		5CB89BD22865971B00A9EDD9 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				ABB0E75E2865BE7800CD9D2C /* CoreDataHelper.swift */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		8771FC6D286083A200748B24 /* Parental Control */ = {
-			isa = PBXGroup;
-			children = (
-				87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */,
-				8700788A286314BC00F4E86E /* ParentalControl_ViewController2.swift */,
-				8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */,
-				8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */,
+				AB2D89D728605ED4007884BC /* LearningCheckPointStoryboard.storyboard */,
 				87904FF328647F1500465E07 /* ParentalControl_Storyboard.storyboard */,
+				4D94BA5D2861D58100364CF4 /* Character.storyboard */,
+				5CF1EF1128648640006FEE22 /* Main.storyboard */,
+				5C1FF038285B83A600A2AEF9 /* Story.storyboard */,
+				5C28665B28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard */,
+				5C5E9D78286AE73700B9F5A7 /* LaunchScreen.storyboard */,
 			);
-			path = "Parental Control";
-			sourceTree = "<group>";
-		};
-		8782B10F2861FF5E00506788 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				8782B1102862023400506788 /* Extension_BorderRadius.swift */,
-			);
-			path = Extension;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
