@@ -23,9 +23,12 @@ protocol viewControllerHomeDelegate: AnyObject {
 var StarTotal = 0
 
 class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
     weak var delegate : viewControllerHomeDelegate?
     let coreDataHelper = CoreDataHelper()
     var fetchTemp : SuatuHari?
+    var fetchNote : NoteLearning?
+    
     //set outlets home page
     @IBOutlet weak var starTotalLabel: UILabel!
     @IBOutlet weak var starView: UIView!
@@ -44,6 +47,11 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(firstTimeFlag)
+        
+        
+        
+        print(firstTimeFlag)
         
         //set radius and shadow to starView
         starView.layer.cornerRadius = 10
@@ -65,6 +73,16 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     
     override func viewWillAppear(_ animated: Bool) {
         playBackgroundSoundHome()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if firstTimeFlag == 1{
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0) {
+                self.performSegue(withIdentifier: "HomePopUpSegue", sender: nil)
+                firstTimeFlag -= 1
+            }
+
+        }
     }
     
     func fetchNama(){
@@ -94,12 +112,12 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     
     //when guideline button pressed:
     @IBAction func guidelineButtonPressed(_ sender: Any) {
-        playGuidelineSettingSound()
+        playButtonSound()
     }
     
     //when setting button pressed:
     @IBAction func settingButtonPressed(_ sender: Any) {
-        playGuidelineSettingSound()
+        playButtonSound()
     }
     
     //define size of collection view cell
@@ -162,6 +180,21 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
         if currentCellIndex < arrHomeCardImage.count{
             homeCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
         }
+    }
+    
+    func fetchText(){
+        let context = coreDataHelper.getBackgroundContext()
+        do
+        {
+            fetchNote = try context.fetch(NoteLearning.fetchRequest()).last
+            
+        }
+        
+        catch
+        {
+            print(error.localizedDescription)
+        }
+        
     }
 }
 

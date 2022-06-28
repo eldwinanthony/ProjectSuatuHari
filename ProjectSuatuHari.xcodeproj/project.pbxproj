@@ -24,6 +24,7 @@
 		5C28665E28606017001830EC /* ParentalGuidelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */; };
 		5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28665F2860637A001830EC /* PGCollectionViewCell.swift */; };
 		5C36788C28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */; };
+		5C383087286B6F6A00A2F62F /* HomePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C383086286B6F6A00A2F62F /* HomePopUpViewController.swift */; };
 		5C3CB7DD28630CA0007EECF6 /* Story1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */; };
 		5C3CB7E1286362C9007EECF6 /* Story3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */; };
 		5C3CB7E5286376A1007EECF6 /* PopUp1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */; };
@@ -74,6 +75,7 @@
 		5C28665D28606017001830EC /* ParentalGuidelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalGuidelinesViewController.swift; sourceTree = "<group>"; };
 		5C28665F2860637A001830EC /* PGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fm-freemusic-cheerful-whistling.mp3"; sourceTree = "<group>"; };
+		5C383086286B6F6A00A2F62F /* HomePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopUpViewController.swift; sourceTree = "<group>"; };
 		5C3CB7DC28630CA0007EECF6 /* Story1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story1ViewController.swift; sourceTree = "<group>"; };
 		5C3CB7E0286362C9007EECF6 /* Story3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story3ViewController.swift; sourceTree = "<group>"; };
 		5C3CB7E4286376A1007EECF6 /* PopUp1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp1ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				5C21DB8F28620F410053606D /* HomeCardCollectionViewCell.swift */,
 				5C0DEE56285B2D8D00395723 /* ViewController.swift */,
+				5C383086286B6F6A00A2F62F /* HomePopUpViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */,
 				87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */,
 				5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */,
+				5C383087286B6F6A00A2F62F /* HomePopUpViewController.swift in Sources */,
 				4D94BA602861D59D00364CF4 /* CharViewController.swift in Sources */,
 				5C2866602860637A001830EC /* PGCollectionViewCell.swift in Sources */,
 				5C4668502865F272002EF090 /* PopUp2ViewController.swift in Sources */,

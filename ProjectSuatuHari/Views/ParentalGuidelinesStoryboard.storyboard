@@ -97,18 +97,6 @@
                                     <segue destination="EYg-7w-Ntc" kind="show" id="RXa-l3-Nzb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-fm-qPT">
-                                <rect key="frame" x="1224" y="518" width="103" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="QNh-b9-ZTQ" kind="show" id="5Br-Ra-wGm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -117,7 +105,6 @@
                         <outlet property="PGCollectionView" destination="ae9-oR-CgU" id="voh-gd-k3D"/>
                         <outlet property="closePGBtn" destination="mAD-ry-9un" id="4Ue-n7-WU7"/>
                         <outlet property="nextBtn" destination="rFf-dc-1BD" id="2IZ-aX-95k"/>
-                        <outlet property="nextViewBtn" destination="wbY-fm-qPT" id="fSp-pu-GO8"/>
                         <outlet property="pgPageControl" destination="rGz-XB-ZyM" id="AE0-8A-7Fz"/>
                         <outlet property="previousBtn" destination="bSc-Ag-FME" id="5Q7-kc-ziO"/>
                     </connections>

@@ -168,7 +168,9 @@
                                     <constraint firstAttribute="height" constant="41" id="qPv-0h-OZz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="􀀳"/>
+                                <buttonConfiguration key="configuration" style="plain" image="􀀳">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="eiE-G6-R3q" kind="show" id="Fhs-yc-Kd8"/>
                                 </connections>

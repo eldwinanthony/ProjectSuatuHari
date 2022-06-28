@@ -59,6 +59,56 @@
             </objects>
             <point key="canvasLocation" x="-1959" y="-628"/>
         </scene>
+        <!--Home Pop Up View Controller-->
+        <scene sceneID="6qm-D9-J7P">
+            <objects>
+                <viewController id="5Kj-rc-6hK" customClass="HomePopUpViewController" customModule="ProjectSuatuHari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UeK-Xo-6SC">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="944"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popuppghome" translatesAutoresizingMaskIntoConstraints="NO" id="bYh-VL-tUo">
+                                <rect key="frame" x="85" y="288" width="534" height="368"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xql-Td-20X">
+                                <rect key="frame" x="357" y="522" width="207" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonbolehhome"/>
+                                <connections>
+                                    <segue destination="13K-pJ-jQh" kind="show" id="any-Zq-m1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPI-Ce-kfg">
+                                <rect key="frame" x="142" y="522" width="207" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buttonnantihome"/>
+                                <connections>
+                                    <segue destination="qxs-P2-X2M" kind="show" id="3Gg-Vv-n2e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zV5-wK-aes"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YB4-qQ-sK1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-kw-XbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1580" y="-40"/>
+        </scene>
+        <!--ParentalGuidelinesStoryboard-->
+        <scene sceneID="ByY-Bj-PIq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParentalGuidelinesStoryboard" id="13K-pJ-jQh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4fv-eW-vbP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udi-aV-xnH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1142" y="-2"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qyD-VV-p2U">
             <objects>
@@ -68,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ3-Jz-1bp">
-                                <rect key="frame" x="1146" y="63" width="101" height="77"/>
+                                <rect key="frame" x="1146" y="39" width="101" height="77"/>
                                 <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="questionmark.circle" catalog="system" title="">
@@ -80,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-ev-6kH">
-                                <rect key="frame" x="1233" y="63" width="102" height="77"/>
+                                <rect key="frame" x="1233" y="39" width="102" height="77"/>
                                 <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gearshape.circle" catalog="system" title="">
@@ -130,7 +180,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mau kemana hari ini?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-qa-Nk2">
-                                <rect key="frame" x="503.5" y="131" width="359.5" height="47"/>
+                                <rect key="frame" x="503.5" y="107" width="359.5" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -215,6 +265,7 @@
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="Ffn-ev-6kH" secondAttribute="trailing" constant="31" id="tun-70-zac"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hle-39-oc0"/>
                     <connections>
                         <outlet property="charButton" destination="MeV-Wx-f3G" id="00a-eb-SsU"/>
                         <outlet property="checkpointButton" destination="EXa-sW-J85" id="o5g-Zr-1hP"/>
@@ -224,6 +275,7 @@
                         <outlet property="profiling" destination="tsE-TE-q0h" id="ac6-pF-t5o"/>
                         <outlet property="starTotalLabel" destination="xnk-R4-fRK" id="w4X-Es-1cB"/>
                         <outlet property="starView" destination="vOf-5L-E4C" id="WsL-XC-ZM2"/>
+                        <segue destination="5Kj-rc-6hK" kind="show" identifier="HomePopUpSegue" id="wx8-tc-3ba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJs-Jy-9aq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -236,7 +288,10 @@
         <image name="Button Home LC" width="617" height="230"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="buttonbolehhome" width="183" height="62"/>
+        <image name="buttonnantihome" width="183" height="62"/>
         <image name="gearshape.circle" catalog="system" width="128" height="121"/>
+        <image name="popuppghome" width="572" height="406"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="star" width="89" height="86"/>
         <systemColor name="systemBackgroundColor">

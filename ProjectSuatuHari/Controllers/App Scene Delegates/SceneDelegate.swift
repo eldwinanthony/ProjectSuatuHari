@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 
 
+var firstTimeFlag = 0
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,19 +23,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         self.fetchData()
+        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
+        window?.makeKeyAndVisible()
+        
         if fetchTemp?.namaAnak == nil{
-            window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
-            window?.makeKeyAndVisible()
+            firstTimeFlag += 1
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                let mainStoryboard = UIStoryboard(name: "ParentalGuidelinesStoryboard", bundle: nil)
+                let mainStoryboard = UIStoryboard(name: "ParentalControl_Storyboard", bundle: nil)
                 let vc: UIViewController
                 vc = mainStoryboard.instantiateInitialViewController()!
                 self.window?.rootViewController = vc
                 self.window?.makeKeyAndVisible()
+            }
         }
         
+        else if fetchTemp?.namaAnak != nil{
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc: UIViewController
+                vc = mainStoryboard.instantiateInitialViewController()!
+                self.window?.rootViewController = vc
+                self.window?.makeKeyAndVisible()
+            }
         }
+        
         guard let _ = (scene as? UIWindowScene) else { return }
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

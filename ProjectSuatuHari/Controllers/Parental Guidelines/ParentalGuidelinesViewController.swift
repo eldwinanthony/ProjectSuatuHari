@@ -15,7 +15,6 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var pgPageControl: UIPageControl!
-    @IBOutlet weak var nextViewBtn: UIButton!
     
     
     //SET THE ARRAY OF IMAGE
@@ -37,7 +36,6 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         //DEFINE TOTAL DOTS IN PAGE CONTROL
         pgPageControl.numberOfPages = pgimageArray.count
         
-        nextViewBtn.isHidden = true
        
     }
     
@@ -80,7 +78,6 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         //HIDE NEXT BTN IF CELL AT TOTAL INDEX - 1
         if currentCellIndex == pgimageArray.count - 1{
             nextBtn.isHidden = true
-            nextViewBtn.isHidden = false
         }
         
         //SCROLL NEXT
@@ -97,7 +94,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         
         //UNHIDE THE NEXT BUTTON
         if currentCellIndex != pgimageArray.count - 1 {
-            nextBtn.isHidden =  false
+            nextBtn.isHidden = false
         }
         
         //HIDE THE PREVIOUS BUTTON AT FIRST CELL
@@ -106,7 +103,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
         }
         
         if currentCellIndex < pgimageArray.count - 1{
-            nextViewBtn.isHidden = true
+            nextBtn.isHidden = false
         }
         
         //SCROLL PREVIOUS
