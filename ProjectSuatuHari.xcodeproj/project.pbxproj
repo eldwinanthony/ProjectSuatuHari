@@ -45,6 +45,8 @@
 		8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */; };
 		8700788F28638B3300F4E86E /* ParentalControl_ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */; };
 		8782B1112862023400506788 /* Extension_BorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782B1102862023400506788 /* Extension_BorderRadius.swift */; };
+		878A336B2869BB7100D09B25 /* SettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878A336A2869BB7100D09B25 /* SettingsStoryboard.storyboard */; };
+		878A336D286A00A200D09B25 /* Setting_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A336C286A00A200D09B25 /* Setting_ViewController.swift */; };
 		87904FF428647F1500465E07 /* ParentalControl_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87904FF328647F1500465E07 /* ParentalControl_Storyboard.storyboard */; };
 		87B4F6C22861C505002BB2A9 /* ParentalControl_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */; };
 		AB2D89D628605EB5007884BC /* LearningCheckPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */; };
@@ -94,6 +96,8 @@
 		8700788C286325CA00F4E86E /* ParentalControl_ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController3.swift; sourceTree = "<group>"; };
 		8700788E28638B3300F4E86E /* ParentalControl_ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController4.swift; sourceTree = "<group>"; };
 		8782B1102862023400506788 /* Extension_BorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_BorderRadius.swift; sourceTree = "<group>"; };
+		878A336A2869BB7100D09B25 /* SettingsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsStoryboard.storyboard; sourceTree = "<group>"; };
+		878A336C286A00A200D09B25 /* Setting_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_ViewController.swift; sourceTree = "<group>"; };
 		87904FF328647F1500465E07 /* ParentalControl_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentalControl_Storyboard.storyboard; sourceTree = "<group>"; };
 		87B4F6C12861C505002BB2A9 /* ParentalControl_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentalControl_ViewController.swift; sourceTree = "<group>"; };
 		AB2D89D528605EB5007884BC /* LearningCheckPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCheckPointViewController.swift; sourceTree = "<group>"; };
@@ -229,8 +233,10 @@
 		5C36788A2869908D00E93E79 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				878A336A2869BB7100D09B25 /* SettingsStoryboard.storyboard */,
+				878A336C286A00A200D09B25 /* Setting_ViewController.swift */,
 			);
-			path = Settings;
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		5CB89BD22865971B00A9EDD9 /* CoreData */ = {
@@ -319,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878A336B2869BB7100D09B25 /* SettingsStoryboard.storyboard in Resources */,
 				5C28665C28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard in Resources */,
 				5C36788C28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 in Resources */,
 				87904FF428647F1500465E07 /* ParentalControl_Storyboard.storyboard in Resources */,
@@ -348,6 +355,7 @@
 				5C21DB9028620F410053606D /* HomeCardCollectionViewCell.swift in Sources */,
 				5C28665E28606017001830EC /* ParentalGuidelinesViewController.swift in Sources */,
 				ABB0E75F2865BE7800CD9D2C /* CoreDataHelper.swift in Sources */,
+				878A336D286A00A200D09B25 /* Setting_ViewController.swift in Sources */,
 				8700788B286314BC00F4E86E /* ParentalControl_ViewController2.swift in Sources */,
 				8700788D286325CA00F4E86E /* ParentalControl_ViewController3.swift in Sources */,
 				5C4668522865F37A002EF090 /* Story7ViewController.swift in Sources */,
