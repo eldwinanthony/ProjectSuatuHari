@@ -29,6 +29,8 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     var fetchTemp : SuatuHari?
     var fetchNote : NoteLearning?
     
+    
+    
     //set outlets home page
     @IBOutlet weak var starTotalLabel: UILabel!
     @IBOutlet weak var starView: UIView!

@@ -693,10 +693,10 @@
             </objects>
             <point key="canvasLocation" x="4638" y="1503"/>
         </scene>
-        <!--Main-->
+        <!--LearningCheckPointStoryboard-->
         <scene sceneID="IlP-XQ-uT7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="CqT-34-8vv" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LearningCheckPointStoryboard" id="CqT-34-8vv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aw6-pU-76K"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtM-yb-ouw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

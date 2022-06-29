@@ -18,6 +18,8 @@ class ParentalControl_ViewController: UIViewController {
         
         stopBackgroundSound()
         
+        
+        
         let warna1 = UIColor(red: 106, green: 73, blue: 246)
         let warna2 = UIColor(red: 190, green: 145, blue: 245)
         
