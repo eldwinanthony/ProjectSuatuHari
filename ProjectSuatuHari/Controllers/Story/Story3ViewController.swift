@@ -120,6 +120,7 @@ class Story3ViewController: UIViewController {
     
     //grass pressed:
     @IBAction func grassPressed(_ sender: Any) {
+        playRumputSound()
         circleImage.isHidden = false
         playNextActivitySound()
         if grassflag == 0 {
@@ -129,6 +130,7 @@ class Story3ViewController: UIViewController {
     
     //apple pressed:
     @IBAction func applePressed(_ sender: Any) {
+        playApelSound()
         xImageApple.isHidden = false
         playWrongSound()
         grassflag += 1
@@ -140,6 +142,7 @@ class Story3ViewController: UIViewController {
     
     //carrot pressed:
     @IBAction func carrotPressed(_ sender: Any) {
+        playWortelSound()
         xImageCarrot.isHidden = false
         playWrongSound()
         grassflag += 1

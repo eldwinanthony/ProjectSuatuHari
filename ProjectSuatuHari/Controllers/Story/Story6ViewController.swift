@@ -40,20 +40,24 @@ class Story6ViewController: UIViewController {
     @IBAction func eskrimMerahTapped(_ sender: Any) {
         playNextActivitySound()
         fadeInScopeMerah()
+        playMerahSound()
         checkmarkmerah.isHidden = false
         moveSegue()
     }
     
     @IBAction func eskrimUnguTapped(_ sender: Any) {
+        playUnguSound()
         playWrongSound()
         xmarkungu.isHidden = false
     }
     @IBAction func eskrimOrangeTapped(_ sender: Any) {
+        playOrenSound()
         playWrongSound()
         xmarkorange.isHidden = false
     }
     
     @IBAction func eskrimCoklatTapped(_ sender: Any) {
+        playCoklatSound()
         playNextActivitySound()
         fadeInScopeCoklat()
         checkmarkcoklat.isHidden = false

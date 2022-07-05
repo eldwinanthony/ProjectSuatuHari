@@ -263,7 +263,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <action selector="grassPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="Vou-hq-dIe"/>
+                                    <action selector="grassPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="1ga-7y-8Tg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRh-lG-UBt">
@@ -272,7 +272,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <action selector="applePressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="4vw-Al-Hlr"/>
+                                    <action selector="applePressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="6Az-xg-NDy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxZ-s5-9Zi">
@@ -281,7 +281,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <action selector="carrotPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="rAb-oU-ahv"/>
+                                    <action selector="carrotPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="6KT-Jr-DZU"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene3promptnew" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-ut-eEc">
@@ -313,7 +313,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <action selector="elephantPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="ERa-Ni-ZWb"/>
+                                    <action selector="elephantPressed:" destination="h7Q-Lh-npO" eventType="touchUpInside" id="ahh-gg-TIf"/>
                                 </connections>
                             </button>
                         </subviews>

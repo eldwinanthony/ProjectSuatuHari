@@ -15,6 +15,14 @@
 		5C0DEE5D285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DEE5B285B2D8D00395723 /* ProjectSuatuHari.xcdatamodeld */; };
 		5C0DEE5F285B2D8D00395723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0DEE5E285B2D8D00395723 /* Assets.xcassets */; };
 		5C1BFADF28742913006DC15C /* PGImageArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1BFADE28742913006DC15C /* PGImageArray.swift */; };
+		5C1BFAF028743F2C006DC15C /* IniOren.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAE928743F2B006DC15C /* IniOren.m4a */; };
+		5C1BFAF128743F2C006DC15C /* IniWortel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAEA28743F2B006DC15C /* IniWortel.m4a */; };
+		5C1BFAF228743F2C006DC15C /* IniMerah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAEB28743F2B006DC15C /* IniMerah.m4a */; };
+		5C1BFAF328743F2C006DC15C /* IniRumput.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAEC28743F2B006DC15C /* IniRumput.m4a */; };
+		5C1BFAF428743F2C006DC15C /* IniCoklat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAED28743F2B006DC15C /* IniCoklat.m4a */; };
+		5C1BFAF528743F2C006DC15C /* IniApel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAEE28743F2B006DC15C /* IniApel.m4a */; };
+		5C1BFAF628743F2C006DC15C /* IniUngu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAEF28743F2B006DC15C /* IniUngu.m4a */; };
+		5C1BFAF82874411A006DC15C /* BerhasilSoundEffect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BFAF72874411A006DC15C /* BerhasilSoundEffect.m4a */; };
 		5C1FF034285B804900A2AEF9 /* buttonsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF032285B804900A2AEF9 /* buttonsound.wav */; };
 		5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */; };
 		5C1FF037285B807D00A2AEF9 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FF036285B807D00A2AEF9 /* SoundController.swift */; };
@@ -67,13 +75,14 @@
 		5C0DEE5E285B2D8D00395723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0DEE63285B2D8D00395723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C1BFADE28742913006DC15C /* PGImageArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGImageArray.swift; sourceTree = "<group>"; };
-		5C1BFAE228743291006DC15C /* IniRumput.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniRumput.m4a; sourceTree = "<group>"; };
-		5C1BFAE328743291006DC15C /* IniOren.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniOren.m4a; sourceTree = "<group>"; };
-		5C1BFAE428743291006DC15C /* IniCoklat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniCoklat.m4a; sourceTree = "<group>"; };
-		5C1BFAE528743291006DC15C /* IniUngu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniUngu.m4a; sourceTree = "<group>"; };
-		5C1BFAE628743291006DC15C /* IniWortel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniWortel.m4a; sourceTree = "<group>"; };
-		5C1BFAE728743291006DC15C /* IniApel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniApel.m4a; sourceTree = "<group>"; };
-		5C1BFAE828743291006DC15C /* IniMerah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniMerah.m4a; sourceTree = "<group>"; };
+		5C1BFAE928743F2B006DC15C /* IniOren.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniOren.m4a; sourceTree = "<group>"; };
+		5C1BFAEA28743F2B006DC15C /* IniWortel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniWortel.m4a; sourceTree = "<group>"; };
+		5C1BFAEB28743F2B006DC15C /* IniMerah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniMerah.m4a; sourceTree = "<group>"; };
+		5C1BFAEC28743F2B006DC15C /* IniRumput.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniRumput.m4a; sourceTree = "<group>"; };
+		5C1BFAED28743F2B006DC15C /* IniCoklat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniCoklat.m4a; sourceTree = "<group>"; };
+		5C1BFAEE28743F2B006DC15C /* IniApel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniApel.m4a; sourceTree = "<group>"; };
+		5C1BFAEF28743F2B006DC15C /* IniUngu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IniUngu.m4a; sourceTree = "<group>"; };
+		5C1BFAF72874411A006DC15C /* BerhasilSoundEffect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BerhasilSoundEffect.m4a; sourceTree = "<group>"; };
 		5C1FF032285B804900A2AEF9 /* buttonsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonsound.wav; sourceTree = "<group>"; };
 		5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nextactivitysound.wav; sourceTree = "<group>"; };
 		5C1FF036285B807D00A2AEF9 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
@@ -155,28 +164,6 @@
 			path = ProjectSuatuHari;
 			sourceTree = "<group>";
 		};
-		5C1BFAE128743272006DC15C /* SoundEffects */ = {
-			isa = PBXGroup;
-			children = (
-				5C1BFAE728743291006DC15C /* IniApel.m4a */,
-				5C1BFAE428743291006DC15C /* IniCoklat.m4a */,
-				5C1BFAE828743291006DC15C /* IniMerah.m4a */,
-				5C1BFAE328743291006DC15C /* IniOren.m4a */,
-				5C1BFAE228743291006DC15C /* IniRumput.m4a */,
-				5C1BFAE528743291006DC15C /* IniUngu.m4a */,
-				5C1BFAE628743291006DC15C /* IniWortel.m4a */,
-				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
-				5C4668542865F6EA002EF090 /* lionroar.mp3 */,
-				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
-				5C764E10286456E1009338F9 /* wrong.wav */,
-				5C93C2AA285C572400E32360 /* guidelineandsetting.wav */,
-				5C1FF032285B804900A2AEF9 /* buttonsound.wav */,
-				5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */,
-				5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */,
-			);
-			path = SoundEffects;
-			sourceTree = "<group>";
-		};
 		5C38307D286B6C5B00A2F62F /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,7 +241,22 @@
 		5C383084286B6CE300A2F62F /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				5C1BFAE128743272006DC15C /* SoundEffects */,
+				5C1BFAEE28743F2B006DC15C /* IniApel.m4a */,
+				5C1BFAED28743F2B006DC15C /* IniCoklat.m4a */,
+				5C1BFAEB28743F2B006DC15C /* IniMerah.m4a */,
+				5C1BFAE928743F2B006DC15C /* IniOren.m4a */,
+				5C1BFAEC28743F2B006DC15C /* IniRumput.m4a */,
+				5C1BFAEF28743F2B006DC15C /* IniUngu.m4a */,
+				5C1BFAEA28743F2B006DC15C /* IniWortel.m4a */,
+				5C4668482865E59E002EF090 /* SoundKuinsi.wav */,
+				5C1BFAF72874411A006DC15C /* BerhasilSoundEffect.m4a */,
+				5C4668542865F6EA002EF090 /* lionroar.mp3 */,
+				5C4668432865DE88002EF090 /* elephant-trumpets-growls-6047.mp3 */,
+				5C764E10286456E1009338F9 /* wrong.wav */,
+				5C93C2AA285C572400E32360 /* guidelineandsetting.wav */,
+				5C1FF032285B804900A2AEF9 /* buttonsound.wav */,
+				5C1FF033285B804900A2AEF9 /* nextactivitysound.wav */,
+				5C36788B28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 */,
 				5C1FF036285B807D00A2AEF9 /* SoundController.swift */,
 			);
 			path = Sounds;
@@ -367,17 +369,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				878A336B2869BB7100D09B25 /* SettingsStoryboard.storyboard in Resources */,
+				5C1BFAF528743F2C006DC15C /* IniApel.m4a in Resources */,
+				5C1BFAF628743F2C006DC15C /* IniUngu.m4a in Resources */,
 				5C28665C28605FF5001830EC /* ParentalGuidelinesStoryboard.storyboard in Resources */,
 				5C36788C28699B6800E93E79 /* fm-freemusic-cheerful-whistling.mp3 in Resources */,
+				5C1BFAF028743F2C006DC15C /* IniOren.m4a in Resources */,
 				87904FF428647F1500465E07 /* ParentalControl_Storyboard.storyboard in Resources */,
+				5C1BFAF228743F2C006DC15C /* IniMerah.m4a in Resources */,
 				5C4668552865F6EA002EF090 /* lionroar.mp3 in Resources */,
 				5C1FF039285B83A600A2AEF9 /* Story.storyboard in Resources */,
+				5C1BFAF82874411A006DC15C /* BerhasilSoundEffect.m4a in Resources */,
 				5C1FF034285B804900A2AEF9 /* buttonsound.wav in Resources */,
 				4D94BA5E2861D58100364CF4 /* Character.storyboard in Resources */,
 				5CF1EF1228648640006FEE22 /* Main.storyboard in Resources */,
+				5C1BFAF128743F2C006DC15C /* IniWortel.m4a in Resources */,
 				5C93C2AB285C572400E32360 /* guidelineandsetting.wav in Resources */,
 				5C5E9D79286AE73700B9F5A7 /* LaunchScreen.storyboard in Resources */,
 				5C764E11286456E1009338F9 /* wrong.wav in Resources */,
+				5C1BFAF428743F2C006DC15C /* IniCoklat.m4a in Resources */,
+				5C1BFAF328743F2C006DC15C /* IniRumput.m4a in Resources */,
 				5C0DEE5F285B2D8D00395723 /* Assets.xcassets in Resources */,
 				AB2D89D828605ED4007884BC /* LearningCheckPointStoryboard.storyboard in Resources */,
 				5C1FF035285B804900A2AEF9 /* nextactivitysound.wav in Resources */,
