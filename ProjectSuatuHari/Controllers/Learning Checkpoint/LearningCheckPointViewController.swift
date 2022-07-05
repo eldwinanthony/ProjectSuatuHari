@@ -13,6 +13,7 @@ class LearningCheckPointViewController: UIViewController{
     let coreDataHelper = CoreDataHelper()
     var fetchTemp : NoteLearning?
     
+    
     @IBOutlet weak var buttonAngkaTransparant: UIButton!{
         didSet{
             buttonAngkaTransparant.layer.cornerRadius = 12
@@ -203,6 +204,25 @@ class LearningCheckPointViewController: UIViewController{
         summaryTitle.text = "Bagaimana cara meningkatkan kemampuan anak mengenal warna?"
         summaryImage.image = UIImage(named: "imagewarna")
         summaryText.text = "Ajak balita bermain tebak-tebakan angka. Minta ia menebak angka berdasarkan petunjuk yang Anda berikan."
+    }
+    
+    
+    @IBOutlet weak var namaAnak: UILabel!
+    var fetchTemps : SuatuHari?
+    
+    func fetchNama(){
+//        let context = coreDataHelper.getBackgroundContext()
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            fetchTemps = try context.fetch(SuatuHari.fetchRequest()).last
+            namaAnak.text = fetchTemps?.namaAnak ?? ""
+        }
+        
+        catch
+        {
+            print(error.localizedDescription)
+        }
     }
 }
 

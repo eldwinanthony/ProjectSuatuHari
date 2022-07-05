@@ -254,11 +254,11 @@
                         <viewLayoutGuide key="safeArea" id="sIi-Xr-rcv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="7dS-IF-eM9"/>
+                            <constraint firstItem="tsE-TE-q0h" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" constant="-2" id="7dS-IF-eM9"/>
                             <constraint firstItem="sIi-Xr-rcv" firstAttribute="trailing" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="119" id="OTU-44-GZE"/>
                             <constraint firstItem="Ymp-qa-Nk2" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="107" id="VZm-jC-g7b"/>
                             <constraint firstItem="Ymp-qa-Nk2" firstAttribute="centerX" secondItem="sIi-Xr-rcv" secondAttribute="centerX" id="Yc3-Pn-TnP"/>
-                            <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="41" id="eAw-ss-cPd"/>
+                            <constraint firstItem="tsE-TE-q0h" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="65" id="eAw-ss-cPd"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="iIR-eb-g4z"/>
                             <constraint firstItem="dJ3-Jz-1bp" firstAttribute="top" secondItem="sIi-Xr-rcv" secondAttribute="top" constant="39" id="m2k-HZ-94R"/>
                             <constraint firstItem="Ffn-ev-6kH" firstAttribute="leading" secondItem="dJ3-Jz-1bp" secondAttribute="trailing" constant="-14" id="sZa-zL-a1S"/>
