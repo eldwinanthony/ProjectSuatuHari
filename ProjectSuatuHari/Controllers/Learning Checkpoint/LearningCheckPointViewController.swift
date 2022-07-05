@@ -37,7 +37,7 @@ class LearningCheckPointViewController: UIViewController{
             StoryBackground.layer.cornerRadius = 12
         }
     }
-    @IBOutlet weak var SubmitButton: UIButton!
+
     @IBOutlet weak var ParameterSatuText: UIView!
     @IBOutlet weak var ParameterSatuBintang: UIImageView!
     @IBOutlet weak var ParameterSatuBox: UIView!{

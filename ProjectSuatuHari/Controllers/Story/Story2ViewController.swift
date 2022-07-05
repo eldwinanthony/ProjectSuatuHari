@@ -19,15 +19,15 @@ class Story2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //make buttons to circle
-        button2.layer.cornerRadius = button2.frame.size.width/2
-        button2.clipsToBounds = true
-        button3.layer.cornerRadius = button2.frame.size.width/2
-        button3.clipsToBounds = true
-        button4.layer.cornerRadius = button2.frame.size.width/2
-        button4.clipsToBounds = true
-        button5.layer.cornerRadius = button2.frame.size.width/2
-        button5.clipsToBounds = true
+//        //make buttons to circle
+//        button2.layer.cornerRadius = button2.frame.size.width/2
+//        button2.clipsToBounds = true
+//        button3.layer.cornerRadius = button2.frame.size.width/2
+//        button3.clipsToBounds = true
+//        button4.layer.cornerRadius = button2.frame.size.width/2
+//        button4.clipsToBounds = true
+//        button5.layer.cornerRadius = button2.frame.size.width/2
+//        button5.clipsToBounds = true
         
         Prompt.alpha = 0
         
@@ -39,35 +39,35 @@ class Story2ViewController: UIViewController {
 
     //button 2 press
     @IBAction func button2TouchDown(_ sender: Any) {
-        button2.backgroundColor = UIColor.red
+        button2.setImage(UIImage(named:"2wrong"), for: .normal)
     }
     
     //button 2 release
     @IBAction func button2TouchUpInside(_ sender: Any) {
         playWrongSound()//nanti diganti sound suara salah
-        button2.backgroundColor = UIColor.systemCyan
+        button2.setImage(UIImage(named:"2"), for: .normal)
     }
     
     //button 3 press
     @IBAction func button3TouchDown(_ sender: Any) {
-        button3.backgroundColor = UIColor.red
+        button3.setImage(UIImage(named:"3wrong"), for: .normal)
     }
     
     //button 3 release
     @IBAction func button3TouchUpInside(_ sender: Any) {
         playWrongSound()//nanti diganti sound suara salah
-        button3.backgroundColor = UIColor.systemCyan
+        button3.setImage(UIImage(named:"3"), for: .normal)
     }
     
     //button 5 press
     @IBAction func button5TouchDown(_ sender: Any) {
-        button5.backgroundColor = UIColor.red
+        button5.setImage(UIImage(named:"5wrong"), for: .normal)
     }
     
     //button 5 release
     @IBAction func button5TouchUpInside(_ sender: Any) {
         playWrongSound()//nanti diganti sound suara salah
-        button5.backgroundColor = UIColor.systemCyan
+        button5.setImage(UIImage(named:"5"), for: .normal)
     }
     
     //prev button pressed:
@@ -78,7 +78,7 @@ class Story2ViewController: UIViewController {
     //button 4 pressed:
     @IBAction func button4Pressed(_ sender: Any) {
         playNextActivitySound()
-        button4.backgroundColor = UIColor.green
+        button4.setImage(UIImage(named:"4correct"), for: .normal)
         performSegue(withIdentifier: "movePopup1", sender: self)
     }
     

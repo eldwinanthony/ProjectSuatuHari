@@ -215,18 +215,6 @@
                                             <action selector="deleteNama" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c6G-E1-BF2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIZ-UP-IVG">
-                                        <rect key="frame" x="323" y="179" width="90" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.41176474089999998" green="0.40392160420000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Submit">
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="submitNote" destination="Y6W-OH-hqX" eventType="touchUpInside" id="k6y-Qi-PrQ"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Vjp-g8-eJU" secondAttribute="trailing" constant="8" id="8Mq-lI-V7K"/>
@@ -329,7 +317,6 @@
                         <outlet property="ParameterTigaText" destination="PGS-eX-LRQ" id="McY-cd-AxB"/>
                         <outlet property="StoryBackground" destination="fgh-DQ-y24" id="6vb-oY-WQ8"/>
                         <outlet property="StoryText" destination="O8m-Hd-Og2" id="Zr4-SM-rQB"/>
-                        <outlet property="SubmitButton" destination="YIZ-UP-IVG" id="ZHu-Ah-19p"/>
                         <outlet property="buttonAngkaTransparant" destination="qxw-68-ToK" id="xzm-uM-QrL"/>
                         <outlet property="buttonHurufTransparant" destination="Rer-vv-FMV" id="J6p-2b-ZfB"/>
                         <outlet property="buttonHurufWarna" destination="Ao8-XT-Jjd" id="eJu-Kd-l3d"/>
