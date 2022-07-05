@@ -12,6 +12,7 @@ class LearningCheckPointViewController: UIViewController{
     
     let coreDataHelper = CoreDataHelper()
     var fetchTemp : NoteLearning?
+    var fetchNama : SuatuHari?
     
     
     @IBOutlet weak var buttonAngkaTransparant: UIButton!{
@@ -117,9 +118,12 @@ class LearningCheckPointViewController: UIViewController{
         }
     }
     
+    @IBOutlet weak var namaAnak: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fetchText()
+        self.fetchNamaAnak()
         
         // Do any additional setup after loading the view.
     }
@@ -207,16 +211,15 @@ class LearningCheckPointViewController: UIViewController{
     }
     
     
-    @IBOutlet weak var namaAnak: UILabel!
-    var fetchTemps : SuatuHari?
     
-    func fetchNama(){
+    
+    func fetchNamaAnak(){
 //        let context = coreDataHelper.getBackgroundContext()
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do
         {
-            fetchTemps = try context.fetch(SuatuHari.fetchRequest()).last
-            namaAnak.text = fetchTemps?.namaAnak ?? ""
+            fetchNama = try context.fetch(SuatuHari.fetchRequest()).last
+            namaAnak.text = fetchNama?.namaAnak ?? ""
         }
         
         catch
