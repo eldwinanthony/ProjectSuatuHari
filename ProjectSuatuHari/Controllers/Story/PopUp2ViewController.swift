@@ -12,7 +12,7 @@ class PopUp2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.isModalInPresentation = false
-
+        playBerhasilSound()
         // Do any additional setup after loading the view.
     }
     
