@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if fetchTemp?.namaAnak == nil{
             firstTimeFlag += 1
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
                 let mainStoryboard = UIStoryboard(name: "ParentalControl_Storyboard", bundle: nil)
                 let vc: UIViewController
                 vc = mainStoryboard.instantiateInitialViewController()!
@@ -38,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         else if fetchTemp?.namaAnak != nil{
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc: UIViewController
                 vc = mainStoryboard.instantiateInitialViewController()!

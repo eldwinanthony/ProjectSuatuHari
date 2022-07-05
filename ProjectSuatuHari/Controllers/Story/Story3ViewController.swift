@@ -44,9 +44,11 @@ class Story3ViewController: UIViewController {
         elephantIndicator.isOpaque = false
         elephantIndicator.layer.cornerRadius =  elephantIndicator.frame.size.width/2
         elephantIndicator.clipsToBounds = true
-        elephantIndicator.isHidden = false
+        elephantIndicator.isHidden = true
 
     }
+    
+    
     
     
     
@@ -103,8 +105,13 @@ class Story3ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+            self.elephantIndicator.isHidden = false
+            self.animateElephant()
+        })
+        
         fadeInPrompt()
-        animateElephant()
     }
     
     @IBAction func elephantPressed(_ sender: Any) {

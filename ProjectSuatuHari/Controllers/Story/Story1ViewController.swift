@@ -26,7 +26,7 @@ class Story1ViewController: UIViewController {
         girlIndicator.isOpaque = false
         girlIndicator.layer.cornerRadius = girlIndicator.frame.size.width/2
         girlIndicator.clipsToBounds = true
-        girlIndicator.isHidden = false
+        girlIndicator.isHidden = true
         
         //hide chat bubble at first
         labelChat.alpha = 0
@@ -39,7 +39,12 @@ class Story1ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         //animate the indicator view
-        animate()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+            self.girlIndicator.isHidden = false
+            self.animate()
+        })
+        
         fadeInPrompt()
         playBackgroundSoundStory()
     }
