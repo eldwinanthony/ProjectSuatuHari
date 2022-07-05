@@ -18,7 +18,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     
     
     //SET THE ARRAY OF IMAGE
-    var pgimageArray = [UIImage(named: "PG1"), UIImage(named: "PG2"), UIImage(named: "PG3"), UIImage(named: "PG4"), UIImage(named: "PG5")]
+    
     
     var currentCellIndex = 0
     
@@ -54,7 +54,7 @@ class ParentalGuidelinesViewController: UIViewController, UICollectionViewDelega
     
     //DEFINE THE NUMBER OF CELL
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.pgimageArray.count
+        return pgimageArray.count
     }
     
     //DEFINE THE CELL

@@ -43,6 +43,7 @@ class ParentalControl_ViewController4: UIViewController {
     @IBAction func submitPressed(_ sender: Any) {
         playButtonSound()
     }
+    
     @IBOutlet weak var CardView4: UIView!{
         didSet{
             CardView4.layer.shadowOffset = CGSize(width: 10, height: 10)
